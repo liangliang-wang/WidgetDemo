@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Response ResponseReference="REF_1483-2075-240959354067548" ResponseSequence="2">
+  <ResponseDetails Language="en">
+    <BookingResponse>
+      <BookingReferences>
+        <BookingReference ReferenceSource="client">
+          <![CDATA[MC20031201a]]>
+        </BookingReference>
+        <BookingReference ReferenceSource="agent">
+          <![CDATA[AG1]]>
+        </BookingReference>
+        <BookingReference ReferenceSource="api">
+          <![CDATA[18327]]>
+        </BookingReference>
+      </BookingReferences>
+      <BookingCreationDate>2003-12-01</BookingCreationDate>
+      <BookingDepartureDate>2004-01-01</BookingDepartureDate>
+      <BookingName><![CDATA[MC20031301]]></BookingName>
+      <PassengerEmail>xxx@ly.com</PassengerEmail>
+      <BookingFees>54.22</BookingFees>
+      <BookingPrice Currency="GBP"
+       Gross="3172.50"
+       Commission="380.70"
+       Nett="2791.80"/>
+      <BookingStatus Code="CP"><![CDATA[Pending Confirmation]]></BookingStatus>
+      <PaxNames>
+        <PaxName PaxId="1"><![CDATA[Mr John Doe]]></PaxName>
+        <PaxName PaxId="2"><![CDATA[Mrs Sarah Doe]]> </PaxName>
+        <PaxName PaxId="3" PaxType="child" ChildAge="4"><![CDATA[Master Jim Doe]]> </PaxName>
+      </PaxNames>
+      <BookingItems>
+        <BookingItem ItemType="hotel">
+          <ItemReference>99</ItemReference>
+          <ItemCity Code="AMS"><![CDATA[Amsterdam]]></ItemCity>
+          <Item Code="NAD"><![CDATA[NADIA]]></Item>
+          <ItemPrice Commission="380.70" Currency="GBP"  Gross="3172.50"  GrossWithoutDiscount="3272.50"  IncludeOfferDiscount="100.00"  Nett="2791.80"/>
+          <Offer Code="DSC"><![CDATA[Discount Night(s) ]]></Offer>
+          <ItemStatus Code="CP"><![CDATA[Pending Confirmation]]></ItemStatus>
+          <ItemConfirmationReference>qwe23</ItemConfirmationReference>
+          <ItemPayableBy>qweq</ItemPayableBy>
+          <ItemRemarks>
+            <ItemRemark Code="LD "><![CDATA[Please note late check out]]></ItemRemark>
+            <ItemRemark><![CDATA[IF POSSIBLE PROVIDE A ROOM ON THE TOP FLOOR]]></ItemRemark>
+          </ItemRemarks>
+          <ItemPayableBy>HOTELS AND MORE, Amsterdam</ItemPayableBy>
+          <EssentialInformation>
+            <Information>
+              <Text><![CDATA[No Children permitted. ]]></Text>
+              <DateRange>
+                <FromDate>2004-01-01</FromDate>
+                <ToDate>2004-12-31</ToDate>
+              </DateRange>
+            </Information>
+          </EssentialInformation>
+          <HotelItem>
+            <PeriodOfStay>
+              <CheckInDate>2004-01-01</CheckInDate>
+              <CheckOutDate>2004-01-11</CheckOutDate>
+            </PeriodOfStay>
+            <HotelRooms>
+              <HotelRoom Code="DB" ExtraBed="true" SharingBedding="true">
+                <PaxIds>
+                  <PaxId>1</PaxId>
+                  <PaxId>2</PaxId>
+                  <PaxId>3</PaxId>
+                </PaxIds>
+              </HotelRoom>
+            </HotelRooms>
+            <Meals>
+              <Basis Code="B"><![CDATA[breakfast]]></Basis>
+              <Breakfast Code="B "><![CDATA[Cold Buffet]]> </Breakfast>
+            </Meals>
+          </HotelItem>
+        </BookingItem>
+      </BookingItems>
+    </BookingResponse>
+
+    <SearchBookingItemResponse>
+      <BookingReferences>
+        <BookingReference ReferenceSource="client">BOOK1002</BookingReference>
+        <BookingReference ReferenceSource="api">56789</BookingReference>
+      </BookingReferences>
+      <BookingDepartureDate>2003-07-29</BookingDepartureDate>
+      <BookingName><![CDATA[Mr John Doe]]></BookingName>
+      <BookingPrice Currency="GBP" Gross="344.00" Commission="34.40" Nett="309.60" />
+      <BookingStatus Code="CP"><![CDATA[Confirmation Pending]]></BookingStatus>
+      <PaxNames>
+        <PaxName PaxId="1"><![CDATA[Mr John Doe]]></PaxName>
+        <PaxName PaxId="2"><![CDATA[Mrs Sarah Doe]]></PaxName>
+        <PaxName PaxId="3" PaxType="child" ChildAge="11"><![CDATA[Master Jim Doe]]></PaxName>
+        <PaxName PaxId="4"><![CDATA[Mr Ant Knee]]></PaxName>
+        <PaxName PaxId="5"><![CDATA[Mrs Sun Knee]]></PaxName>
+      </PaxNames>
+      <BookingItems>
+        <BookingItem ItemType="hotel">
+          <ItemReference>1</ItemReference>
+          <ItemCity Code="AMS"><![CDATA[Amsterdam]]></ItemCity>
+          <Item Code="APP"><![CDATA[Apple Inn]]></Item>
+          <ItemPrice Commission="34.40"
+          Currency="GBP"
+          Gross="344.00"
+          GrossWithoutDiscount="516"
+          IncludeOfferDiscount="172.00"
+          Nett="309.60"/>
+          <Offer Code="DSC"><![CDATA[Discount Night(s) ]]></Offer>
+          <ItemStatus Code="CP"><![CDATA[Confirmation Pending]]></ItemStatus>
+          <ItemRemarks>
+            <ItemRemark Code="LA"><![CDATA[Late Arrival]]></ItemRemark>
+          </ItemRemarks>
+          <HotelItem>
+            <PeriodOfStay>
+              <CheckInDate>2003-07-30</CheckInDate>
+              <CheckOutDate>2003-08-01</CheckOutDate>
+            </PeriodOfStay>
+            <HotelRooms>
+              <HotelRoom Code="DB" ExtraBed="true" NumberOfCots="2">
+                <PaxIds>
+                  <PaxId>1</PaxId>
+                  <PaxId>2</PaxId>
+                  <PaxId>3</PaxId>
+                </PaxIds>
+              </HotelRoom>
+              <HotelRoom Code="TB">
+                <PaxIds>
+                  <PaxId>4</PaxId>
+                  <PaxId>5</PaxId>
+                </PaxIds>
+              </HotelRoom>
+            </HotelRooms>
+            <Meals>
+              <Basis Code="B"><![CDATA[Breakfast]]></Basis>
+              <Breakfast Code="C"><![CDATA[Continental breakfast]]></Breakfast>
+            </Meals>
+          </HotelItem>
+        </BookingItem>
+      </BookingItems>
+    </SearchBookingItemResponse>
+  </ResponseDetails>
+</Response>

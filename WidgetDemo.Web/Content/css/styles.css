@@ -1,0 +1,73 @@
+﻿.ax_image
+{
+    position: absolute;
+    left: 84px;
+    top: 24px;
+    width: 32px;
+    height: 32px;
+}
+.panel_state
+{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background-image: none;
+}
+.upanel
+{
+    float: left;
+    padding: 10px 0 0 20px;
+    
+}
+div.monitor-panel
+{
+    width: 100%;
+    height: initial;
+    float: right;
+    padding: 5px 10px 0 0;
+}
+div.monitor-panel table
+{
+    width: 95%;
+    margin: 5px auto;
+}
+div.monitor-panel table td, div.monitor-panel table th
+{
+    border-bottom: solid 1px #95B8E7;
+}
+div.monitor-panel table tr:first-child > td, div.monitor-panel table tr:first-child > th
+{
+    border-bottom: solid 2px #95B8E7;
+}
+div.monitor-panel table tr:first-child
+{
+    font-weight: bold;
+}
+div.monitor-panel table tr > td:first-child
+{
+    width: 30%;
+}
+.normal
+{
+    background-color: White;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+    color: green;
+}
+.abnormal
+{
+    background-color: White;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+    margin: 5px;
+    color: red;
+    cursor: pointer;
+}

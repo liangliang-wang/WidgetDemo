@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <page validaterequest="false" />
+        <title>王亮demo项目-@ViewBag.Title</title>
+        <link type="text/css" rel="stylesheet" href="@Url.Content("~/Cake/default.css")"/>
+        <link rel="stylesheet" type="text/css" href="@Url.Content("~/Cake/Easyui/themes/default/easyui.css")"/>
+        <link rel="stylesheet" type="text/css" href="@Url.Content("~/Cake/Easyui/themes/icon.css")"/>
+        <script src="@Url.Content("~/Scripts/jquery-1.8.3.min.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Cake/Easyui/jquery.easyui.min.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/jquery.form.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Cake/Easyui/easyui-lang-zh_CN.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Cake/Easyui/easyui.validate.extend.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/comm.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/date.js")" type="text/javascript"></script>
+        @RenderSection("head", required: false)
+    </head>
+<body class="easyui-layout">
+    @RenderBody()
+</body>
+</html>

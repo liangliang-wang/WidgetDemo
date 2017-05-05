@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>JSONEditor | Switch mode</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <!-- json editor -->
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Cake/jsoneditor-master/jsoneditor.css")">
+
+    <script src="@Url.Content("~/Scripts/jquery-1.8.3.min.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Cake/jsoneditor-master/jsoneditor.js")"></script>
+    <!-- ace editor -->
+    <script src="@Url.Content("~/Cake/jsoneditor-master/asset/ace/ace.js")"></script>
+    <!-- json lint -->
+    <script src="@Url.Content("~/Cake/jsoneditor-master/asset/jsonlint/jsonlint.js")"></script>
+
+    <style type="text/css">
+        body, html {
+            font-family: arial, sans-serif;
+            font-size: 11pt;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .content {
+            margin-left: 2%;
+            margin-top: 1%;
+        }
+    </style>
+</head>
+<body>
+    <table class="content">
+        <tbody>
+            <tr>
+                <td>
+                    <div id="container1"></div>
+                </td>
+                <td>
+                    <div id="container2"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script type="text/javascript">
+        $(function () {
+            var bodyWidth = $('body').width();
+            var bodyHeigth = $('body').height();
+            var maxHeigth = (bodyHeigth * 0.9) + "px";
+            $("#container1").css("height", maxHeigth);
+            $("#container2").css("height", maxHeigth);
+
+
+            var maxWidth = (bodyWidth * 0.45) + "px";
+            $("#container1").css("width", maxWidth);
+            $("#container2").css("width", maxWidth);
+        });
+        var container1 = document.getElementById('container1');
+        var options1 = {
+            mode: 'text',
+            error: function (err) {
+                alert(err.toString());
+            },
+            change: function () {
+                if (editor1 != null) {
+                    editor2.setText(editor1.getText());
+                    editor2.expandAll();
+                }
+            }
+        };
+        var editor1 = new JSONEditor(container1, options1, null);
+
+        var container2 = document.getElementById('container2');
+        var options2 = {
+            mode: "view",
+            error: function (err) {
+                alert(err.toString());
+            }
+        };
+        var editor2 = new JSONEditor(container2, options2, null);
+
+        editor1.setText("");
+        editor1.textarea.focus();
+
+    </script>
+</body>
+</html>

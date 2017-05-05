@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CodeSharp.Package.AspNetWebPage</id>
+    <version>1.0</version>
+    <title>AspNet WebPages for asp.net mvc3 .NET4</title>
+    <authors>MS</authors>
+    <owners>MS</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WebPages for asp.net4/mvc3
+      Microsoft.Web.Infrastructure.dll
+      System.Web.Helpers.dll
+      System.Web.Razor.dll
+      System.Web.WebPages.Administration.dll
+      System.Web.WebPages.Deployment.dll
+      System.Web.WebPages.dll
+      System.Web.WebPages.Razor.dll</description>
+    <releaseNotes />
+    <copyright>2011</copyright>
+    <language />
+  </metadata>
+</package>

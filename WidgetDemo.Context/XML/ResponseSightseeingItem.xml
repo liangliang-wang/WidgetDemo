@@ -1,0 +1,15 @@
+﻿<SightseeingItem>
+  <TourDate>20 04-01-01</TourDate>
+  <TourLanguage Code="E"><![CDATA[English]]></TourLanguage>
+  <SpecialCode>123</SpecialCode>
+  <SpecialItem>sad</SpecialItem>
+  <PaxIds>
+    <PaxId>1</PaxId>
+  </PaxIds>
+  <TourDeparture>
+    <Time>08.05</Time>
+    <DeparturePoint Code="CUMB01"> <![CDATA[Cumberland Hotel]]> </DeparturePoint>
+  </TourDeparture>
+  <TourSupplier Code="EVAN01"><![CDATA[EVAN EVANS TOURS]]></TourSupplier>
+  <PleaseNote>safsaf</PleaseNote>
+</SightseeingItem>

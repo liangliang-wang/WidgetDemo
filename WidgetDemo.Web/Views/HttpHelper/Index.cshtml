@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "HttpHelper";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+}
+@model WidgetDemo.Model.HttpHelper.HttpRequestModel
+@section head{
+    <script type="text/javascript">
+        $(function () {
+            var bodyWidth = $('body').width();
+            var bodyHeigth = $('body').height();
+            var maxHeigth = (bodyHeigth * 0.55) + "px";
+            $("#data01").css("max-height", maxHeigth);
+            $("#result").css("max-height", maxHeigth);
+            var maxWidth = (bodyWidth * 0.45) + "px";
+            $("#data01").css("max-width", maxWidth);
+            $("#result").css("max-width", maxWidth);
+
+            //$("#HeaderContent").css("height", maxHeigth);
+            //$("#HeaderContent").css("width", maxHeigth);
+
+        });
+
+
+        function submitForm(isB0) {
+            $("#IsBo").val(isB0);
+            $("#requestForm").form('submit', {
+                success: function (data) {
+                    var obj = $.parseJSON(data);
+                    $("#result").html(obj.Result);
+                    $("#spanTime").html(obj.SpanTime);
+                },
+                error: function () {
+                    $("#result").val('请求失败');
+                }
+            });
+        }
+    </script>
+}
+<h2>HttpHelper</h2>
+<br />
+
+<div style="margin-left: 30px">
+    <form id="requestForm" method="post" action="@Url.Content("~/HttpHelper/Operator")">
+        <div style="margin-bottom: 10px;">
+            <span>url:</span><input name="Urlstr" type="text" style="width: 600px;" />
+            <span>请求方式：</span>
+            <select name="Type">
+                <option value="GET">Get</option>
+                <option value="POST">Post</option>
+                <option value="PUT">Put</option>
+                <option value="DELETE">Delete</option>
+            </select>
+            编码：<input type="text" value="UTF-8" id="Encode" name="Encode" style="width: 50px;" />
+
+            <input type="button" value="请求" onclick="submitForm()" style="width: 50px;" />
+            <input type="button" value="BO请求" onclick="submitForm(1)" style="width: 50px;" />
+            <input type="hidden" name="IsBo" id="IsBo" value="0" />
+            <span>耗时：</span><span id="spanTime"></span>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <span style="vertical-align: top">Header:</span>
+            <textarea id="HeaderContent" name="Header" style="width: 400px; height: 100px; resize: none"></textarea>
+            <span style="vertical-align: top">Cookie:</span>
+            <textarea id="Cookie" name="Cookie" style="width: 400px; height: 100px; resize: none"></textarea>
+        </div>
+        <div style="float: left; margin-right: 10px;">
+            <span style="vertical-align: top">参数:</span>
+            <textarea id="data01" name="Data" style="min-width: 400px; min-height: 200px;"></textarea>
+        </div>
+        <div>
+            <span style="vertical-align: top">结果:</span>
+            <textarea id="result" name="result" style="min-width: 400px; min-height: 200px;"></textarea>
+        </div>
+    </form>
+</div>

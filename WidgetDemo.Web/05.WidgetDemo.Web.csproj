@@ -1,0 +1,1333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B6AACCC-E031-41BC-B475-952311BAFFB4}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WidgetDemo.Web</RootNamespace>
+    <AssemblyName>WidgetDemo.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\SolutionItems\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Flight.CommonParamAndEnum">
+      <HintPath>..\SolutionItems\Flight.CommonParamAndEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\SolutionItems\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Libero.FusionCharts">
+      <HintPath>..\SolutionItems\Libero.FusionCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\SolutionItems\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MetaDataV2">
+      <HintPath>..\SolutionItems\MetaDataV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Cci.MetadataHelper">
+      <HintPath>..\SolutionItems\Microsoft.Cci.MetadataHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Cci.MetadataModel">
+      <HintPath>..\SolutionItems\Microsoft.Cci.MetadataModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Cci.PeReader">
+      <HintPath>..\SolutionItems\Microsoft.Cci.PeReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\SolutionItems\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\SolutionItems\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\SolutionItems\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\SolutionItems\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\SolutionItems\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\SolutionItems\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TC.Flight.CommonEnumLibrary">
+      <HintPath>..\SolutionItems\TC.Flight.CommonEnumLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="TC.Flight.CommonToolsLibrary">
+      <HintPath>..\SolutionItems\TC.Flight.CommonToolsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="TC.Flight.T4Library">
+      <HintPath>..\SolutionItems\TC.Flight.T4Library.dll</HintPath>
+    </Reference>
+    <Reference Include="TC.SystemOperateLog">
+      <HintPath>..\SolutionItems\TC.SystemOperateLog.dll</HintPath>
+    </Reference>
+    <Reference Include="TCBase.Authority.Sdk">
+      <HintPath>..\SolutionItems\TCBase.Authority.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="TCBase.CapacityPlanning.RequestTrack">
+      <HintPath>..\SolutionItems\TCBase.CapacityPlanning.RequestTrack.dll</HintPath>
+    </Reference>
+    <Reference Include="TCSmartFramework.CommonInterface">
+      <HintPath>..\SolutionItems\TCSmartFramework.CommonInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="TCSmartFramework.DataAccess">
+      <HintPath>..\SolutionItems\TCSmartFramework.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="TCSmartFramework.Utility">
+      <HintPath>..\SolutionItems\TCSmartFramework.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AdminControllerBase.cs" />
+    <Compile Include="Controllers\AdminWebViewPageBase.cs" />
+    <Compile Include="Controllers\AmazeController.cs" />
+    <Compile Include="Controllers\CrawlerController.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
+    <Compile Include="Controllers\EasyUiController.cs" />
+    <Compile Include="Controllers\HelperController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HttpHelperController.cs" />
+    <Compile Include="Controllers\RedisController.cs" />
+    <Compile Include="Controllers\DSFInterface\DsfInterfaceController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cake\assets\css\admin.css" />
+    <Content Include="Cake\assets\css\amazeui.css" />
+    <Content Include="Cake\assets\css\amazeui.flat.css" />
+    <Content Include="Cake\assets\css\amazeui.flat.min.css" />
+    <Content Include="Cake\assets\css\amazeui.min.css" />
+    <Content Include="Cake\assets\css\app.css" />
+    <Content Include="Cake\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Cake\assets\i\app-icon72x72%402x.png" />
+    <Content Include="Cake\assets\i\examples\admin-chrome.png" />
+    <Content Include="Cake\assets\i\examples\admin-firefox.png" />
+    <Content Include="Cake\assets\i\examples\admin-ie.png" />
+    <Content Include="Cake\assets\i\examples\admin-opera.png" />
+    <Content Include="Cake\assets\i\examples\admin-safari.png" />
+    <Content Include="Cake\assets\i\examples\adminPage.png" />
+    <Content Include="Cake\assets\i\examples\blogPage.png" />
+    <Content Include="Cake\assets\i\examples\landing.png" />
+    <Content Include="Cake\assets\i\examples\landingPage.png" />
+    <Content Include="Cake\assets\i\examples\loginPage.png" />
+    <Content Include="Cake\assets\i\examples\sidebarPage.png" />
+    <Content Include="Cake\assets\i\favicon.png" />
+    <Content Include="Cake\assets\i\startup-640x1096.png" />
+    <Content Include="Cake\assets\js\amazeui.js" />
+    <Content Include="Cake\assets\js\amazeui.legacy.js" />
+    <Content Include="Cake\assets\js\amazeui.legacy.min.js" />
+    <Content Include="Cake\assets\js\amazeui.min.js" />
+    <Content Include="Cake\assets\js\amazeui.widgets.helper.js" />
+    <Content Include="Cake\assets\js\amazeui.widgets.helper.min.js" />
+    <Content Include="Cake\assets\js\app.js" />
+    <Content Include="Cake\assets\js\handlebars.min.js" />
+    <Content Include="Cake\assets\js\jquery.min.js" />
+    <Content Include="Cake\assets\js\polyfill\rem.min.js" />
+    <Content Include="Cake\assets\js\polyfill\respond.min.js" />
+    <Content Include="Cake\default.css" />
+    <Content Include="Cake\default.js" />
+    <Content Include="Cake\Easyui\datagrid-filter.js" />
+    <Content Include="Cake\Easyui\easyloader.js" />
+    <Content Include="Cake\Easyui\easyui-lang-zh_CN.js" />
+    <Content Include="Cake\Easyui\easyui.validate.extend.js" />
+    <Content Include="Cake\Easyui\jquery.easyui.min.js" />
+    <Content Include="Cake\Easyui\jquery.min.js" />
+    <Content Include="Cake\Easyui\locale\easyui-lang-en.js" />
+    <Content Include="Cake\Easyui\locale\easyui-lang-zh_CN.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.accordion.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.calendar.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.combo.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.combobox.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.combogrid.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.combotree.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.datagrid.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.datebox.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.datetimebox.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.dialog.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.draggable.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.droppable.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.form.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.layout.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.linkbutton.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.menu.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.menubutton.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.messager.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.numberbox.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.numberspinner.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.pagination.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.panel.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.parser.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.progressbar.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.propertygrid.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.resizable.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.searchbox.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.slider.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.spinner.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.splitbutton.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.tabs.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.timespinner.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.tooltip.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.tree.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.treegrid.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.validatebox.js" />
+    <Content Include="Cake\Easyui\plugins\jquery.window.js" />
+    <Content Include="Cake\Easyui\themes\black\accordion.css" />
+    <Content Include="Cake\Easyui\themes\black\calendar.css" />
+    <Content Include="Cake\Easyui\themes\black\combo.css" />
+    <Content Include="Cake\Easyui\themes\black\combobox.css" />
+    <Content Include="Cake\Easyui\themes\black\datagrid.css" />
+    <Content Include="Cake\Easyui\themes\black\datebox.css" />
+    <Content Include="Cake\Easyui\themes\black\dialog.css" />
+    <Content Include="Cake\Easyui\themes\black\easyui.css" />
+    <Content Include="Cake\Easyui\themes\black\images\accordion_arrows.png" />
+    <Content Include="Cake\Easyui\themes\black\images\blank.gif" />
+    <Content Include="Cake\Easyui\themes\black\images\calendar_arrows.png" />
+    <Content Include="Cake\Easyui\themes\black\images\combo_arrow.png" />
+    <Content Include="Cake\Easyui\themes\black\images\datagrid_icons.png" />
+    <Content Include="Cake\Easyui\themes\black\images\datebox_arrow.png" />
+    <Content Include="Cake\Easyui\themes\black\images\layout_arrows.png" />
+    <Content Include="Cake\Easyui\themes\black\images\linkbutton_bg.png" />
+    <Content Include="Cake\Easyui\themes\black\images\loading.gif" />
+    <Content Include="Cake\Easyui\themes\black\images\menu_arrows.png" />
+    <Content Include="Cake\Easyui\themes\black\images\messager_icons.png" />
+    <Content Include="Cake\Easyui\themes\black\images\pagination_icons.png" />
+    <Content Include="Cake\Easyui\themes\black\images\panel_tools.png" />
+    <Content Include="Cake\Easyui\themes\black\images\searchbox_button.png" />
+    <Content Include="Cake\Easyui\themes\black\images\slider_handle.png" />
+    <Content Include="Cake\Easyui\themes\black\images\spinner_arrows.png" />
+    <Content Include="Cake\Easyui\themes\black\images\tabs_icons.png" />
+    <Content Include="Cake\Easyui\themes\black\images\tree_icons.png" />
+    <Content Include="Cake\Easyui\themes\black\images\validatebox_warning.png" />
+    <Content Include="Cake\Easyui\themes\black\layout.css" />
+    <Content Include="Cake\Easyui\themes\black\linkbutton.css" />
+    <Content Include="Cake\Easyui\themes\black\menu.css" />
+    <Content Include="Cake\Easyui\themes\black\menubutton.css" />
+    <Content Include="Cake\Easyui\themes\black\messager.css" />
+    <Content Include="Cake\Easyui\themes\black\pagination.css" />
+    <Content Include="Cake\Easyui\themes\black\panel.css" />
+    <Content Include="Cake\Easyui\themes\black\progressbar.css" />
+    <Content Include="Cake\Easyui\themes\black\propertygrid.css" />
+    <Content Include="Cake\Easyui\themes\black\searchbox.css" />
+    <Content Include="Cake\Easyui\themes\black\slider.css" />
+    <Content Include="Cake\Easyui\themes\black\spinner.css" />
+    <Content Include="Cake\Easyui\themes\black\splitbutton.css" />
+    <Content Include="Cake\Easyui\themes\black\tabs.css" />
+    <Content Include="Cake\Easyui\themes\black\tooltip.css" />
+    <Content Include="Cake\Easyui\themes\black\tree.css" />
+    <Content Include="Cake\Easyui\themes\black\validatebox.css" />
+    <Content Include="Cake\Easyui\themes\black\window.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\accordion.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\calendar.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\combo.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\combobox.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\datagrid.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\datebox.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\dialog.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\easyui.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\blank.gif" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\loading.gif" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="Cake\Easyui\themes\bootstrap\layout.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\linkbutton.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\menu.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\menubutton.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\messager.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\pagination.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\panel.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\progressbar.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\propertygrid.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\searchbox.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\slider.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\spinner.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\splitbutton.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\tabs.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\tooltip.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\tree.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\validatebox.css" />
+    <Content Include="Cake\Easyui\themes\bootstrap\window.css" />
+    <Content Include="Cake\Easyui\themes\default\accordion.css" />
+    <Content Include="Cake\Easyui\themes\default\calendar.css" />
+    <Content Include="Cake\Easyui\themes\default\combo.css" />
+    <Content Include="Cake\Easyui\themes\default\combobox.css" />
+    <Content Include="Cake\Easyui\themes\default\datagrid.css" />
+    <Content Include="Cake\Easyui\themes\default\datebox.css" />
+    <Content Include="Cake\Easyui\themes\default\dialog.css" />
+    <Content Include="Cake\Easyui\themes\default\easyui.css" />
+    <Content Include="Cake\Easyui\themes\default\images\accordion_arrows.png" />
+    <Content Include="Cake\Easyui\themes\default\images\blank.gif" />
+    <Content Include="Cake\Easyui\themes\default\images\calendar_arrows.png" />
+    <Content Include="Cake\Easyui\themes\default\images\combo_arrow.png" />
+    <Content Include="Cake\Easyui\themes\default\images\datagrid_icons.png" />
+    <Content Include="Cake\Easyui\themes\default\images\datebox_arrow.png" />
+    <Content Include="Cake\Easyui\themes\default\images\layout_arrows.png" />
+    <Content Include="Cake\Easyui\themes\default\images\linkbutton_bg.png" />
+    <Content Include="Cake\Easyui\themes\default\images\loading.gif" />
+    <Content Include="Cake\Easyui\themes\default\images\menu_arrows.png" />
+    <Content Include="Cake\Easyui\themes\default\images\messager_icons.png" />
+    <Content Include="Cake\Easyui\themes\default\images\pagination_icons.png" />
+    <Content Include="Cake\Easyui\themes\default\images\panel_tools.png" />
+    <Content Include="Cake\Easyui\themes\default\images\searchbox_button.png" />
+    <Content Include="Cake\Easyui\themes\default\images\slider_handle.png" />
+    <Content Include="Cake\Easyui\themes\default\images\spinner_arrows.png" />
+    <Content Include="Cake\Easyui\themes\default\images\tabs_icons.png" />
+    <Content Include="Cake\Easyui\themes\default\images\tree_icons.png" />
+    <Content Include="Cake\Easyui\themes\default\images\validatebox_warning.png" />
+    <Content Include="Cake\Easyui\themes\default\layout.css" />
+    <Content Include="Cake\Easyui\themes\default\linkbutton.css" />
+    <Content Include="Cake\Easyui\themes\default\menu.css" />
+    <Content Include="Cake\Easyui\themes\default\menubutton.css" />
+    <Content Include="Cake\Easyui\themes\default\messager.css" />
+    <Content Include="Cake\Easyui\themes\default\pagination.css" />
+    <Content Include="Cake\Easyui\themes\default\panel.css" />
+    <Content Include="Cake\Easyui\themes\default\progressbar.css" />
+    <Content Include="Cake\Easyui\themes\default\propertygrid.css" />
+    <Content Include="Cake\Easyui\themes\default\searchbox.css" />
+    <Content Include="Cake\Easyui\themes\default\slider.css" />
+    <Content Include="Cake\Easyui\themes\default\spinner.css" />
+    <Content Include="Cake\Easyui\themes\default\splitbutton.css" />
+    <Content Include="Cake\Easyui\themes\default\tabs.css" />
+    <Content Include="Cake\Easyui\themes\default\tooltip.css" />
+    <Content Include="Cake\Easyui\themes\default\tree.css" />
+    <Content Include="Cake\Easyui\themes\default\validatebox.css" />
+    <Content Include="Cake\Easyui\themes\default\window.css" />
+    <Content Include="Cake\Easyui\themes\gray\accordion.css" />
+    <Content Include="Cake\Easyui\themes\gray\calendar.css" />
+    <Content Include="Cake\Easyui\themes\gray\combo.css" />
+    <Content Include="Cake\Easyui\themes\gray\combobox.css" />
+    <Content Include="Cake\Easyui\themes\gray\datagrid.css" />
+    <Content Include="Cake\Easyui\themes\gray\datebox.css" />
+    <Content Include="Cake\Easyui\themes\gray\dialog.css" />
+    <Content Include="Cake\Easyui\themes\gray\easyui.css" />
+    <Content Include="Cake\Easyui\themes\gray\images\accordion_arrows.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\blank.gif" />
+    <Content Include="Cake\Easyui\themes\gray\images\calendar_arrows.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\combo_arrow.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\datagrid_icons.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\datebox_arrow.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\layout_arrows.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\loading.gif" />
+    <Content Include="Cake\Easyui\themes\gray\images\menu_arrows.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\messager_icons.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\pagination_icons.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\panel_tools.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\searchbox_button.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\slider_handle.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\spinner_arrows.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\tabs_icons.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\tree_icons.png" />
+    <Content Include="Cake\Easyui\themes\gray\images\validatebox_warning.png" />
+    <Content Include="Cake\Easyui\themes\gray\layout.css" />
+    <Content Include="Cake\Easyui\themes\gray\linkbutton.css" />
+    <Content Include="Cake\Easyui\themes\gray\menu.css" />
+    <Content Include="Cake\Easyui\themes\gray\menubutton.css" />
+    <Content Include="Cake\Easyui\themes\gray\messager.css" />
+    <Content Include="Cake\Easyui\themes\gray\pagination.css" />
+    <Content Include="Cake\Easyui\themes\gray\panel.css" />
+    <Content Include="Cake\Easyui\themes\gray\progressbar.css" />
+    <Content Include="Cake\Easyui\themes\gray\propertygrid.css" />
+    <Content Include="Cake\Easyui\themes\gray\searchbox.css" />
+    <Content Include="Cake\Easyui\themes\gray\slider.css" />
+    <Content Include="Cake\Easyui\themes\gray\spinner.css" />
+    <Content Include="Cake\Easyui\themes\gray\splitbutton.css" />
+    <Content Include="Cake\Easyui\themes\gray\tabs.css" />
+    <Content Include="Cake\Easyui\themes\gray\tooltip.css" />
+    <Content Include="Cake\Easyui\themes\gray\tree.css" />
+    <Content Include="Cake\Easyui\themes\gray\validatebox.css" />
+    <Content Include="Cake\Easyui\themes\gray\window.css" />
+    <Content Include="Cake\Easyui\themes\icon.css" />
+    <Content Include="Cake\Easyui\themes\icons\back.png" />
+    <Content Include="Cake\Easyui\themes\icons\blank.gif" />
+    <Content Include="Cake\Easyui\themes\icons\cancel.png" />
+    <Content Include="Cake\Easyui\themes\icons\cut.png" />
+    <Content Include="Cake\Easyui\themes\icons\edit_add.png" />
+    <Content Include="Cake\Easyui\themes\icons\edit_remove.png" />
+    <Content Include="Cake\Easyui\themes\icons\export.png" />
+    <Content Include="Cake\Easyui\themes\icons\filesave.png" />
+    <Content Include="Cake\Easyui\themes\icons\help.png" />
+    <Content Include="Cake\Easyui\themes\icons\history.png" />
+    <Content Include="Cake\Easyui\themes\icons\import.png" />
+    <Content Include="Cake\Easyui\themes\icons\mini_add.png" />
+    <Content Include="Cake\Easyui\themes\icons\mini_edit.png" />
+    <Content Include="Cake\Easyui\themes\icons\mini_refresh.png" />
+    <Content Include="Cake\Easyui\themes\icons\monitor.png" />
+    <Content Include="Cake\Easyui\themes\icons\no.png" />
+    <Content Include="Cake\Easyui\themes\icons\ok.png" />
+    <Content Include="Cake\Easyui\themes\icons\pencil.png" />
+    <Content Include="Cake\Easyui\themes\icons\print.png" />
+    <Content Include="Cake\Easyui\themes\icons\redo.png" />
+    <Content Include="Cake\Easyui\themes\icons\reload.png" />
+    <Content Include="Cake\Easyui\themes\icons\search.png" />
+    <Content Include="Cake\Easyui\themes\icons\setting.png" />
+    <Content Include="Cake\Easyui\themes\icons\sum.png" />
+    <Content Include="Cake\Easyui\themes\icons\tip.png" />
+    <Content Include="Cake\Easyui\themes\icons\undo.png" />
+    <Content Include="Cake\Easyui\themes\icons\warning.png" />
+    <Content Include="Cake\Easyui\themes\metro\accordion.css" />
+    <Content Include="Cake\Easyui\themes\metro\calendar.css" />
+    <Content Include="Cake\Easyui\themes\metro\combo.css" />
+    <Content Include="Cake\Easyui\themes\metro\combobox.css" />
+    <Content Include="Cake\Easyui\themes\metro\datagrid.css" />
+    <Content Include="Cake\Easyui\themes\metro\datebox.css" />
+    <Content Include="Cake\Easyui\themes\metro\dialog.css" />
+    <Content Include="Cake\Easyui\themes\metro\easyui.css" />
+    <Content Include="Cake\Easyui\themes\metro\images\accordion_arrows.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\blank.gif" />
+    <Content Include="Cake\Easyui\themes\metro\images\calendar_arrows.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\combo_arrow.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\datagrid_icons.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\datebox_arrow.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\layout_arrows.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\linkbutton_bg.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\loading.gif" />
+    <Content Include="Cake\Easyui\themes\metro\images\menu_arrows.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\messager_icons.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\pagination_icons.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\panel_tools.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\searchbox_button.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\slider_handle.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\spinner_arrows.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\tabs_icons.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\tree_icons.png" />
+    <Content Include="Cake\Easyui\themes\metro\images\validatebox_warning.png" />
+    <Content Include="Cake\Easyui\themes\metro\layout.css" />
+    <Content Include="Cake\Easyui\themes\metro\linkbutton.css" />
+    <Content Include="Cake\Easyui\themes\metro\menu.css" />
+    <Content Include="Cake\Easyui\themes\metro\menubutton.css" />
+    <Content Include="Cake\Easyui\themes\metro\messager.css" />
+    <Content Include="Cake\Easyui\themes\metro\pagination.css" />
+    <Content Include="Cake\Easyui\themes\metro\panel.css" />
+    <Content Include="Cake\Easyui\themes\metro\progressbar.css" />
+    <Content Include="Cake\Easyui\themes\metro\propertygrid.css" />
+    <Content Include="Cake\Easyui\themes\metro\searchbox.css" />
+    <Content Include="Cake\Easyui\themes\metro\slider.css" />
+    <Content Include="Cake\Easyui\themes\metro\spinner.css" />
+    <Content Include="Cake\Easyui\themes\metro\splitbutton.css" />
+    <Content Include="Cake\Easyui\themes\metro\tabs.css" />
+    <Content Include="Cake\Easyui\themes\metro\tooltip.css" />
+    <Content Include="Cake\Easyui\themes\metro\tree.css" />
+    <Content Include="Cake\Easyui\themes\metro\validatebox.css" />
+    <Content Include="Cake\Easyui\themes\metro\window.css" />
+    <Content Include="Cake\Easyui\_readme.txt" />
+    <Content Include="Cake\Fancybox\blank.gif" />
+    <Content Include="Cake\Fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Cake\Fancybox\fancybox_loading.gif" />
+    <Content Include="Cake\Fancybox\fancybox_overlay.png" />
+    <Content Include="Cake\Fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Cake\Fancybox\fancybox_sprite.png" />
+    <Content Include="Cake\Fancybox\helpers\fancybox_buttons.png" />
+    <Content Include="Cake\Fancybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Cake\Fancybox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Cake\Fancybox\helpers\jquery.fancybox-media.js" />
+    <Content Include="Cake\Fancybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Cake\Fancybox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Cake\Fancybox\jquery.fancybox.css" />
+    <Content Include="Cake\Fancybox\jquery.fancybox.js" />
+    <Content Include="Cake\Fancybox\jquery.fancybox.pack.js" />
+    <Content Include="Cake\Fancybox\_readme.txt" />
+    <Content Include="Cake\ico\calendar.gif" />
+    <Content Include="Cake\ico\data.jpg" />
+    <Content Include="Cake\ico\ico01.gif" />
+    <Content Include="Cake\ico\ico02.gif" />
+    <Content Include="Cake\ico\ico03.gif" />
+    <Content Include="Cake\ico\ico04.gif" />
+    <Content Include="Cake\ico\ico05.gif" />
+    <Content Include="Cake\ico\ico06.gif" />
+    <Content Include="Cake\ico\ico07.gif" />
+    <Content Include="Cake\ico\ico08.gif" />
+    <Content Include="Cake\ico\ico09.gif" />
+    <Content Include="Cake\ico\ico10.gif" />
+    <Content Include="Cake\ico\ico100.gif" />
+    <Content Include="Cake\ico\ico101.gif" />
+    <Content Include="Cake\ico\ico102.gif" />
+    <Content Include="Cake\ico\ico103.gif" />
+    <Content Include="Cake\ico\ico104.gif" />
+    <Content Include="Cake\ico\ico105.gif" />
+    <Content Include="Cake\ico\ico106.gif" />
+    <Content Include="Cake\ico\ico107.gif" />
+    <Content Include="Cake\ico\ico108.gif" />
+    <Content Include="Cake\ico\ico109.gif" />
+    <Content Include="Cake\ico\ico11.gif" />
+    <Content Include="Cake\ico\ico110.gif" />
+    <Content Include="Cake\ico\ico111.gif" />
+    <Content Include="Cake\ico\ico112.gif" />
+    <Content Include="Cake\ico\ico112_1.gif" />
+    <Content Include="Cake\ico\ico112_2.gif" />
+    <Content Include="Cake\ico\ico112_3.gif" />
+    <Content Include="Cake\ico\ico113.gif" />
+    <Content Include="Cake\ico\ico114.gif" />
+    <Content Include="Cake\ico\ico115.gif" />
+    <Content Include="Cake\ico\ico116.gif" />
+    <Content Include="Cake\ico\ico117.gif" />
+    <Content Include="Cake\ico\ico118.gif" />
+    <Content Include="Cake\ico\ico119.gif" />
+    <Content Include="Cake\ico\ico12.gif" />
+    <Content Include="Cake\ico\ico120.gif" />
+    <Content Include="Cake\ico\ico121.gif" />
+    <Content Include="Cake\ico\ico122.gif" />
+    <Content Include="Cake\ico\ico123.gif" />
+    <Content Include="Cake\ico\ico124.gif" />
+    <Content Include="Cake\ico\ico125.gif" />
+    <Content Include="Cake\ico\ico126.gif" />
+    <Content Include="Cake\ico\ico127.gif" />
+    <Content Include="Cake\ico\ico128.gif" />
+    <Content Include="Cake\ico\ico129.gif" />
+    <Content Include="Cake\ico\ico13.gif" />
+    <Content Include="Cake\ico\ico130.gif" />
+    <Content Include="Cake\ico\ico131.gif" />
+    <Content Include="Cake\ico\ico132.gif" />
+    <Content Include="Cake\ico\ico133.gif" />
+    <Content Include="Cake\ico\ico134.gif" />
+    <Content Include="Cake\ico\ico135.gif" />
+    <Content Include="Cake\ico\ico136.gif" />
+    <Content Include="Cake\ico\ico137.gif" />
+    <Content Include="Cake\ico\ico138.gif" />
+    <Content Include="Cake\ico\ico139.gif" />
+    <Content Include="Cake\ico\ico14.gif" />
+    <Content Include="Cake\ico\ico140.gif" />
+    <Content Include="Cake\ico\ico141.gif" />
+    <Content Include="Cake\ico\ico142.gif" />
+    <Content Include="Cake\ico\ico143.gif" />
+    <Content Include="Cake\ico\ico144.gif" />
+    <Content Include="Cake\ico\ico145.gif" />
+    <Content Include="Cake\ico\ico146.gif" />
+    <Content Include="Cake\ico\ico147.gif" />
+    <Content Include="Cake\ico\ico148.gif" />
+    <Content Include="Cake\ico\ico149.gif" />
+    <Content Include="Cake\ico\ico15.gif" />
+    <Content Include="Cake\ico\ico150.gif" />
+    <Content Include="Cake\ico\ico151.gif" />
+    <Content Include="Cake\ico\ico152.gif" />
+    <Content Include="Cake\ico\ico153.gif" />
+    <Content Include="Cake\ico\ico154.gif" />
+    <Content Include="Cake\ico\ico155.gif" />
+    <Content Include="Cake\ico\ico156.gif" />
+    <Content Include="Cake\ico\ico157.gif" />
+    <Content Include="Cake\ico\ico158.gif" />
+    <Content Include="Cake\ico\ico159.gif" />
+    <Content Include="Cake\ico\ico16.gif" />
+    <Content Include="Cake\ico\ico160.gif" />
+    <Content Include="Cake\ico\ico161.gif" />
+    <Content Include="Cake\ico\ico162.gif" />
+    <Content Include="Cake\ico\ico163.gif" />
+    <Content Include="Cake\ico\ico164.gif" />
+    <Content Include="Cake\ico\ico165.gif" />
+    <Content Include="Cake\ico\ico166.gif" />
+    <Content Include="Cake\ico\ico167.gif" />
+    <Content Include="Cake\ico\ico168.gif" />
+    <Content Include="Cake\ico\ico169.gif" />
+    <Content Include="Cake\ico\ico17.gif" />
+    <Content Include="Cake\ico\ico170.gif" />
+    <Content Include="Cake\ico\ico171.gif" />
+    <Content Include="Cake\ico\ico1711.gif" />
+    <Content Include="Cake\ico\ico17111.gif" />
+    <Content Include="Cake\ico\ico17112.gif" />
+    <Content Include="Cake\ico\ico172.gif" />
+    <Content Include="Cake\ico\ico173.gif" />
+    <Content Include="Cake\ico\ico174.gif" />
+    <Content Include="Cake\ico\ico175.gif" />
+    <Content Include="Cake\ico\ico176.gif" />
+    <Content Include="Cake\ico\ico177.gif" />
+    <Content Include="Cake\ico\ico178.gif" />
+    <Content Include="Cake\ico\ico179.gif" />
+    <Content Include="Cake\ico\ico18.gif" />
+    <Content Include="Cake\ico\ico180.gif" />
+    <Content Include="Cake\ico\ico181.gif" />
+    <Content Include="Cake\ico\ico182.gif" />
+    <Content Include="Cake\ico\ico183.gif" />
+    <Content Include="Cake\ico\ico184.gif" />
+    <Content Include="Cake\ico\ico185.gif" />
+    <Content Include="Cake\ico\ico186.gif" />
+    <Content Include="Cake\ico\ico187.gif" />
+    <Content Include="Cake\ico\ico188.gif" />
+    <Content Include="Cake\ico\ico189.gif" />
+    <Content Include="Cake\ico\ico19.gif" />
+    <Content Include="Cake\ico\ico190.gif" />
+    <Content Include="Cake\ico\ico191.gif" />
+    <Content Include="Cake\ico\ico192.gif" />
+    <Content Include="Cake\ico\ico193.gif" />
+    <Content Include="Cake\ico\ico194.gif" />
+    <Content Include="Cake\ico\ico195.gif" />
+    <Content Include="Cake\ico\ico196.gif" />
+    <Content Include="Cake\ico\ico197.gif" />
+    <Content Include="Cake\ico\ico198.gif" />
+    <Content Include="Cake\ico\ico199.gif" />
+    <Content Include="Cake\ico\ico20.gif" />
+    <Content Include="Cake\ico\ico200.gif" />
+    <Content Include="Cake\ico\ico201.gif" />
+    <Content Include="Cake\ico\ico202.gif" />
+    <Content Include="Cake\ico\ico203.gif" />
+    <Content Include="Cake\ico\ico204.gif" />
+    <Content Include="Cake\ico\ico205.gif" />
+    <Content Include="Cake\ico\ico206.gif" />
+    <Content Include="Cake\ico\ico207.gif" />
+    <Content Include="Cake\ico\ico208.gif" />
+    <Content Include="Cake\ico\ico209.gif" />
+    <Content Include="Cake\ico\ico21.gif" />
+    <Content Include="Cake\ico\ico210.gif" />
+    <Content Include="Cake\ico\ico211.gif" />
+    <Content Include="Cake\ico\ico212.gif" />
+    <Content Include="Cake\ico\ico213.gif" />
+    <Content Include="Cake\ico\ico214.gif" />
+    <Content Include="Cake\ico\ico215.gif" />
+    <Content Include="Cake\ico\ico216.gif" />
+    <Content Include="Cake\ico\ico217.gif" />
+    <Content Include="Cake\ico\ico218.gif" />
+    <Content Include="Cake\ico\ico219.gif" />
+    <Content Include="Cake\ico\ico22.gif" />
+    <Content Include="Cake\ico\ico220.gif" />
+    <Content Include="Cake\ico\ico221.gif" />
+    <Content Include="Cake\ico\ico222.gif" />
+    <Content Include="Cake\ico\ico223.gif" />
+    <Content Include="Cake\ico\ico224.gif" />
+    <Content Include="Cake\ico\ico225.gif" />
+    <Content Include="Cake\ico\ico226.gif" />
+    <Content Include="Cake\ico\ico227.gif" />
+    <Content Include="Cake\ico\ico228.gif" />
+    <Content Include="Cake\ico\ico229.gif" />
+    <Content Include="Cake\ico\ico23.gif" />
+    <Content Include="Cake\ico\ico230.gif" />
+    <Content Include="Cake\ico\ico231.gif" />
+    <Content Include="Cake\ico\ico232.gif" />
+    <Content Include="Cake\ico\ico233.gif" />
+    <Content Include="Cake\ico\ico234.gif" />
+    <Content Include="Cake\ico\ico235.gif" />
+    <Content Include="Cake\ico\ico236.gif" />
+    <Content Include="Cake\ico\ico237.gif" />
+    <Content Include="Cake\ico\ico238.gif" />
+    <Content Include="Cake\ico\ico239.gif" />
+    <Content Include="Cake\ico\ico24.gif" />
+    <Content Include="Cake\ico\ico240.gif" />
+    <Content Include="Cake\ico\ico241.gif" />
+    <Content Include="Cake\ico\ico242.gif" />
+    <Content Include="Cake\ico\ico243.gif" />
+    <Content Include="Cake\ico\ico244.gif" />
+    <Content Include="Cake\ico\ico245.gif" />
+    <Content Include="Cake\ico\ico246.gif" />
+    <Content Include="Cake\ico\ico247.gif" />
+    <Content Include="Cake\ico\ico248.gif" />
+    <Content Include="Cake\ico\ico249.gif" />
+    <Content Include="Cake\ico\ico25.gif" />
+    <Content Include="Cake\ico\ico250.gif" />
+    <Content Include="Cake\ico\ico251.gif" />
+    <Content Include="Cake\ico\ico252.gif" />
+    <Content Include="Cake\ico\ico253.gif" />
+    <Content Include="Cake\ico\ico254.gif" />
+    <Content Include="Cake\ico\ico255.gif" />
+    <Content Include="Cake\ico\ico256.gif" />
+    <Content Include="Cake\ico\ico257.gif" />
+    <Content Include="Cake\ico\ico258.gif" />
+    <Content Include="Cake\ico\ico259.gif" />
+    <Content Include="Cake\ico\ico26.gif" />
+    <Content Include="Cake\ico\ico260.gif" />
+    <Content Include="Cake\ico\ico261.gif" />
+    <Content Include="Cake\ico\ico262.gif" />
+    <Content Include="Cake\ico\ico263.gif" />
+    <Content Include="Cake\ico\ico264.gif" />
+    <Content Include="Cake\ico\ico265.gif" />
+    <Content Include="Cake\ico\ico266.gif" />
+    <Content Include="Cake\ico\ico267.gif" />
+    <Content Include="Cake\ico\ico268.gif" />
+    <Content Include="Cake\ico\ico269.gif" />
+    <Content Include="Cake\ico\ico27.gif" />
+    <Content Include="Cake\ico\ico270.gif" />
+    <Content Include="Cake\ico\ico271.gif" />
+    <Content Include="Cake\ico\ico272.gif" />
+    <Content Include="Cake\ico\ico273.gif" />
+    <Content Include="Cake\ico\ico274.gif" />
+    <Content Include="Cake\ico\ico275.gif" />
+    <Content Include="Cake\ico\ico276.gif" />
+    <Content Include="Cake\ico\ico277.gif" />
+    <Content Include="Cake\ico\ico278.gif" />
+    <Content Include="Cake\ico\ico279.gif" />
+    <Content Include="Cake\ico\ico28.gif" />
+    <Content Include="Cake\ico\ico280.gif" />
+    <Content Include="Cake\ico\ico281.gif" />
+    <Content Include="Cake\ico\ico282.gif" />
+    <Content Include="Cake\ico\ico283.gif" />
+    <Content Include="Cake\ico\ico284.gif" />
+    <Content Include="Cake\ico\ico285.gif" />
+    <Content Include="Cake\ico\ico286.gif" />
+    <Content Include="Cake\ico\ico287.gif" />
+    <Content Include="Cake\ico\ico288.gif" />
+    <Content Include="Cake\ico\ico289.gif" />
+    <Content Include="Cake\ico\ico29.gif" />
+    <Content Include="Cake\ico\ico290.gif" />
+    <Content Include="Cake\ico\ico291.gif" />
+    <Content Include="Cake\ico\ico292.gif" />
+    <Content Include="Cake\ico\ico293.gif" />
+    <Content Include="Cake\ico\ico294.gif" />
+    <Content Include="Cake\ico\ico295.gif" />
+    <Content Include="Cake\ico\ico296.gif" />
+    <Content Include="Cake\ico\ico297.gif" />
+    <Content Include="Cake\ico\ico298.gif" />
+    <Content Include="Cake\ico\ico299.gif" />
+    <Content Include="Cake\ico\ico30.gif" />
+    <Content Include="Cake\ico\ico300.gif" />
+    <Content Include="Cake\ico\ico301.gif" />
+    <Content Include="Cake\ico\ico302.gif" />
+    <Content Include="Cake\ico\ico303.gif" />
+    <Content Include="Cake\ico\ico304.gif" />
+    <Content Include="Cake\ico\ico305.gif" />
+    <Content Include="Cake\ico\ico306.gif" />
+    <Content Include="Cake\ico\ico307.gif" />
+    <Content Include="Cake\ico\ico308.gif" />
+    <Content Include="Cake\ico\ico309.gif" />
+    <Content Include="Cake\ico\ico31.gif" />
+    <Content Include="Cake\ico\ico310.gif" />
+    <Content Include="Cake\ico\ico311.gif" />
+    <Content Include="Cake\ico\ico312.gif" />
+    <Content Include="Cake\ico\ico313.gif" />
+    <Content Include="Cake\ico\ico314.gif" />
+    <Content Include="Cake\ico\ico315.gif" />
+    <Content Include="Cake\ico\ico316.gif" />
+    <Content Include="Cake\ico\ico317.gif" />
+    <Content Include="Cake\ico\ico318.gif" />
+    <Content Include="Cake\ico\ico319.gif" />
+    <Content Include="Cake\ico\ico32.gif" />
+    <Content Include="Cake\ico\ico320.gif" />
+    <Content Include="Cake\ico\ico321.gif" />
+    <Content Include="Cake\ico\ico322.gif" />
+    <Content Include="Cake\ico\ico323.gif" />
+    <Content Include="Cake\ico\ico324.gif" />
+    <Content Include="Cake\ico\ico325.gif" />
+    <Content Include="Cake\ico\ico326.gif" />
+    <Content Include="Cake\ico\ico327.gif" />
+    <Content Include="Cake\ico\ico328.gif" />
+    <Content Include="Cake\ico\ico329.gif" />
+    <Content Include="Cake\ico\ico33.gif" />
+    <Content Include="Cake\ico\ico330.gif" />
+    <Content Include="Cake\ico\ico331.gif" />
+    <Content Include="Cake\ico\ico332.gif" />
+    <Content Include="Cake\ico\ico333.gif" />
+    <Content Include="Cake\ico\ico334.gif" />
+    <Content Include="Cake\ico\ico335.gif" />
+    <Content Include="Cake\ico\ico336.gif" />
+    <Content Include="Cake\ico\ico337.gif" />
+    <Content Include="Cake\ico\ico338.gif" />
+    <Content Include="Cake\ico\ico339.gif" />
+    <Content Include="Cake\ico\ico34.gif" />
+    <Content Include="Cake\ico\ico340.gif" />
+    <Content Include="Cake\ico\ico341.gif" />
+    <Content Include="Cake\ico\ico342.gif" />
+    <Content Include="Cake\ico\ico343.gif" />
+    <Content Include="Cake\ico\ico344.gif" />
+    <Content Include="Cake\ico\ico345.gif" />
+    <Content Include="Cake\ico\ico346.gif" />
+    <Content Include="Cake\ico\ico347.gif" />
+    <Content Include="Cake\ico\ico348.gif" />
+    <Content Include="Cake\ico\ico349.gif" />
+    <Content Include="Cake\ico\ico35.gif" />
+    <Content Include="Cake\ico\ico350.gif" />
+    <Content Include="Cake\ico\ico351.gif" />
+    <Content Include="Cake\ico\ico352.gif" />
+    <Content Include="Cake\ico\ico353.gif" />
+    <Content Include="Cake\ico\ico354.gif" />
+    <Content Include="Cake\ico\ico355.gif" />
+    <Content Include="Cake\ico\ico356.gif" />
+    <Content Include="Cake\ico\ico357.gif" />
+    <Content Include="Cake\ico\ico358.gif" />
+    <Content Include="Cake\ico\ico359.gif" />
+    <Content Include="Cake\ico\ico36.gif" />
+    <Content Include="Cake\ico\ico360.gif" />
+    <Content Include="Cake\ico\ico361.gif" />
+    <Content Include="Cake\ico\ico362.gif" />
+    <Content Include="Cake\ico\ico363.gif" />
+    <Content Include="Cake\ico\ico364.gif" />
+    <Content Include="Cake\ico\ico365.gif" />
+    <Content Include="Cake\ico\ico366.gif" />
+    <Content Include="Cake\ico\ico367.gif" />
+    <Content Include="Cake\ico\ico368.gif" />
+    <Content Include="Cake\ico\ico369.gif" />
+    <Content Include="Cake\ico\ico37.gif" />
+    <Content Include="Cake\ico\ico370.gif" />
+    <Content Include="Cake\ico\ico371.gif" />
+    <Content Include="Cake\ico\ico372.gif" />
+    <Content Include="Cake\ico\ico373.gif" />
+    <Content Include="Cake\ico\ico374.gif" />
+    <Content Include="Cake\ico\ico375.gif" />
+    <Content Include="Cake\ico\ico376.gif" />
+    <Content Include="Cake\ico\ico377.gif" />
+    <Content Include="Cake\ico\ico378.gif" />
+    <Content Include="Cake\ico\ico379.gif" />
+    <Content Include="Cake\ico\ico38.gif" />
+    <Content Include="Cake\ico\ico380.gif" />
+    <Content Include="Cake\ico\ico381.gif" />
+    <Content Include="Cake\ico\ico382.gif" />
+    <Content Include="Cake\ico\ico383.gif" />
+    <Content Include="Cake\ico\ico384.gif" />
+    <Content Include="Cake\ico\ico385.gif" />
+    <Content Include="Cake\ico\ico386.gif" />
+    <Content Include="Cake\ico\ico387.gif" />
+    <Content Include="Cake\ico\ico388.gif" />
+    <Content Include="Cake\ico\ico389.gif" />
+    <Content Include="Cake\ico\ico39.gif" />
+    <Content Include="Cake\ico\ico390.gif" />
+    <Content Include="Cake\ico\ico391.gif" />
+    <Content Include="Cake\ico\ico392.gif" />
+    <Content Include="Cake\ico\ico393.gif" />
+    <Content Include="Cake\ico\ico394.gif" />
+    <Content Include="Cake\ico\ico395.gif" />
+    <Content Include="Cake\ico\ico40.gif" />
+    <Content Include="Cake\ico\ico41.gif" />
+    <Content Include="Cake\ico\ico42.gif" />
+    <Content Include="Cake\ico\ico43.gif" />
+    <Content Include="Cake\ico\ico44.gif" />
+    <Content Include="Cake\ico\ico45.gif" />
+    <Content Include="Cake\ico\ico46.gif" />
+    <Content Include="Cake\ico\ico47.gif" />
+    <Content Include="Cake\ico\ico48.gif" />
+    <Content Include="Cake\ico\ico49.gif" />
+    <Content Include="Cake\ico\ico50.gif" />
+    <Content Include="Cake\ico\ico51.gif" />
+    <Content Include="Cake\ico\ico52.gif" />
+    <Content Include="Cake\ico\ico53.gif" />
+    <Content Include="Cake\ico\ico54.gif" />
+    <Content Include="Cake\ico\ico55.gif" />
+    <Content Include="Cake\ico\ico56.gif" />
+    <Content Include="Cake\ico\ico57.gif" />
+    <Content Include="Cake\ico\ico58.gif" />
+    <Content Include="Cake\ico\ico59.gif" />
+    <Content Include="Cake\ico\ico60.gif" />
+    <Content Include="Cake\ico\ico61.gif" />
+    <Content Include="Cake\ico\ico62.gif" />
+    <Content Include="Cake\ico\ico63.gif" />
+    <Content Include="Cake\ico\ico64.gif" />
+    <Content Include="Cake\ico\ico65.gif" />
+    <Content Include="Cake\ico\ico66.gif" />
+    <Content Include="Cake\ico\ico67.gif" />
+    <Content Include="Cake\ico\ico68.gif" />
+    <Content Include="Cake\ico\ico69.gif" />
+    <Content Include="Cake\ico\ico70.gif" />
+    <Content Include="Cake\ico\ico71.gif" />
+    <Content Include="Cake\ico\ico72.gif" />
+    <Content Include="Cake\ico\ico73.gif" />
+    <Content Include="Cake\ico\ico74.gif" />
+    <Content Include="Cake\ico\ico75.gif" />
+    <Content Include="Cake\ico\ico76.gif" />
+    <Content Include="Cake\ico\ico77.gif" />
+    <Content Include="Cake\ico\ico78.gif" />
+    <Content Include="Cake\ico\ico79.gif" />
+    <Content Include="Cake\ico\ico80.gif" />
+    <Content Include="Cake\ico\ico81.gif" />
+    <Content Include="Cake\ico\ico82.gif" />
+    <Content Include="Cake\ico\ico83.gif" />
+    <Content Include="Cake\ico\ico84.gif" />
+    <Content Include="Cake\ico\ico85.gif" />
+    <Content Include="Cake\ico\ico86.gif" />
+    <Content Include="Cake\ico\ico87.gif" />
+    <Content Include="Cake\ico\ico88.gif" />
+    <Content Include="Cake\ico\ico89.gif" />
+    <Content Include="Cake\ico\ico90.gif" />
+    <Content Include="Cake\ico\ico91.gif" />
+    <Content Include="Cake\ico\ico92.gif" />
+    <Content Include="Cake\ico\ico93.gif" />
+    <Content Include="Cake\ico\ico94.gif" />
+    <Content Include="Cake\ico\ico95.gif" />
+    <Content Include="Cake\ico\ico96.gif" />
+    <Content Include="Cake\ico\ico97.gif" />
+    <Content Include="Cake\ico\ico98.gif" />
+    <Content Include="Cake\ico\ico99.gif" />
+    <Content Include="Cake\ico\ico991.gif" />
+    <Content Include="Cake\jquery-autocomplete\jquery.autocomplete.css" />
+    <Content Include="Cake\jquery-autocomplete\jquery.autocomplete.js" />
+    <Content Include="Cake\jquery-autocomplete\jquery.autocomplete.min.js" />
+    <Content Include="Cake\jquery-autocomplete\jquery.autocomplete.pack.js" />
+    <Content Include="Cake\jquery-autocomplete\lib\jquery.ajaxQueue.js" />
+    <Content Include="Cake\jquery-autocomplete\lib\jquery.bgiframe.min.js" />
+    <Content Include="Cake\jquery-autocomplete\lib\thickbox-compressed.js" />
+    <Content Include="Cake\jquery-autocomplete\lib\thickbox.css" />
+    <Content Include="Cake\jquery-autocomplete\_readme.txt" />
+    <Content Include="Cake\jsoneditor-master\.gitignore" />
+    <Content Include="Cake\jsoneditor-master\asset\ace\ace.js" />
+    <Content Include="Cake\jsoneditor-master\asset\ace\ext-searchbox.js" />
+    <Content Include="Cake\jsoneditor-master\asset\ace\mode-json.js" />
+    <Content Include="Cake\jsoneditor-master\asset\ace\theme-jsoneditor.js" />
+    <Content Include="Cake\jsoneditor-master\asset\ace\theme-textmate.js" />
+    <Content Include="Cake\jsoneditor-master\asset\ace\worker-json.js" />
+    <Content Include="Cake\jsoneditor-master\asset\jsonlint\jsonlint.js" />
+    <Content Include="Cake\jsoneditor-master\examples\01_basic_usage.html" />
+    <Content Include="Cake\jsoneditor-master\examples\02_viewer.html" />
+    <Content Include="Cake\jsoneditor-master\examples\03_switch_mode.html" />
+    <Content Include="Cake\jsoneditor-master\examples\04_load_and_save.html" />
+    <Content Include="Cake\jsoneditor-master\examples\05_custom_fields_editable.html" />
+    <Content Include="Cake\jsoneditor-master\examples\requirejs_demo\requirejs_demo.html" />
+    <Content Include="Cake\jsoneditor-master\examples\requirejs_demo\scripts\main.js" />
+    <Content Include="Cake\jsoneditor-master\examples\requirejs_demo\scripts\require.js" />
+    <Content Include="Cake\jsoneditor-master\gulpfile.js" />
+    <Content Include="Cake\jsoneditor-master\img\jsoneditor-icons.png" />
+    <Content Include="Cake\jsoneditor-master\jsoneditor.css" />
+    <Content Include="Cake\jsoneditor-master\jsoneditor.js" />
+    <Content Include="Cake\jsoneditor-master\jsoneditor.min.css" />
+    <Content Include="Cake\jsoneditor-master\jsoneditor.min.js" />
+    <Content Include="Cake\jsoneditor-master\misc\codeeditor.png" />
+    <Content Include="Cake\jsoneditor-master\misc\jsoneditor.png" />
+    <Content Include="Cake\jsoneditor-master\misc\todo.txt" />
+    <Content Include="Cake\jsoneditor-master\src\css\contextmenu.css" />
+    <Content Include="Cake\jsoneditor-master\src\css\img\description.txt" />
+    <Content Include="Cake\jsoneditor-master\src\css\img\jsoneditor-icons.png" />
+    <Content Include="Cake\jsoneditor-master\src\css\img\jsoneditor-icons.svg" />
+    <Content Include="Cake\jsoneditor-master\src\css\jsoneditor.css" />
+    <Content Include="Cake\jsoneditor-master\src\css\menu.css" />
+    <Content Include="Cake\jsoneditor-master\src\css\searchbox.css" />
+    <Content Include="Cake\jsoneditor-master\src\js\ace\theme-jsoneditor.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\appendNodeFactory.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\ContextMenu.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\header.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\Highlighter.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\History.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\JSONEditor.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\modeswitcher.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\module.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\Node.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\SearchBox.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\textmode.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\treemode.js" />
+    <Content Include="Cake\jsoneditor-master\src\js\util.js" />
+    <Content Include="Cake\jsoneditor-master\test\couchdbeditor.html" />
+    <Content Include="Cake\jsoneditor-master\test\require.js" />
+    <Content Include="Cake\jsoneditor-master\test\test.html" />
+    <Content Include="Cake\jsoneditor-master\test\test_build.html" />
+    <Content Include="Cake\jsoneditor-master\test\test_build_min.html" />
+    <Content Include="Cake\My97DatePicker\calendar.js" />
+    <Content Include="Cake\My97DatePicker\lang\en.js" />
+    <Content Include="Cake\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Cake\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Cake\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Cake\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Cake\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Cake\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Cake\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Cake\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Cake\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Cake\My97DatePicker\WdatePicker.js" />
+    <Content Include="Cake\Validate\jquery.validate.extension.js" />
+    <Content Include="Cake\Validate\jquery.validate.messages_cn.js" />
+    <Content Include="Cake\Validate\jquery.validate.min.js" />
+    <Content Include="Content\css\eshop_import_v2008.css" />
+    <Content Include="Content\css\Layout.css" />
+    <Content Include="Content\css\global-ezabay-v2008.css" />
+    <Content Include="Content\css\head_v2008.css" />
+    <Content Include="Content\css\index-import.css" />
+    <Content Include="Content\css\left_v2008.css" />
+    <Content Include="Content\css\main_v2008.css" />
+    <Content Include="Content\css\passsport_import_v2008.css" />
+    <Content Include="Content\css\public_v2008.css" />
+    <Content Include="Content\css\repaging.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\styles.css" />
+    <Content Include="Content\css\user_v2008.css" />
+    <Content Include="Content\dll\TC.Flight.Job.Report.CommonMonitorJob.dll" />
+    <Content Include="Content\FusionChartsSWF\FCF_Area2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Bar2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Candlestick.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Column2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Column3D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Doughnut2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Funnel.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Gantt.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Line.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_MSArea2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_MSBar2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_MSColumn2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_MSColumn2DLineDY.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_MSColumn3D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_MSColumn3DLineDY.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_MSLine.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Pie2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_Pie3D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_StackedArea2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_StackedBar2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_StackedColumn2D.swf" />
+    <Content Include="Content\FusionChartsSWF\FCF_StackedColumn3D.swf" />
+    <Content Include="Content\img2\busy.gif" />
+    <Content Include="Content\img2\cnLogo.png" />
+    <Content Include="Content\img2\err_ico.gif" />
+    <Content Include="Content\img2\fish-404.png" />
+    <Content Include="Content\img2\gull-404.png" />
+    <Content Include="Content\img2\sky-404.png" />
+    <Content Include="Content\img2\warning.png" />
+    <Content Include="Content\img2\warning2.png" />
+    <Content Include="Content\img2\warning3.png" />
+    <Content Include="Content\img\-.gif" />
+    <Content Include="Content\img\arrow_right.gif" />
+    <Content Include="Content\img\bottom1.gif" />
+    <Content Include="Content\img\bottom2.gif" />
+    <Content Include="Content\img\bt-big-bak.gif" />
+    <Content Include="Content\img\bt-mid-bak.gif" />
+    <Content Include="Content\img\check.gif" />
+    <Content Include="Content\img\clew-bottom-bak.gif" />
+    <Content Include="Content\img\clew-center-bak.gif" />
+    <Content Include="Content\img\clew-top-bak.gif" />
+    <Content Include="Content\img\ddv_inde_bak.gif" />
+    <Content Include="Content\img\del.gif" />
+    <Content Include="Content\img\down.gif" />
+    <Content Include="Content\img\goods_ct_bt1.gif" />
+    <Content Include="Content\img\goods_ct_bt2.gif" />
+    <Content Include="Content\img\head-bak.gif" />
+    <Content Include="Content\img\head-info-ico.gif" />
+    <Content Include="Content\img\head-menu-check.gif" />
+    <Content Include="Content\img\head-menu-hover.gif" />
+    <Content Include="Content\img\ico2\ico01.gif" />
+    <Content Include="Content\img\ico2\ico157.gif" />
+    <Content Include="Content\img\ico2\ico163_1.gif" />
+    <Content Include="Content\img\ico2\ico167.gif" />
+    <Content Include="Content\img\ico2\ico168.gif" />
+    <Content Include="Content\img\ico2\ico215.gif" />
+    <Content Include="Content\img\ico2\ico49.gif" />
+    <Content Include="Content\img\input-bak.gif" />
+    <Content Include="Content\img\left-ctr-close.gif" />
+    <Content Include="Content\img\left-ctr-open.gif" />
+    <Content Include="Content\img\left_hover_bak.gif" />
+    <Content Include="Content\img\loader.gif" />
+    <Content Include="Content\img\login_bak.gif" />
+    <Content Include="Content\img\login_bt.gif" />
+    <Content Include="Content\img\login_val.gif" />
+    <Content Include="Content\img\main-foot-bak.gif" />
+    <Content Include="Content\img\main-h5-ico.gif" />
+    <Content Include="Content\img\main-title-bak.gif" />
+    <Content Include="Content\img\mid-control-bak.gif" />
+    <Content Include="Content\img\new.gif" />
+    <Content Include="Content\img\news-title.gif" />
+    <Content Include="Content\img\new_list.gif" />
+    <Content Include="Content\img\passport_login_bak.gif" />
+    <Content Include="Content\img\small-bt-bak.gif" />
+    <Content Include="Content\img\table-data-bak.gif" />
+    <Content Include="Content\img\tips.gif" />
+    <Content Include="Content\img\top.gif" />
+    <Content Include="Content\img\uncheck.gif" />
+    <Content Include="Content\img\up.gif" />
+    <Content Include="Content\img\user-bak.gif" />
+    <Content Include="Content\img\user-down-bak.gif" />
+    <Content Include="Content\img\user-down-bt.gif" />
+    <Content Include="Content\img\user-down-h5-ico.gif" />
+    <Content Include="Content\img\user-foot-bak.gif" />
+    <Content Include="Content\img\user-login1.gif" />
+    <Content Include="Content\img\user-login2.gif" />
+    <Content Include="Content\img\user-login3.gif" />
+    <Content Include="Content\js\jquery.blockUI.js" />
+    <Content Include="Content\js\jquery.common.js" />
+    <Content Include="Content\js\jquery.cookie.js" />
+    <Content Include="Content\js\jquery.form.js" />
+    <Content Include="Content\js\jquery.pjax.js" />
+    <Content Include="Content\js\jquery.treeview.js" />
+    <Content Include="Content\js\Layout.js" />
+    <Content Include="Content\js\repaging.js" />
+    <Content Include="Content\js\Site.js" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\Templete\Example.xlsx" />
+    <Content Include="Content\Templete\综合查询报表.xls" />
+    <Content Include="Scripts\JsonFormat.js" />
+    <Content Include="XML\User.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\Department.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Cake\jsoneditor-master\.npmignore" />
+    <Content Include="Cake\jsoneditor-master\bower.json" />
+    <Content Include="Cake\jsoneditor-master\docs\api.md" />
+    <Content Include="Cake\jsoneditor-master\docs\shortcut_keys.md" />
+    <Content Include="Cake\jsoneditor-master\docs\usage.md" />
+    <Content Include="Cake\jsoneditor-master\HISTORY.md" />
+    <Content Include="Cake\jsoneditor-master\jsoneditor.map" />
+    <Content Include="Cake\jsoneditor-master\LICENSE" />
+    <Content Include="Cake\jsoneditor-master\misc\how_to_publish.md" />
+    <Content Include="Cake\jsoneditor-master\NOTICE" />
+    <Content Include="Cake\jsoneditor-master\package.json" />
+    <Content Include="Cake\jsoneditor-master\README.md" />
+    <Content Include="Cake\jsoneditor-master\src\css\img\export.sh" />
+    <Content Include="Cake\jsoneditor-master\test\largefile.json" />
+    <Content Include="Cake\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Cake\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Cake\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Cake\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Cake\assets\fonts\FontAwesome.otf" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\comm.js" />
+    <Content Include="Scripts\date.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.form.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutMaster.cshtml" />
+    <Content Include="Views\Helper\Index.cshtml" />
+    <Content Include="Views\Helper\JsonHelper.cshtml" />
+    <Content Include="Views\HttpHelper\Index.cshtml" />
+    <Content Include="Views\EasyUi\Index.cshtml" />
+    <Content Include="Views\HttpHelper\Login.cshtml" />
+    <Content Include="Views\DSFInterface.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\00.WidgetDemo.Common\01.WidgetDemo.Common.csproj">
+      <Project>{00bfcbf5-e4f6-45cc-9519-220f9fcef849}</Project>
+      <Name>01.WidgetDemo.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WidgetDemo.Context\04.WidgetDemo.Context.csproj">
+      <Project>{7f6e32f5-d8eb-41ce-8e94-2c699b48368a}</Project>
+      <Name>04.WidgetDemo.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WidgetDemo.DAL\03.WidgetDemo.DAL.csproj">
+      <Project>{764b8b0a-924e-406c-b6c7-0bb48622006b}</Project>
+      <Name>03.WidgetDemo.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WidgetDemo.Model\02.WidgetDemo.Model.csproj">
+      <Project>{ae81332f-8d18-4fb6-96f4-4dcff2df861d}</Project>
+      <Name>02.WidgetDemo.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2696/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

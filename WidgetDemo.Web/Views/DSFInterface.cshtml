@@ -1,0 +1,111 @@
+﻿@using System.Text
+@using TC.Vacations.Entity.DsfInterface
+@model DSFGroupViewModel
+@{
+    Layout = null;
+}
+@functions
+{
+
+    private string ParamTable(PropertyViewModel parameter)
+    {
+        StringBuilder html = new StringBuilder();
+        if (parameter.IsClass)
+        {
+            html.AppendFormat(" <a data-toggle='collapse' data-target='#param_{0}'><span>{0}</span></a><br />", parameter.Name);
+            html.AppendFormat("<div id='param_{0}' class='collapse in'>", parameter.Name);
+            html.AppendFormat(" <table class='table'><thead><tr><th>字段名</th><th>类型</th><th>说明</th></tr></thead>");
+            html.Append("<tbody>");
+            foreach (var property in parameter.Type.Properties)
+            {
+                html.AppendFormat(" <tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", property.Name, property.Type.Name, property.Summary);
+            }
+            html.Append("</tbody></table>");
+            html.Append("</div>");
+
+            foreach (var propertyViewModel in parameter.Type.Properties)
+            {
+                html.Append(ParamTable(propertyViewModel));
+            }
+        }
+        
+        return html.ToString();
+    }
+
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+</head>
+<body style="margin-left: 20px;">
+    <div class="Title">
+        <span>服务组名：<span>@Model.GroupName</span></span><br />
+        <span>版本：<span>@Model.Version</span></span><br />
+        <span>环境：<span>@Model.Environment</span></span>
+    </div>
+    <div class="panel-group" id="accordion" style="margin-left: 10px">
+        <span>方法列表</span>
+        @foreach (var interfaceData in @Model.Interfaces)
+        {
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse_@interfaceData.ServiceName">
+                            @interfaceData.ServiceName
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse_@interfaceData.ServiceName" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <span>ServiceName:<span>@interfaceData.ServiceName</span></span>
+                        <span>UriName:<span>@interfaceData.UriName</span></span>
+                        @foreach (var methodData in interfaceData.Methods)
+                        {
+                            <span>方法名：<span>@methodData.Name</span></span>
+                            <span>简介：<span>@methodData.Summary</span></span>
+                            <div>
+                                <a data-toggle="collapse" data-target="#requestParam_@(interfaceData.ServiceName)_@(methodData.Name)">
+                                    <span>请求参数</span>
+                                </a><br />
+                                <div id="requestParam_@(interfaceData.ServiceName)_@(methodData.Name)" class="collapse in">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    字段名
+                                                </th>
+                                                <th>
+                                                    类型
+                                                </th>
+                                                <th>
+                                                    说明
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var field in @methodData.Parameters)
+                                            {
+                                                <tr>
+                                                    <td>@field.Name</td>
+                                                    <td>@field.Type.Name</td>
+                                                    <td>@field.Summary</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                    @foreach (var param in methodData.Parameters)
+                                    {
+                                        <div>@Html.Raw(ParamTable(param))</div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,487 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+}
+@section head{
+    <style type="text/css">
+        .description {
+            border: 1px solid #eee;
+        }
+    </style>
+    <script type="text/javascript">
+        _IdUserField = "FAAId";
+        $(document).ready(function () {
+            //用户combobox
+            $("#FMPOwnerId").combobox({
+                url: '@Url.Content("~/Home/AjaxListForCombogrid/")',
+                mode: 'remote',
+                valueField: 'FAAId',
+                textField: 'FAAName',
+                panelHeight: 160,
+                editable: true
+            }).combobox("clear");
+
+            //用户combogrid
+            $("#FMPOwnerId01").combogrid({
+                url: '@Url.Content("~/Home/ListAllAlarmName/")',
+                idField: 'FAAId',
+                textField: 'FAAName',
+                multiple: true,
+                fitColumns: true,
+                columns: [
+                    [
+                        { field: 'ck', checkbox: true },
+                        { field: 'FAAName', title: '姓名', width: 150 },
+                        { field: 'FAAEmployeeId', title: '工号', width: 150 }
+                    ]
+                ]
+            });
+            //部门combotree
+            $("#SSUseDeptId").combotree({
+                url: '@Url.Content("~/Department/TreeForCombobox/")',
+                panelHeight: 300,
+                multiple: true,
+                cascadeCheck: true,
+                editable: false,
+                //全部折叠
+                onLoadSuccess: function (node, data) {
+                    $('#SSUseDeptId').combotree('tree').tree("collapseAll");
+                }
+            });
+        });
+
+        //选择收件人
+        function SelectUser() {
+
+            $('#divSelectUser').dialog({
+                title: '选择收件人',
+                width: 700,
+                hight: 400,
+                modal: true,
+                collapsible: false,
+                resizable: true,
+                onClose: function () {
+                    clearForm("userSelect");
+                    $('#tbSelectUser').datagrid('loadData', { total: 0, rows: [] });
+                    $('#selectGrid').datagrid('loadData', { total: 0, rows: [] });
+                }
+            });
+            $('#tbSelectUser').datagrid({
+                url: '@Url.Content("~/Home/List")',
+                idField: _IdUserField,
+                width: 'auto',
+                height: 'auto',
+                nowrap: true,
+                striped: true,
+                remoteSort: true,
+                border: false,
+                collapsible: true,
+                fit: true,
+                fitColumns: false,
+                rownumbers: true,
+                pagination: true,
+                singleSelect: false,
+                pageNumber: 1,
+                pageSize: 10,
+                pageList: [10, 20, 30, 40, 50],
+                onSelect: function (rowIndex, rowData) {
+                    $('#selectGrid').datagrid('appendRow', {
+                        FAAId: rowData.FAAId,
+                        FAAName: rowData.FAAName,
+                        FAAEmployeeId: rowData.FAAEmployeeId
+                    });
+                },
+                onUnselect: function (rowIndex, rowData) {
+                    var data = $('#selectGrid').datagrid('getData');
+                    var length = data.total;
+                    for (var i = length - 1; i > -1; i--) {
+                        if (data.rows[i].FAAId == rowData.FAAId) {
+                            $('#selectGrid').datagrid('deleteRow', i);
+                        }
+                    }
+                },
+                onLoadSuccess: function (data) {
+                    LoadCheckSelectData(data);
+                },
+                columns: [
+                    [
+                        { field: 'FAAId', title: 'ID', hidden: true, sortable: true, align: 'center', width: 80 },
+                        { field: 'FAAName', title: '姓名', align: 'left', width: 80 },
+                        { field: 'FAAEmployeeId', title: '工号', align: 'left', width: 60 },
+                        { field: 'FAADeptId', title: '所属部门', align: 'center', width: 150 }
+                    ]
+                ]
+            });
+            $("#selectGrid").datagrid({
+                height: 260,
+                idField: _IdUserField,
+                width: 'auto',
+                singleSelect: false,
+                fitColumns: true,
+                rownumbers: false,
+                columns: [
+                    [
+                        { field: 'FAAId', title: 'ID', hidden: true, sortable: true, align: 'center', width: 80 },
+                        { field: 'FAAName', title: '姓名', align: 'left', width: 80 },
+                        { field: 'FAAEmployeeId', title: '工号', align: 'left', width: 60 },
+                        {
+                            field: 'Action',
+                            title: '处理',
+                            align: 'left',
+                            width: 60,
+                            formatter: function (value, row, index) {
+                                return "<a href = '#' onclick='DelUser(" + row.FAAId + ")'>删除</a>";
+                            }
+                        }
+                    ]
+                ]
+            });
+            if ($("#FAAName").val() == null || $("#FAAName").val() == "") {
+                $('#tbSelectUser').datagrid('clearSelections');
+                $('#tbSelectUser').datagrid('clearChecked');
+                $('#selectGrid').datagrid('clearSelections');
+                $('#selectGrid').datagrid('clearChecked');
+            } else {
+                var UserId = $("#FAAName").val().split(',');
+                var UserName = $("#NameText").val().split(';');
+                var userLength = UserId.length;
+                for (var index = 0; index < userLength; index++) {
+                    var name = UserName[index].split('-');
+                    $('#selectGrid').datagrid('appendRow', {
+                        FAAId: UserId[index],
+                        FAAName: name[0],
+                        FAAEmployeeId: name[1]
+                    });
+                }
+            }
+            doSearch();
+        }
+
+        //用户搜索
+        function doSearch() {
+            $('#tbSelectUser').datagrid('load', serializObject("userSelect"));
+        }
+
+        //保存User
+        function SaveUser() {
+            var UserId = "";
+            var UserName = "";
+            var data = $('#selectGrid').datagrid('getData');
+            var length = data.total;
+            for (var i = length - 1; i > -1; i--) {
+                UserId += data.rows[i].FAAId + ",";
+                UserName += data.rows[i].FAAName + "-" + data.rows[i].FAAEmployeeId + ";";
+            }
+            $("#NameText").val(UserName.substring(0, UserName.length - 1));
+            $("#FAAName").val(UserId.substring(0, UserId.length - 1));
+            closeForm("divSelectUser");
+        }
+
+        //删除User
+        function DelUser(FAAId) {
+            var data = $('#selectGrid').datagrid('getData');
+            var length = data.total;
+            for (var i = length - 1; i > -1; i--) {
+                if (data.rows[i].FAAId == FAAId) {
+                    $('#selectGrid').datagrid('deleteRow', i);
+                }
+            }
+            CheckSelectData();
+        }
+
+        //删除时核对数据-去除选中
+        function CheckSelectData() {
+            var data = $('#tbSelectUser').datagrid('getSelections');
+            var selectData = $('#selectGrid').datagrid('getData');
+            var selectLength = selectData.total;
+            var length = data.length;
+            for (var i = 0; i < length; i++) {
+                var isUnselectRow = true;
+                for (var j = selectLength - 1; j > -1; j--) {
+                    if (selectData.rows[j].FAAId == data[i].FAAId) {
+                        isUnselectRow = false;
+                        break;
+                    }
+                }
+                if (isUnselectRow) {
+                    var index = $('#tbSelectUser').datagrid('getRowIndex', data[i]);
+                    if (index > -1) {
+                        $('#tbSelectUser').datagrid('unselectRow', index);
+                    }
+                }
+            }
+        }
+
+        //刷新加载时核对数据
+        function LoadCheckSelectData(newdata) {
+            var length = newdata.rows.length;
+            var selectData = $('#selectGrid').datagrid('getData');
+            var selectLength = selectData.total;
+            for (var j = selectLength - 1; j > -1; j--) {
+                for (var i = 0; i < length; i++) {
+                    if (selectData.rows[j].FAAId == newdata.rows[i].FAAId) {
+                        var index = $('#tbSelectUser').datagrid('getRowIndex', newdata.rows[i]);
+                        if (index > -1 && (!IsSelected(newdata.rows[i].FAAId, "tbSelectUser"))) {
+                            $('#tbSelectUser').datagrid('selectRow', index);
+                        }
+                    }
+                }
+            }
+            for (var m = 0; m < length; m++) {
+                var isUnselectRow = true;
+                for (var n = selectLength - 1; n > -1; n--) {
+                    if (selectData.rows[n].FAAId == newdata.rows[m].FAAId) {
+                        isUnselectRow = false;
+                        break;
+                    }
+                }
+                if (isUnselectRow) {
+                    var newIndex = $('#tbSelectUser').datagrid('getRowIndex', newdata.rows[m]);
+                    if (newIndex > -1) {
+                        $('#tbSelectUser').datagrid('unselectRow', newIndex);
+                    }
+                }
+            }
+            Distinct();
+        }
+
+        //判断是否选中
+        function IsSelected(FAAId, datagrid) {
+            var result = false;
+            var data = $('#' + datagrid).datagrid('getSelections');
+            var length = data.length;
+            for (var i = 0; i < length; i++) {
+                if (data[i].FAAId == FAAId) {
+                    result = true;
+                    break;
+                }
+
+            }
+            return result;
+        }
+
+        //选中去重
+        function Distinct() {
+            var selectData = $('#selectGrid').datagrid('getData');
+            for (var i = 0; i < selectData.total; i++) {
+                for (var j = i + 1; j < selectData.total; j++) {
+                    if (selectData.rows[i].FAAId == selectData.rows[j].FAAId) {
+                        var index = $('#selectGrid').datagrid('getRowIndex', selectData.rows[j]);
+                        if (index > -1) {
+                            $('#selectGrid').datagrid('deleteRow', index);
+                        }
+                    }
+                }
+            }
+        }
+
+        //redis-Add
+        function Add() {
+            var key = $("#addKey").val();
+            var value = $("#addValue").val();
+            if (key == null || key == "") {
+                $.messager.alert("提 示", "键值不可为空", "info");
+                return;
+            }
+            $.ajax({
+                type: "Get",
+                url: '@Url.Content("~/Redis/AddRedis?key=")' + key + "&value=" + value,
+                success: function (data) {
+                    if (data == "True") {
+                        $.messager.alert("提 示", "添加成功", "info");
+                    } else {
+                        $.messager.alert("错 误", "添加失败", "error");
+                    }
+                },
+                error: function () {
+                    $.messager.alert("错 误", "添加失败", "error");
+                }
+
+            });
+        }
+
+        //redis-Get
+        function Get() {
+            var key = $("#getKey").val();
+            if (key == null || key == "") {
+                $.messager.alert("提 示", "键值不可为空", "info");
+                return;
+            }
+            $.ajax({
+                type: "Get",
+                url: '@Url.Content("~/Redis/GetRedis?key=")' + key,
+                success: function (data) {
+                    if (data) {
+                        $("#getValue").val(data);
+                    }
+                },
+                error: function () {
+                    $.messager.alert("错 误", "获取数据失败", "error");
+                }
+
+            });
+        }
+
+        //redis-Update
+        function Update() {
+            var key = $("#updateKey").val();
+            var value = $("#updateValue").val();
+            if (key == null || key == "") {
+                $.messager.alert("提 示", "键值不可为空", "info");
+            }
+            $.ajax({
+                type: "Get",
+                url: '@Url.Content("~/Redis/UpdateRedis?key=")' + key + "&value=" + value,
+                success: function (data) {
+                    if (data) {
+                        $.messager.alert("提 示", "更新成功", "info");
+                        return;
+                    }
+                },
+                error: function () {
+                    $.messager.alert("错 误", "更新失败", "error");
+                }
+
+            });
+        }
+
+        function GetAllKey() {
+            var dataResult;
+            $.ajax({
+                type: "Get",
+                async: false,
+                url: '@Url.Content("~/Redis/GetAllKey")',
+                success: function (data) {
+                    $("#allKey").val(data);
+                },
+                error: function () {
+                    $.messager.alert("错 误", "更新失败", "error");
+                }
+            });
+            //$("#allKey").combobox({
+            //    data: dataResult
+            //}).combobox("clear");
+        }
+    </script>
+}
+<div data-options="region:'north',border:false" style="padding: 5px;
+        background-color: #E5EEFD;">
+    <table>
+        <tr>
+            <th valign="top">
+                用户选择：
+            </th>
+            <td>
+                <input type="hidden" id="FAAName" name="FAAName" />
+                <textarea style="width: 240px;" id="NameText" name="NameText" readonly="readonly"></textarea>
+                <a href="#" onclick="SelectUser()">选择</a><br />
+                1.弹出框选择，可搜索，用于数据量较大，多选。<br />
+            </td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <th valign="top">
+                用户选择：
+            </th>
+            <td>
+                <input type="text" id="FMPOwnerId" name="FMPOwnerId" validtype="blankCheck(50)" style="width:166px;" /><br />
+                1.单选，可搜索<br />
+            </td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <th valign="top">
+                用户选择：
+            </th>
+            <td>
+                <input type="text" id="FMPOwnerId01" name="FMPOwnerId01" validtype="blankCheck(50)" style="width:166px;" /><br />
+                1.多选<br />
+                2.数据量大时不建议使用,因为第一条数据可搜索，第二条数据不能搜索<br />
+            </td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+            <th valign="top">部门选择</th>
+            <td>
+                <input style="width: 328px;" class="easyui-combotree" id="SSUseDeptId" name="SSUseDeptId" tipposition='left' /><br />
+                1.树形结构，可控制为单选<br />
+                2.可控制选中父节点，子节点是否都选中。<br />
+                3.树形可默认展开，也可默认收拢<br />
+            </td>
+        </tr>
+    </table>
+    <h2>redis-Demo</h2>
+    <table>
+        <tr>
+            <td colspan="2">
+                所有键：<input type="text" id="allKey" style="width: 308px;" />
+            </td>
+            <td>
+                &nbsp;<input type="button" id="addSubmit" value="获取" style="width: 50px" onclick="GetAllKey()" />
+
+        </tr>
+        <tr id="add">
+            <td>
+                键：<input type="text" id="addKey" style="width: 150px;" />
+            </td>
+            <td>
+                值：<input type="text" id="addValue" style="width: 150px;" />
+            </td>
+            <td>&nbsp;<input type="button" id="addSubmit" value="添加" style="width: 50px" onclick="Add()" /></td>
+        </tr>
+
+        <tr id="get">
+            <td>
+                键：<input type="text" id="getKey" style="width: 150px;" />
+            </td>
+            <td>
+                值：<input type="text" id="getValue" style="width: 150px;" />
+            </td>
+            <td>&nbsp;<input type="button" id="getSubmit" value="获取" style="width: 50px" onclick="Get()" /></td>
+        </tr>
+
+        <tr id="update">
+            <td>
+                键：<input type="text" id="updateKey" style="width: 150px;" />
+            </td>
+            <td>
+                值：<input type="text" id="updateValue" style="width: 150px;" />
+            </td>
+            <td>&nbsp;<input type="button" id="updateSubmit" value="修改" style="width: 50px" onclick="Update()" /></td>
+        </tr>
+    </table>
+</div>
+<div data-options="region:'center',border:false" style="overflow-y: hidden;">
+    @*数据表格*@
+    <table id="tbGrid"></table>
+</div>
+@*用户选择*@
+<div id="divSelectUser" style="width: 680px; height: 400px;" data-options="region:'center',border:false">
+    <table>
+        <tr>
+            <td>
+                <div style="width: 380px; height: 360px;">
+                    <form id="userSelect">
+                        <div id="tb" style="padding: 3px">
+                            <span>姓名:</span>
+                            <input type="text" name="FAAName" style="border: 1px solid #ccc; width: 100px" />
+                            <span>工号</span>
+                            <input type="text" id="FAAEmployeeId" name="FAAEmployeeId" style="border: 1px solid #ccc; width: 100px" />
+                            <a href="#" class="easyui-linkbutton" plain="true" onclick="doSearch()">查询</a>
+                        </div>
+                    </form>
+                    <table id="tbSelectUser"></table>
+                </div>
+            </td>
+            <td valign="top">
+                <div style="width: 260px; height: 300px;">
+                    <table id="selectGrid"></table>
+                </div>
+                <a style="float:right" href="javascript:void(0)" class="easyui-linkbutton" onclick="SaveUser()">确定</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+

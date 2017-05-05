@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+  <Source>
+    <RequestorID Client="1483" EMailAddress="M@C.IE" Password="m"/>
+    <RequestorPreferences Language="en" Currency="GBP">
+      <RequestMode>ASYNCHRONOUS</RequestMode>
+      <ResponseURL>/ProcessResponse/GetXML</ResponseURL>
+    </RequestorPreferences>
+  </Source>
+  <RequestDetails>
+    <AddBookingRequest Currency="GBP">
+      <BookingName>MC20031301</BookingName>
+      <BookingReference>MC20031201a</BookingReference>
+      <AgentReference>MC20031201b</AgentReference>
+      <BookingDepartureDate>2004-01-01</BookingDepartureDate>
+      <PassengerEmail>xxx@ly.com</PassengerEmail>
+      <PaxNames>
+        <PaxName PaxId="1"><![CDATA[Mr John Doe ]]></PaxName>
+        <PaxName PaxId="2"><![CDATA[Mrs Sarah Doe ]]></PaxName>
+        <PaxName PaxId="3" PaxType="child" ChildAge="10"><![CDATA[Mrs Sarah Don ]]></PaxName>
+      </PaxNames>
+      <BookingItems>
+        <BookingItem ItemType="hotel" ExpectedPrice ="50.00">
+          <ItemReference>1</ItemReference>
+          <ItemCity Code="AMS" />
+          <Item Code="NAD" />
+          <ItemRemarks>
+            <ItemRemark Code="LA"/>
+          </ItemRemarks>
+          <HotelItem>
+            <AlternativesAllowed>true</AlternativesAllowed>
+            <PeriodOfStay>
+              <CheckInDate>2004-01-01</CheckInDate>
+              <CheckOutDate>2004-01-11</CheckOutDate>
+              <Duration>10</Duration>
+            </PeriodOfStay>
+            <HotelRooms>
+              <HotelRoom Code="TB" Id="001:NAD" ExtraBed="true" NumberOfExtraBeds="1" SharingBedding="true" NumberOfCots="2">
+                <Description><![CDATA[大大大]]></Description>
+                <PaxIds>
+                  <PaxId>1</PaxId>
+                  <PaxId>2</PaxId>
+                </PaxIds>
+              </HotelRoom>
+            </HotelRooms>
+            <HotelPaxRoom Adults="1" Children="1" Cots="1" Id="001:NAD" SharingBedding="true">
+              <Description><![CDATA[大大大]]></Description>
+              <PaxIds>
+                <PaxId>1</PaxId>
+                <PaxId>2</PaxId>
+              </PaxIds>
+            </HotelPaxRoom>
+          </HotelItem>
+        </BookingItem>
+        <BookingItem ItemType="sightseeing">
+          <ItemReference>1</ItemReference>
+          <ItemCity Code="PAR" />
+          <Item Code="CITY01-EL" />
+          <SightseeingItem>
+            <TourDate>2004-01-01</TourDate>
+            <TourLanguage Code="E" LanguageListCode="XZ" />
+            <SpecialItem Code="FC" />
+            <PaxIds>
+              <PaxId>1</PaxId>
+              <PaxId>2</PaxId>
+              <PaxId>3</PaxId>
+            </PaxIds>
+            <TourDeparture>
+              <Time>07.00</Time>
+              <DeparturePoint Code="CITY04" />
+              <Description><![CDATA[描述]]></Description>
+              <AddressLines>
+                <AddressLine><![CDATA[地址1]]></AddressLine>
+                <AddressLine><![CDATA[地址2]]></AddressLine>
+              </AddressLines>
+              <Telephone>1231</Telephone>
+            </TourDeparture>
+          </SightseeingItem>
+        </BookingItem>
+        <BookingItem ItemType="transfer">
+          <ItemReference>1</ItemReference>
+          <ItemCity Code="LON" />
+          <Item Code="000000084003" />
+          <TransferItem>
+            <PickUpDetails>
+              <City Code="SZ"></City>
+              <PickUpAccommodation>
+                <PickUpFrom>
+                  <Hotel Code=""></Hotel>
+                  <Apartment Code=""></Apartment>
+                  <Address>
+                    <AddressLine1></AddressLine1>
+                    <AddressLine2></AddressLine2>
+                    <City Code=""></City>
+                    <County></County>
+                    <PostCode></PostCode>
+                    <Telephone></Telephone>
+                  </Address>
+                  <Meetingpoint Code=""></Meetingpoint>
+                </PickUpFrom>
+                <PickUpTime>10:50</PickUpTime>
+              </PickUpAccommodation>
+              <PickUpAirport>
+                <ArrivingFrom>
+                  <Airport Code="JFK"/>
+                </ArrivingFrom>
+                <FlightNumber>BA1234</FlightNumber>
+                <EstimatedArrival>14.45</EstimatedArrival>
+              </PickUpAirport>
+              <PickUpStation>
+                <Station Code=""></Station>
+                <ArrivingFrom>
+                  <City Code="SZ"></City>
+                </ArrivingFrom>
+                <TrainName></TrainName>
+                <EstimateArrival></EstimateArrival>
+              </PickUpStation>
+              <PickUpPort>
+                <ArrivingFrom></ArrivingFrom>
+                <ShipName></ShipName>
+                <ShippingCompany></ShippingCompany>
+                <EstimateArrival></EstimateArrival>
+              </PickUpPort>
+              <PickUpOther>
+                <PickUpFrom></PickUpFrom>
+                <Hotel Code=""></Hotel>
+                <Apartment Code=""></Apartment>
+                <Address>
+                  <AddressLine1></AddressLine1>
+                  <AddressLine2></AddressLine2>
+                  <City Code=""></City>
+                  <County></County>
+                  <PostCode></PostCode>
+                  <Telephone></Telephone>
+                </Address>
+                <Meetingpoint Code=""></Meetingpoint>
+              </PickUpOther>
+            </PickUpDetails>
+            <DropOffDetails>
+              <City Code=""></City>
+              <DropOffAccommodation>
+                <DropOffTo></DropOffTo>
+                <Hotel Code=""></Hotel>
+                <Apartment Code=""></Apartment>
+                <Address>
+                  <AddressLine1></AddressLine1>
+                  <AddressLine2></AddressLine2>
+                  <City Code=""></City>
+                  <County></County>
+                  <PostCode></PostCode>
+                  <Telephone></Telephone>
+                </Address>
+                <Meetingpoint Code=""></Meetingpoint>
+              </DropOffAccommodation>
+              <DropOffAirport>
+                <DepartingTo></DepartingTo>
+                <Airport Code=""></Airport>
+                <FlightNumber>BA1234</FlightNumber>
+                <DepartureTime>14.45</DepartureTime>
+              </DropOffAirport>
+              <DropOffStation>
+                <Station Code=""></Station>
+                <DepartingTo></DepartingTo>
+                <City Code="SZ"></City>
+                <TrainName></TrainName>
+                <DepartureTime></DepartureTime>
+              </DropOffStation>
+              <DropOffPort>
+                <DepartingTo></DepartingTo>
+                <ShipName></ShipName>
+                <ShippingCompany></ShippingCompany>
+                <DepartureTime></DepartureTime>
+              </DropOffPort>
+              <PickUpOther>
+                <DropOffTo></DropOffTo>
+                <Hotel Code=""></Hotel>
+                <Apartment Code=""></Apartment>
+                <Address>
+                  <AddressLine1></AddressLine1>
+                  <AddressLine2></AddressLine2>
+                  <City Code=""></City>
+                  <County></County>
+                  <PostCode></PostCode>
+                  <Telephone></Telephone>
+                </Address>
+                <Meetingpoint Code=""></Meetingpoint>
+              </PickUpOther>
+            </DropOffDetails>
+            <TransferDate>2005-01-01</TransferDate>
+            <TransferLanguage>E</TransferLanguage>
+            <TransferVehicle>
+              <Vehicle Code="SA" MaximumPassengers="3"/>
+              <Passengers>2</Passengers>
+              <LeadPaxId>1</LeadPaxId>
+            </TransferVehicle>
+          </TransferItem>
+        </BookingItem>
+      </BookingItems>
+    </AddBookingRequest>
+    <ModifyBookingRequest>
+      <BookingReference ReferenceSource="click">MC20031201c</BookingReference>
+      <AgentReference>MC20031201d</AgentReference>
+      <BookingDepartureDate>2015-07-04</BookingDepartureDate>
+      <PassengerEmail></PassengerEmail>
+      <PaxNames>
+        <PaxName PaxId="1"><![CDATA[Mr John Doe ]]></PaxName>
+        <PaxName PaxId="2"><![CDATA[Mrs Sarah Doe ]]></PaxName>
+        <PaxName PaxId="3" PaxType="child" ChildAge="10"><![CDATA[Mrs Sarah Don ]]></PaxName>
+      </PaxNames>
+    </ModifyBookingRequest>
+    <CancelBookingRequest>
+      <BookingReference ReferenceSource="click">MC20031201d</BookingReference>
+    </CancelBookingRequest>
+    <SearchBookingRequest>
+      <BookingReference ReferenceSource="click">MC20031201d</BookingReference>
+      <BookingDateRange DateType="Departure">2015-07-10</BookingDateRange>
+      <BookingStatusCode>1</BookingStatusCode>
+      <BookingName>MC20031301</BookingName>
+      <EchoSearchCriteria>false</EchoSearchCriteria>
+    </SearchBookingRequest>
+    <AddBookingItemRequest>
+      <BookingReference ReferenceSource="api">18327</BookingReference>
+      <BookingItems>
+        <BookingItem ItemType="hotel">
+          <ItemReference>99</ItemReference>
+          <ItemCity Code="AMS" />
+          <Item Code="NAD" />
+          <ItemRemarks>
+            <ItemRemark Code="LA"/>
+          </ItemRemarks>
+          <HotelItem>
+            <AlternativesAllowed>false</AlternativesAllowed>
+            Version 2.3.
+            Page 44 of 76
+            <PeriodOfStay>
+              <CheckInDate>2004-01-25</CheckInDate>
+              <CheckOutDate>2004-01-26</CheckOutDate>
+            </PeriodOfStay>
+            <HotelRooms>
+              <HotelRoom Code="DB" ExtraBed="true" NumberOfCots="2">
+                <PaxIds>
+                  <PaxId>1</PaxId>
+                  <PaxId>2</PaxId>
+                  <PaxId>3</PaxId>
+                </PaxIds>
+              </HotelRoom>
+            </HotelRooms>
+          </HotelItem>
+        </BookingItem>
+      </BookingItems>
+    </AddBookingItemRequest>
+    <ModifyBookingItemRequest>
+      <BookingReference ReferenceSource="api">18327</BookingReference>
+      <BookingItems>
+        <BookingItem ItemType="hotel" ExpectedPrice ="50.00">
+          <ItemReference>1</ItemReference>
+          <ItemCity Code="AMS" />
+          <Item Code="NAD" />
+          <ItemRemarks>
+            <ItemRemark Code="LA"/>
+          </ItemRemarks>
+          <HotelItem>
+            <AlternativesAllowed>true</AlternativesAllowed>
+            <PeriodOfStay>
+              <CheckInDate>2004-01-01</CheckInDate>
+              <CheckOutDate>2004-01-11</CheckOutDate>
+              <Duration>10</Duration>
+            </PeriodOfStay>
+            <HotelRooms>
+              <HotelRoom Code="TB" Id="001:NAD" ExtraBed="true" NumberOfExtraBeds="1" SharingBedding="true" NumberOfCots="2">
+                <Description><![CDATA[大大大]]></Description>
+                <PaxIds>
+                  <PaxId>1</PaxId>
+                  <PaxId>2</PaxId>
+                </PaxIds>
+              </HotelRoom>
+            </HotelRooms>
+            <HotelPaxRoom Adults="1" Children="1" Cots="1" Id="001:NAD" SharingBedding="true">
+              <Description><![CDATA[大大大]]></Description>
+              <PaxIds>
+                <PaxId>1</PaxId>
+                <PaxId>2</PaxId>
+              </PaxIds>
+            </HotelPaxRoom>
+          </HotelItem>
+        </BookingItem>
+      </BookingItems>
+    </ModifyBookingItemRequest>
+    <CancelBookingItemRequest></CancelBookingItemRequest>
+    <SearchBookingItemRequest>
+      <BookingReference ReferenceSource="client">BOOK1002</BookingReference>
+      <ItemStatusCode>qwe</ItemStatusCode>
+      <ItemReference>1</ItemReference>
+    </SearchBookingItemRequest>
+  </RequestDetails>
+</Request>

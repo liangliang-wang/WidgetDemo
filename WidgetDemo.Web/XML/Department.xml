@@ -1,0 +1,1670 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rlt>
+  <deptList>
+    <dept id="473" name="总经理室" hid="0" on="0" enabled="1">
+      <dept id="305" name="旅游酒店事业部" hid="134" on="0" enabled="1">
+        <dept id="17" name="旅游酒店管培生" hid="0" on="0" enabled="1">
+          <dept id="20" name="旅游酒店管培生第一组" hid="107" on="0" enabled="1" />
+          <dept id="21" name="旅游酒店管培生第二组" hid="0" on="0" enabled="1" />
+          <dept id="22" name="旅游酒店管培生第三组" hid="0" on="0" enabled="1" />
+          <dept id="23" name="旅游酒店管培生第四组" hid="0" on="0" enabled="1" />
+        </dept>
+        <dept id="41" name="旅游酒店HR" hid="48" on="0" enabled="1">
+          <dept id="267" name="酒店人事行政部" hid="0" on="0" enabled="0" />
+          <dept id="376" name="培训部" hid="0" on="0" enabled="0" />
+        </dept>
+        <dept id="332" name="旅游酒店产品研发中心" hid="135" on="0" enabled="1">
+          <dept id="69" name="酒店资源三部" hid="109" on="0" enabled="0" />
+          <dept id="70" name="酒店资源四部" hid="110" on="0" enabled="0" />
+          <dept id="71" name="酒店资源六部" hid="127" on="0" enabled="0" />
+          <dept id="72" name="酒店资源七部" hid="113" on="0" enabled="0" />
+          <dept id="73" name="酒店资源八部" hid="114" on="0" enabled="0" />
+          <dept id="74" name="酒店维护部" hid="0" on="0" enabled="0" />
+          <dept id="335" name="酒店房控部" hid="0" on="0" enabled="0">
+            <dept id="337" name="房控一部" hid="59" on="0" enabled="0" />
+            <dept id="339" name="房控二部" hid="60" on="0" enabled="0" />
+            <dept id="340" name="房控三部" hid="61" on="0" enabled="0" />
+            <dept id="470" name="房控四部" hid="62" on="0" enabled="0" />
+          </dept>
+          <dept id="344" name="业务部" hid="0" on="0" enabled="0" />
+          <dept id="345" name="酒店资源五部" hid="111" on="0" enabled="0" />
+          <dept id="347" name="酒店资源一部" hid="107" on="0" enabled="0" />
+          <dept id="348" name="酒店资源二部" hid="107" on="0" enabled="0" />
+          <dept id="466" name="酒店预付产品运营部" hid="115" on="0" enabled="0">
+            <dept id="1296" name="酒店预付-产品运营部" hid="-1" on="0" enabled="0" />
+            <dept id="1297" name="酒店预付-产品质检部" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="531" name="酒店VIP项目部" hid="94" on="0" enabled="0" />
+          <dept id="625" name="华东大区" hid="136" on="0" enabled="0">
+            <dept id="628" name="华东一部" hid="108" on="0" enabled="0" />
+            <dept id="631" name="华东三部" hid="123" on="0" enabled="0" />
+            <dept id="635" name="华东二部" hid="178" on="0" enabled="0" />
+            <dept id="812" name="山东区" hid="-1" on="0" enabled="0" />
+            <dept id="814" name="上海区" hid="-1" on="0" enabled="0" />
+            <dept id="816" name="湘皖区" hid="-1" on="0" enabled="0" />
+            <dept id="819" name="苏南区" hid="-1" on="0" enabled="0" />
+            <dept id="820" name="南京区" hid="-1" on="0" enabled="0" />
+            <dept id="821" name="扬常区" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="626" name="华南大区" hid="137" on="0" enabled="0">
+            <dept id="633" name="华南二部" hid="129" on="0" enabled="0" />
+            <dept id="634" name="华南三部" hid="130" on="0" enabled="0" />
+            <dept id="815" name="赣鄂区" hid="-1" on="0" enabled="0" />
+            <dept id="827" name="广州区" hid="-1" on="0" enabled="0" />
+            <dept id="828" name="深圳区" hid="-1" on="0" enabled="0" />
+            <dept id="829" name="云桂区" hid="-1" on="0" enabled="0" />
+            <dept id="993" name="两广区" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="627" name="华北特区" hid="138" on="0" enabled="0">
+            <dept id="629" name="上海特区" hid="108" on="0" enabled="0" />
+            <dept id="637" name="华北一部" hid="1" on="0" enabled="0" />
+            <dept id="638" name="华北二部" hid="126" on="0" enabled="0" />
+            <dept id="639" name="华北三部" hid="127" on="0" enabled="0" />
+          </dept>
+          <dept id="660" name="中央特区" hid="-1" on="0" enabled="0">
+            <dept id="636" name="北京特区" hid="26" on="0" enabled="0" />
+          </dept>
+          <dept id="686" name="东南特区" hid="-1" on="0" enabled="0" />
+          <dept id="800" name="华中大区" hid="-1" on="0" enabled="0">
+            <dept id="630" name="华中二部" hid="122" on="0" enabled="0" />
+            <dept id="632" name="华中一部" hid="116" on="0" enabled="0" />
+          </dept>
+          <dept id="817" name="东南大区" hid="-1" on="0" enabled="0">
+            <dept id="818" name="闽琼区" hid="-1" on="0" enabled="0" />
+            <dept id="825" name="津冀区" hid="-1" on="0" enabled="0" />
+            <dept id="971" name="浙江区" hid="-1" on="0" enabled="0" />
+            <dept id="989" name="杭州区" hid="-1" on="0" enabled="0" />
+            <dept id="990" name="浙新区" hid="-1" on="0" enabled="0" />
+            <dept id="991" name="闽赣区" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="824" name="西南大区" hid="-1" on="0" enabled="0">
+            <dept id="813" name="东北区" hid="-1" on="0" enabled="0" />
+            <dept id="822" name="蜀都区" hid="-1" on="0" enabled="0" />
+            <dept id="823" name="渝琼区" hid="-1" on="0" enabled="0" />
+            <dept id="826" name="陕冀区" hid="-1" on="0" enabled="0" />
+            <dept id="992" name="北京区" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="830" name="创新大区" hid="-1" on="0" enabled="0">
+            <dept id="9" name="酒店国际港澳部" hid="0" on="0" enabled="0" />
+            <dept id="371" name="酒店团购研发部" hid="50" on="0" enabled="0">
+              <dept id="158" name="酒店KO一部" hid="0" on="0" enabled="0" />
+              <dept id="159" name="酒店KO二部" hid="0" on="0" enabled="0" />
+              <dept id="249" name="酒店淘宝部1" hid="34" on="0" enabled="0" />
+            </dept>
+            <dept id="831" name="酒店产品质检部" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="961" name="团购项目部" hid="-1" on="0" enabled="0">
+            <dept id="962" name="团购阿米巴一部" hid="-1" on="0" enabled="0" />
+            <dept id="963" name="团购阿米巴二部" hid="-1" on="0" enabled="0" />
+            <dept id="1074" name="团购阿米巴三部" hid="-1" on="0" enabled="0" />
+            <dept id="1149" name="资源签约会战部" hid="-1" on="0" enabled="0">
+              <dept id="1150" name="会战-东南区" hid="-1" on="0" enabled="0" />
+              <dept id="1151" name="会战-华南区" hid="-1" on="0" enabled="0" />
+              <dept id="1152" name="会战-华东区" hid="-1" on="0" enabled="0" />
+              <dept id="1153" name="会战-西南区" hid="-1" on="0" enabled="0" />
+              <dept id="1154" name="会战-华中区" hid="-1" on="0" enabled="0" />
+              <dept id="1260" name="旅游目的地大区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1221" name="酒店团购运营部" hid="-1" on="0" enabled="0">
+              <dept id="1222" name="酒店团购产品包装部" hid="-1" on="0" enabled="0" />
+              <dept id="1223" name="酒店团购预约流程部" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1224" name="团购项目-华东大区" hid="-1" on="0" enabled="0">
+              <dept id="1228" name="团购项目-苏南区" hid="-1" on="0" enabled="0" />
+              <dept id="1229" name="团购项目-南京区" hid="-1" on="0" enabled="0" />
+              <dept id="1230" name="团购项目-山东区" hid="-1" on="0" enabled="0" />
+              <dept id="1231" name="团购项目-湘皖区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1225" name="团购项目-东南大区" hid="-1" on="0" enabled="0">
+              <dept id="1232" name="团购项目-浙江区" hid="-1" on="0" enabled="0" />
+              <dept id="1233" name="团购项目-闽琼区" hid="-1" on="0" enabled="0" />
+              <dept id="1234" name="团购项目-津冀区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1226" name="团购项目-西南大区" hid="-1" on="0" enabled="0">
+              <dept id="1235" name="团购项目-蜀都区" hid="-1" on="0" enabled="0" />
+              <dept id="1236" name="团购项目-陕豫区" hid="-1" on="0" enabled="0" />
+              <dept id="1237" name="团购项目-东北区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1227" name="团购项目-华南大区" hid="-1" on="0" enabled="0">
+              <dept id="1238" name="团购项目-广东区" hid="-1" on="0" enabled="0" />
+              <dept id="1239" name="团购项目-深圳区" hid="-1" on="0" enabled="0" />
+              <dept id="1240" name="团购项目-云桂区" hid="-1" on="0" enabled="0" />
+              <dept id="1241" name="团购项目-上海区" hid="-1" on="0" enabled="0" />
+              <dept id="1242" name="团购项目-赣鄂区" hid="-1" on="0" enabled="0" />
+            </dept>
+          </dept>
+          <dept id="987" name="华北大区" hid="-1" on="0" enabled="0">
+            <dept id="988" name="黑吉区" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="994" name="资源大区" hid="-1" on="0" enabled="0">
+            <dept id="995" name="华北资源部" hid="-1" on="0" enabled="0" />
+            <dept id="996" name="华中资源部" hid="-1" on="0" enabled="0" />
+            <dept id="997" name="东南资源部" hid="-1" on="0" enabled="0" />
+            <dept id="998" name="华东资源部" hid="-1" on="0" enabled="0" />
+            <dept id="999" name="中央资源部" hid="-1" on="0" enabled="0" />
+            <dept id="1000" name="华南资源部" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1045" name="旅游酒店结算运维部" hid="-1" on="0" enabled="1" />
+          <dept id="1298" name="酒店现付产品运营部" hid="-1" on="0" enabled="0">
+            <dept id="1299" name="酒店现付产品西南大区" hid="-1" on="0" enabled="0">
+              <dept id="1303" name="酒店现付产品-东北区" hid="-1" on="0" enabled="0" />
+              <dept id="1304" name="酒店现付产品-蜀都区" hid="-1" on="0" enabled="0" />
+              <dept id="1305" name="酒店现付产品-陕冀区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1300" name="酒店现付产品华东大区" hid="-1" on="0" enabled="0">
+              <dept id="1306" name="酒店现付产品-山东区" hid="-1" on="0" enabled="0" />
+              <dept id="1307" name="酒店现付产品-湘皖区" hid="-1" on="0" enabled="0" />
+              <dept id="1308" name="酒店现付产品-南京区" hid="-1" on="0" enabled="0" />
+              <dept id="1309" name="酒店现付产品-苏南区" hid="-1" on="0" enabled="0" />
+              <dept id="1310" name="酒店现付产品-上海区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1301" name="酒店现付产品华南大区" hid="-1" on="0" enabled="0">
+              <dept id="1311" name="酒店现付产品-深圳区" hid="-1" on="0" enabled="0" />
+              <dept id="1312" name="酒店现付产品-广州区" hid="-1" on="0" enabled="0" />
+              <dept id="1313" name="酒店现付产品-赣鄂区" hid="-1" on="0" enabled="0" />
+              <dept id="1314" name="酒店现付产品-云桂区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1302" name="酒店现付产品东南大区" hid="-1" on="0" enabled="0">
+              <dept id="1315" name="酒店现付产品-浙江区" hid="-1" on="0" enabled="0" />
+              <dept id="1316" name="酒店现付产品-闽琼区" hid="-1" on="0" enabled="0" />
+            </dept>
+          </dept>
+          <dept id="1317" name="酒店预付产品业务部" hid="-1" on="0" enabled="0">
+            <dept id="1318" name="酒店预付产品西南大区" hid="-1" on="0" enabled="0">
+              <dept id="1322" name="酒店预付产品-东北区" hid="-1" on="0" enabled="0" />
+              <dept id="1323" name="酒店预付产品-蜀都区" hid="-1" on="0" enabled="0" />
+              <dept id="1324" name="酒店预付产品-陕冀区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1319" name="酒店预付产品华东大区" hid="-1" on="0" enabled="0">
+              <dept id="1325" name="酒店预付产品-山东区" hid="-1" on="0" enabled="0" />
+              <dept id="1326" name="酒店预付产品-湘皖区" hid="-1" on="0" enabled="0" />
+              <dept id="1327" name="酒店预付产品-南京区" hid="-1" on="0" enabled="0" />
+              <dept id="1328" name="酒店预付产品-苏南区" hid="-1" on="0" enabled="0" />
+              <dept id="1329" name="酒店预付产品-上海区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1320" name="酒店预付产品华南大区" hid="-1" on="0" enabled="0">
+              <dept id="1330" name="酒店预付产品-深圳区" hid="-1" on="0" enabled="0" />
+              <dept id="1331" name="酒店预付产品-广州区" hid="-1" on="0" enabled="0" />
+              <dept id="1332" name="酒店预付产品-赣鄂区" hid="-1" on="0" enabled="0" />
+              <dept id="1333" name="酒店预付产品-云桂区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1321" name="酒店预付产品东南大区" hid="-1" on="0" enabled="0">
+              <dept id="1334" name="酒店预付产品-闽琼区" hid="-1" on="0" enabled="0" />
+              <dept id="1335" name="酒店预付产品-浙江区" hid="-1" on="0" enabled="0" />
+            </dept>
+          </dept>
+          <dept id="1460" name="旅游酒店产品-上海区" hid="-1" on="0" enabled="1" />
+          <dept id="1461" name="旅游酒店产品-江苏区" hid="-1" on="0" enabled="1">
+            <dept id="1469" name="旅游酒店产品江苏-苏州区" hid="-1" on="0" enabled="1" />
+            <dept id="1470" name="旅游酒店产品江苏-常锡区" hid="-1" on="0" enabled="1" />
+            <dept id="1471" name="旅游酒店产品江苏-南京区" hid="-1" on="0" enabled="1" />
+            <dept id="1472" name="旅游酒店产品江苏-东北区" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1462" name="旅游酒店产品-西南区" hid="-1" on="0" enabled="1">
+            <dept id="1473" name="旅游酒店产品西南-闽琼区" hid="-1" on="0" enabled="1" />
+            <dept id="1474" name="旅游酒店产品西南-云桂区" hid="-1" on="0" enabled="1" />
+            <dept id="1475" name="旅游酒店产品西南-集团包房业务部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1464" name="旅游酒店产品-浙江区" hid="-1" on="0" enabled="1">
+            <dept id="1479" name="旅游酒店产品浙江-杭嘉区" hid="-1" on="0" enabled="1" />
+            <dept id="1480" name="旅游酒店产品浙江-金宁区" hid="-1" on="0" enabled="1" />
+            <dept id="1481" name="旅游酒店产品浙江-绍淳区" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1465" name="旅游酒店产品-华中区" hid="-1" on="0" enabled="1">
+            <dept id="1482" name="旅游酒店产品华中-赣鄂区" hid="-1" on="0" enabled="1" />
+            <dept id="1483" name="旅游酒店产品华中-湘皖区" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1466" name="旅游酒店产品-北方区" hid="-1" on="0" enabled="1">
+            <dept id="1484" name="旅游酒店产品东北-冀豫区" hid="-1" on="0" enabled="1" />
+            <dept id="1485" name="旅游酒店产品东北-山东区" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1467" name="旅游酒店产品-广东区" hid="-1" on="0" enabled="1">
+            <dept id="1486" name="旅游酒店产品广东-广州区" hid="-1" on="0" enabled="1" />
+            <dept id="1487" name="旅游酒店产品广东-深圳区" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1489" name="旅游酒店产品质检运营部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="351" name="酒店预订中心" hid="0" on="0" enabled="1">
+          <dept id="35" name="酒店呼叫中心" hid="51" on="0" enabled="0">
+            <dept id="366" name="酒店CCT部" hid="0" on="0" enabled="0">
+              <dept id="160" name="酒店CCT -A组" hid="0" on="0" enabled="0" />
+              <dept id="161" name="酒店CCT-B组" hid="0" on="0" enabled="0">
+                <dept id="32" name="酒店CCT-B2" hid="84" on="0" enabled="0" />
+                <dept id="33" name="酒店CCT-B3" hid="85" on="0" enabled="0" />
+                <dept id="34" name="酒店CCT-B4" hid="86" on="0" enabled="0" />
+                <dept id="465" name="酒店CCT-B1" hid="83" on="0" enabled="0" />
+              </dept>
+              <dept id="162" name="酒店CCT-C组" hid="0" on="0" enabled="0">
+                <dept id="163" name="酒店CCT-C1" hid="87" on="0" enabled="0" />
+                <dept id="164" name="酒店CCT-C2" hid="88" on="0" enabled="0" />
+              </dept>
+              <dept id="165" name="酒店CCT-D组" hid="0" on="0" enabled="0">
+                <dept id="166" name="酒店CCT-D1" hid="89" on="0" enabled="0" />
+                <dept id="167" name="酒店CCT-D2" hid="90" on="0" enabled="0" />
+              </dept>
+              <dept id="168" name="酒店CCT-E组" hid="0" on="0" enabled="0">
+                <dept id="169" name="酒店CCT-E1" hid="91" on="0" enabled="0" />
+                <dept id="170" name="酒店CCT-E2" hid="92" on="0" enabled="0" />
+                <dept id="532" name="酒店CCT-E3" hid="0" on="0" enabled="0" />
+              </dept>
+              <dept id="515" name="酒店CCT新兵" hid="0" on="0" enabled="0">
+                <dept id="522" name="酒店CCT教官组" hid="0" on="0" enabled="0" />
+              </dept>
+              <dept id="523" name="酒店CCT新兵连" hid="0" on="0" enabled="0" />
+              <dept id="734" name="酒店CCT二部" hid="-1" on="0" enabled="0">
+                <dept id="367" name="酒店CCT-A1" hid="79" on="0" enabled="0" />
+                <dept id="368" name="酒店CCT-A2" hid="80" on="0" enabled="0" />
+                <dept id="370" name="酒店CCT-A4" hid="82" on="0" enabled="0" />
+                <dept id="517" name="酒店CCT-A8" hid="0" on="0" enabled="0" />
+                <dept id="799" name="酒店CCT中控组" hid="-1" on="0" enabled="0" />
+              </dept>
+              <dept id="735" name="酒店CCT一部" hid="-1" on="0" enabled="0">
+                <dept id="171" name="酒店CCT-酒店组" hid="93" on="0" enabled="0" />
+                <dept id="369" name="酒店CCT-A3" hid="81" on="0" enabled="0" />
+                <dept id="642" name="酒店CCT-A5商务通" hid="0" on="0" enabled="0" />
+                <dept id="724" name="酒店CCT-A6" hid="-1" on="0" enabled="0" />
+                <dept id="725" name="酒店CCT-投诉组" hid="-1" on="0" enabled="0" />
+                <dept id="965" name="酒店CCT-A9" hid="-1" on="0" enabled="0" />
+              </dept>
+              <dept id="964" name="酒店CCT总控部" hid="-1" on="0" enabled="0" />
+              <dept id="982" name="酒店CCT三部" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="641" name="酒店CCS部" hid="0" on="0" enabled="0">
+              <dept id="643" name="酒店CCS一部" hid="0" on="0" enabled="0" />
+              <dept id="644" name="酒店CCS二部" hid="0" on="0" enabled="0" />
+              <dept id="645" name="酒店CCS-B1" hid="0" on="0" enabled="0" />
+              <dept id="646" name="酒店CCS-B2" hid="0" on="0" enabled="0" />
+              <dept id="647" name="酒店CCS-B3" hid="0" on="0" enabled="0" />
+              <dept id="648" name="酒店CCS-C1" hid="0" on="0" enabled="0" />
+              <dept id="649" name="酒店CCS-C2" hid="0" on="0" enabled="0" />
+            </dept>
+          </dept>
+          <dept id="36" name="酒店订单中心" hid="52" on="0" enabled="0" />
+          <dept id="37" name="酒店OA部" hid="53" on="0" enabled="0">
+            <dept id="155" name="OA五部" hid="0" on="0" enabled="0" />
+            <dept id="216" name="酒店OA前处理部" hid="0" on="0" enabled="0">
+              <dept id="217" name="酒店OA前处理一部" hid="35" on="0" enabled="0" />
+              <dept id="218" name="酒店OA前处理二部" hid="36" on="0" enabled="0" />
+              <dept id="219" name="酒店OA前处理三部" hid="48" on="0" enabled="0" />
+            </dept>
+            <dept id="220" name="酒店OA后处理部" hid="0" on="0" enabled="0">
+              <dept id="221" name="酒店OA后处理一部" hid="49" on="0" enabled="0" />
+              <dept id="222" name="酒店OA后处理二部" hid="94" on="0" enabled="0" />
+            </dept>
+            <dept id="379" name="OA一部" hid="0" on="0" enabled="0" />
+            <dept id="380" name="OA二部" hid="0" on="0" enabled="0" />
+            <dept id="381" name="OA三部" hid="0" on="0" enabled="0" />
+            <dept id="382" name="OA四部" hid="0" on="0" enabled="0" />
+            <dept id="768" name="酒店OA一部" hid="-1" on="0" enabled="0">
+              <dept id="770" name="酒店OAH-A1" hid="-1" on="0" enabled="0" />
+              <dept id="771" name="酒店OAH-A2" hid="-1" on="0" enabled="0" />
+              <dept id="887" name="酒店OAH-A3" hid="-1" on="0" enabled="0" />
+              <dept id="942" name="酒店OAH-A4" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="769" name="酒店OAC部" hid="-1" on="0" enabled="0">
+              <dept id="773" name="酒店OAC-B1" hid="-1" on="0" enabled="0" />
+              <dept id="774" name="酒店OAC-B2" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="943" name="酒店OA二部" hid="-1" on="0" enabled="0">
+              <dept id="772" name="酒店OAS-C1" hid="-1" on="0" enabled="0" />
+              <dept id="944" name="酒店OAS-C2" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1088" name="酒店OA中控" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="42" name="酒店新人部" hid="0" on="0" enabled="0">
+            <dept id="43" name="新人CCT" hid="0" on="0" enabled="0" />
+            <dept id="44" name="新人OP" hid="0" on="0" enabled="0" />
+            <dept id="45" name="新人OA" hid="0" on="0" enabled="0" />
+          </dept>
+          <dept id="294" name="客服部" hid="0" on="0" enabled="0" />
+          <dept id="357" name="酒店OP部" hid="0" on="0" enabled="0">
+            <dept id="176" name="酒店OP -A组" hid="0" on="0" enabled="0">
+              <dept id="180" name="酒店OP-A1组" hid="2" on="0" enabled="0" />
+              <dept id="181" name="酒店OP-A2组" hid="3" on="0" enabled="0" />
+              <dept id="182" name="酒店OP-A3组" hid="4" on="0" enabled="0" />
+              <dept id="183" name="酒店OP-A4组" hid="5" on="0" enabled="0" />
+            </dept>
+            <dept id="177" name="酒店OP-B组" hid="0" on="0" enabled="0">
+              <dept id="184" name="酒店OP-B1组" hid="40" on="0" enabled="0" />
+              <dept id="185" name="酒店OP-B2组" hid="41" on="0" enabled="0" />
+              <dept id="186" name="酒店OP-B3组" hid="42" on="0" enabled="0" />
+              <dept id="508" name="酒店OP-B4组" hid="118" on="0" enabled="0" />
+            </dept>
+            <dept id="178" name="酒店OP-C组" hid="1" on="0" enabled="0">
+              <dept id="187" name="酒店OP-C1组" hid="43" on="0" enabled="0" />
+              <dept id="188" name="酒店OP-C2组" hid="101" on="0" enabled="0" />
+              <dept id="189" name="酒店OP-C3组" hid="102" on="0" enabled="0" />
+            </dept>
+            <dept id="179" name="酒店OP-D组" hid="0" on="0" enabled="0">
+              <dept id="190" name="酒店OP-D1组" hid="103" on="0" enabled="0" />
+              <dept id="191" name="酒店OP-D2组" hid="104" on="0" enabled="0" />
+              <dept id="192" name="酒店OP-D3组" hid="105" on="0" enabled="0" />
+            </dept>
+            <dept id="358" name="OP一部" hid="0" on="0" enabled="0" />
+            <dept id="359" name="OP二部" hid="0" on="0" enabled="0" />
+            <dept id="360" name="OP三部" hid="0" on="0" enabled="0" />
+            <dept id="361" name="OP四部" hid="0" on="0" enabled="0" />
+            <dept id="362" name="OP五部" hid="0" on="0" enabled="0" />
+            <dept id="363" name="OP六部" hid="0" on="0" enabled="0" />
+            <dept id="364" name="OP七部" hid="0" on="0" enabled="0" />
+            <dept id="365" name="OP八部" hid="0" on="0" enabled="0" />
+            <dept id="372" name="酒店资深处理部" hid="95" on="0" enabled="0">
+              <dept id="193" name="酒店担保组" hid="0" on="0" enabled="0">
+                <dept id="194" name="酒店担保A1组" hid="96" on="0" enabled="0" />
+                <dept id="195" name="酒店担保A2组" hid="97" on="0" enabled="0" />
+                <dept id="196" name="酒店担保A3组" hid="98" on="0" enabled="0" />
+              </dept>
+              <dept id="373" name="资深处理一部" hid="44" on="0" enabled="0" />
+              <dept id="374" name="资深处理二部" hid="45" on="0" enabled="0" />
+              <dept id="375" name="资深处理三部" hid="57" on="0" enabled="0" />
+              <dept id="469" name="资深处理四部" hid="58" on="0" enabled="0" />
+              <dept id="510" name="酒店夜班组" hid="0" on="0" enabled="0" />
+            </dept>
+            <dept id="516" name="酒店OP新兵连" hid="0" on="0" enabled="0">
+              <dept id="524" name="酒店OP教官组" hid="0" on="0" enabled="0" />
+              <dept id="525" name="酒店OP新兵组" hid="0" on="0" enabled="0" />
+            </dept>
+            <dept id="670" name="酒店OPA部" hid="-1" on="0" enabled="0" />
+            <dept id="739" name="酒店OP一部" hid="-1" on="0" enabled="0">
+              <dept id="743" name="酒店OPI-A4" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="740" name="酒店OP-A1" hid="-1" on="0" enabled="0" />
+            <dept id="741" name="酒店OP-A2" hid="-1" on="0" enabled="0" />
+            <dept id="742" name="酒店OP-A3" hid="-1" on="0" enabled="0" />
+            <dept id="744" name="酒店OP二部" hid="-1" on="0" enabled="0">
+              <dept id="748" name="酒店OPN-B4" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="745" name="酒店OP-B1" hid="-1" on="0" enabled="0" />
+            <dept id="746" name="酒店OP-B2" hid="-1" on="0" enabled="0" />
+            <dept id="747" name="酒店OP-B3" hid="-1" on="0" enabled="0" />
+            <dept id="749" name="酒店OP三部" hid="-1" on="0" enabled="0">
+              <dept id="750" name="酒店OP-C1234567" hid="-1" on="0" enabled="0" />
+              <dept id="751" name="酒店OP-C22345" hid="-1" on="0" enabled="0" />
+              <dept id="1011" name="酒店OP-C32345" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="796" name="酒店OPC-中控" hid="-1" on="0" enabled="0" />
+            <dept id="968" name="酒店OP-A4" hid="-1" on="0" enabled="0" />
+            <dept id="969" name="酒店OP-A5" hid="-1" on="0" enabled="0" />
+            <dept id="970" name="酒店OP-B4" hid="-1" on="0" enabled="0" />
+            <dept id="1023" name="酒店OP-C1" hid="-1" on="0" enabled="0" />
+            <dept id="1024" name="酒店OP-C2" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="378" name="酒店现付结算部" hid="7" on="0" enabled="1">
+            <dept id="153" name="酒店结算一部" hid="116" on="0" enabled="0" />
+            <dept id="154" name="酒店结算二部" hid="117" on="0" enabled="0" />
+            <dept id="640" name="酒店结算三部" hid="0" on="0" enabled="0" />
+            <dept id="874" name="酒店现付结算" hid="-1" on="0" enabled="0" />
+            <dept id="875" name="酒店预付结算部" hid="-1" on="0" enabled="0" />
+            <dept id="876" name="酒店现付结算一部" hid="-1" on="0" enabled="0" />
+            <dept id="877" name="酒店现付结算二部" hid="-1" on="0" enabled="0" />
+            <dept id="937" name="酒店现付结算三部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="509" name="酒店专家部" hid="37" on="0" enabled="0">
+            <dept id="197" name="酒店改订组" hid="0" on="0" enabled="0">
+              <dept id="198" name="酒店满房B1组" hid="99" on="0" enabled="0" />
+              <dept id="199" name="酒店满房B2组" hid="100" on="0" enabled="0" />
+            </dept>
+            <dept id="672" name="酒店暂存组" hid="-1" on="0" enabled="0" />
+            <dept id="708" name="外呼组" hid="-1" on="0" enabled="0" />
+            <dept id="775" name="酒店专家-A1" hid="-1" on="0" enabled="0" />
+            <dept id="776" name="酒店专家-A2" hid="-1" on="0" enabled="0" />
+            <dept id="777" name="酒店专家-A3" hid="-1" on="0" enabled="0" />
+            <dept id="778" name="酒店专家-A4" hid="-1" on="0" enabled="0" />
+            <dept id="888" name="酒店专家-中控" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="752" name="酒店OPS部" hid="-1" on="0" enabled="0">
+            <dept id="753" name="酒店OPS-担保" hid="-1" on="0" enabled="0">
+              <dept id="1013" name="酒店OPS担保-A1" hid="-1" on="0" enabled="0" />
+              <dept id="1014" name="酒店OPS担保-A2" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="754" name="酒店OPS-夜班" hid="-1" on="0" enabled="0" />
+            <dept id="1404" name="酒店OPS担保中控" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="801" name="客诉质培部" hid="-1" on="0" enabled="0">
+            <dept id="1" name="酒店质检培训部" hid="56" on="0" enabled="0" />
+            <dept id="140" name="酒店客户服务部" hid="0" on="0" enabled="0">
+              <dept id="658" name="客服A组" hid="-1" on="0" enabled="0" />
+              <dept id="659" name="客服B组" hid="-1" on="0" enabled="0" />
+              <dept id="1188" name="酒店客户服务部-投诉组" hid="-1" on="0" enabled="0" />
+              <dept id="1189" name="酒店客户服务部-反馈组" hid="-1" on="0" enabled="0" />
+              <dept id="1190" name="酒店客户服务部-中控组" hid="-1" on="0" enabled="0" />
+            </dept>
+          </dept>
+        </dept>
+        <dept id="377" name="酒店审核中心" hid="0" on="0" enabled="0">
+          <dept id="468" name="质检带教部" hid="0" on="0" enabled="0" />
+        </dept>
+        <dept id="727" name="酒店项目管理部" hid="-1" on="0" enabled="0">
+          <dept id="146" name="酒店用户体验部" hid="0" on="0" enabled="0" />
+          <dept id="1008" name="酒店市场研发部3" hid="-1" on="0" enabled="0">
+            <dept id="1009" name="酒店SE研发部" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1012" name="度假酒店项目部" hid="-1" on="0" enabled="0" />
+          <dept id="1022" name="酒店产品营销部" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="895" name="旅游酒店运营中心" hid="-1" on="0" enabled="1">
+          <dept id="1184" name="旅游酒店流程组" hid="-1" on="0" enabled="1" />
+          <dept id="1186" name="旅游酒店PC运营组" hid="-1" on="0" enabled="1" />
+          <dept id="1390" name="旅游酒店无线运营组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="896" name="旅游酒店预订中心" hid="-1" on="0" enabled="1">
+          <dept id="898" name="旅游酒店订单中心" hid="-1" on="0" enabled="1">
+            <dept id="947" name="旅游酒店确认一组" hid="-1" on="0" enabled="1" />
+            <dept id="948" name="旅游酒店确认二组" hid="-1" on="0" enabled="1" />
+            <dept id="1391" name="旅游酒店保险部" hid="-1" on="0" enabled="1" />
+            <dept id="1559" name="旅游酒店OR部" hid="-1" on="0" enabled="1">
+              <dept id="1569" name="旅游酒店OR一组" hid="-1" on="0" enabled="1" />
+              <dept id="1570" name="旅游酒店OR二组" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1560" name="旅游酒店OP部" hid="-1" on="0" enabled="1">
+              <dept id="1571" name="旅游酒店OP一组" hid="-1" on="0" enabled="1" />
+              <dept id="1572" name="旅游酒店OP二组" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+          <dept id="899" name="旅游酒店呼叫中心" hid="-1" on="0" enabled="1">
+            <dept id="1046" name="旅游酒店CCT一部" hid="-1" on="0" enabled="1">
+              <dept id="1573" name="旅游酒店CCT-A1" hid="-1" on="0" enabled="1" />
+              <dept id="1574" name="旅游酒店CCT-A2" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1047" name="旅游酒店CCT二部" hid="-1" on="0" enabled="1">
+              <dept id="1558" name="旅游酒店CCT-中控" hid="-1" on="0" enabled="1" />
+              <dept id="1576" name="旅游酒店CCT-B1" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1183" name="旅游酒店外呼组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="966" name="自助游预订管理部" hid="-1" on="0" enabled="0" />
+          <dept id="1185" name="旅游酒店流程质培部" hid="-1" on="0" enabled="1" />
+          <dept id="1561" name="旅游酒店预付部" hid="-1" on="0" enabled="1">
+            <dept id="1565" name="旅游酒店预付一部" hid="-1" on="0" enabled="1" />
+            <dept id="1566" name="旅游酒店预付二部" hid="-1" on="0" enabled="1" />
+            <dept id="1567" name="旅游酒店夜班组" hid="-1" on="0" enabled="1" />
+            <dept id="1568" name="旅游酒店预付结算部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1562" name="旅游酒店客诉专家部" hid="-1" on="0" enabled="1">
+            <dept id="946" name="旅游酒店投诉部" hid="-1" on="0" enabled="1" />
+            <dept id="967" name="旅游酒店专家部" hid="-1" on="0" enabled="1">
+              <dept id="1563" name="旅游酒店专家一部" hid="-1" on="0" enabled="0" />
+              <dept id="1564" name="旅游酒店专家二部" hid="-1" on="0" enabled="0" />
+            </dept>
+          </dept>
+          <dept id="1578" name="旅游酒店无线客服部" hid="-1" on="0" enabled="1">
+            <dept id="1575" name="旅游酒店无线外呼" hid="-1" on="0" enabled="1" />
+            <dept id="1577" name="旅游酒店无线中控" hid="-1" on="0" enabled="1" />
+            <dept id="1752" name="旅游酒店无线TTS" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1788" name="旅游酒店新兵连" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="953" name="旅游酒店市场部" hid="-1" on="0" enabled="1">
+          <dept id="1187" name="旅游酒店淘宝组" hid="-1" on="0" enabled="1" />
+          <dept id="1653" name="旅游酒店竞价组" hid="-1" on="0" enabled="1" />
+          <dept id="1654" name="旅游酒店SC运营组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1755" name="短线-北京分公司" hid="-1" on="0" enabled="1">
+          <dept id="892" name="北京旅游酒店业务部" hid="-1" on="0" enabled="1">
+            <dept id="1249" name="北京旅游酒店业务-北京区" hid="-1" on="0" enabled="1" />
+            <dept id="1250" name="北京旅游酒店业务-天津区" hid="-1" on="0" enabled="1" />
+            <dept id="1251" name="北京办-京津团购" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1756" name="北京景区门票业务部" hid="-1" on="0" enabled="1">
+            <dept id="1757" name="北京线下营销" hid="-1" on="0" enabled="1" />
+            <dept id="1758" name="北京景区业务" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1759" name="北京市场运营业务部" hid="-1" on="0" enabled="1" />
+        </dept>
+      </dept>
+      <dept id="311" name="景区事业部" hid="0" on="0" enabled="1">
+        <dept id="65" name="景区HR" hid="0" on="0" enabled="1" />
+        <dept id="90" name="景区开发部" hid="0" on="0" enabled="0" />
+        <dept id="327" name="景区预订中心" hid="9" on="0" enabled="1">
+          <dept id="60" name="景区到付订单部" hid="0" on="0" enabled="1">
+            <dept id="141" name="景区OA一区" hid="0" on="0" enabled="0" />
+            <dept id="142" name="景区OA二区" hid="0" on="0" enabled="0" />
+            <dept id="538" name="景区OA三区" hid="0" on="0" enabled="0" />
+            <dept id="539" name="景区OA四区" hid="0" on="0" enabled="0" />
+            <dept id="690" name="景区AP一部" hid="-1" on="0" enabled="0" />
+            <dept id="691" name="景区AP二部" hid="-1" on="0" enabled="0" />
+            <dept id="920" name="景区订单前处理部" hid="-1" on="0" enabled="0">
+              <dept id="924" name="景区订单前处理三部" hid="-1" on="0" enabled="0" />
+              <dept id="925" name="景区订单大票区" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="922" name="景区到付订单一部" hid="-1" on="0" enabled="1">
+              <dept id="1734" name="景区到付订单-审核一组" hid="-1" on="0" enabled="1" />
+              <dept id="1735" name="景区到付订单-审核二组" hid="-1" on="0" enabled="1" />
+              <dept id="1736" name="景区到付订单-审核三组" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="923" name="景区到付订单二部" hid="-1" on="0" enabled="1">
+              <dept id="921" name="景区到付订单-做单回访二组" hid="-1" on="0" enabled="1" />
+              <dept id="1120" name="景区到付订单-做单回访一组" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+          <dept id="143" name="景区在线订单部" hid="75" on="0" enabled="1">
+            <dept id="784" name="景区自助游订单部" hid="-1" on="0" enabled="0" />
+            <dept id="785" name="景区FP在线组" hid="-1" on="0" enabled="0" />
+            <dept id="1181" name="景区在线门票二部" hid="-1" on="0" enabled="1" />
+            <dept id="1182" name="景区在线门票一部" hid="-1" on="0" enabled="1" />
+            <dept id="1396" name="景区在线保险组" hid="-1" on="0" enabled="1" />
+            <dept id="1397" name="景区在线团购组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="302" name="景区投诉流程部" hid="0" on="0" enabled="0">
+            <dept id="671" name="景区新兵连四连" hid="-1" on="0" enabled="0" />
+            <dept id="726" name="景区机动连" hid="-1" on="0" enabled="0" />
+            <dept id="803" name="景区质监组" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="535" name="景区服务流程部" hid="0" on="0" enabled="1">
+            <dept id="59" name="景区CCT部" hid="0" on="0" enabled="1">
+              <dept id="144" name="景区CCT一部" hid="77" on="0" enabled="1">
+                <dept id="609" name="景区CCT一部A组" hid="0" on="0" enabled="0" />
+                <dept id="610" name="景区CCT一部B组" hid="0" on="0" enabled="0" />
+              </dept>
+              <dept id="145" name="景区CCT二部" hid="78" on="0" enabled="1">
+                <dept id="611" name="景区CCT二部A组" hid="0" on="0" enabled="0" />
+                <dept id="612" name="景区CCT二部B组" hid="0" on="0" enabled="0" />
+              </dept>
+              <dept id="687" name="景区CCT三部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="537" name="景区KO部" hid="0" on="0" enabled="0" />
+            <dept id="688" name="景区新兵连一连" hid="-1" on="0" enabled="0" />
+            <dept id="802" name="景区投诉部" hid="-1" on="0" enabled="1" />
+            <dept id="804" name="景区流程组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="536" name="景区订单部" hid="0" on="0" enabled="0">
+            <dept id="736" name="景区新兵连二连" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="915" name="景区质监培训部" hid="-1" on="0" enabled="1" />
+          <dept id="916" name="景区资源结算维护部" hid="-1" on="0" enabled="1">
+            <dept id="61" name="景区结算部" hid="76" on="0" enabled="1">
+              <dept id="689" name="景区新兵连三连" hid="-1" on="0" enabled="0" />
+              <dept id="765" name="景区结算一部" hid="-1" on="0" enabled="1" />
+              <dept id="766" name="景区结算二部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="541" name="景区资源维护部" hid="72" on="0" enabled="1">
+              <dept id="917" name="景区资源维护一部" hid="-1" on="0" enabled="1" />
+              <dept id="918" name="景区资源维护二部" hid="-1" on="0" enabled="1" />
+              <dept id="919" name="景区资源维护上线部" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+        </dept>
+        <dept id="669" name="景区市场渠道部" hid="-1" on="0" enabled="0" />
+        <dept id="729" name="景区项目管理部" hid="-1" on="0" enabled="0">
+          <dept id="91" name="景区B项目部" hid="0" on="0" enabled="0">
+            <dept id="95" name="景区开发项目一部" hid="0" on="0" enabled="0" />
+            <dept id="96" name="景区开发项目二部" hid="0" on="0" enabled="0" />
+            <dept id="97" name="景区开发项目三部" hid="0" on="0" enabled="0" />
+            <dept id="98" name="景区开发项目四部" hid="0" on="0" enabled="0" />
+            <dept id="99" name="景区开发项目五部" hid="0" on="0" enabled="0" />
+            <dept id="101" name="景区项目运营部" hid="0" on="0" enabled="0" />
+            <dept id="230" name="景区项目开发部" hid="0" on="0" enabled="0" />
+          </dept>
+        </dept>
+        <dept id="730" name="景区产品中心" hid="-1" on="0" enabled="1">
+          <dept id="62" name="景区营销部" hid="0" on="0" enabled="0">
+            <dept id="676" name="景区特区营销部" hid="-1" on="0" enabled="0">
+              <dept id="677" name="景区浙江特区部" hid="-1" on="0" enabled="0" />
+              <dept id="678" name="景区特区二部" hid="-1" on="0" enabled="0" />
+              <dept id="679" name="景区东北特区部" hid="-1" on="0" enabled="0" />
+              <dept id="851" name="景区上海特区部" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="756" name="景区营销阿米巴" hid="-1" on="0" enabled="0">
+              <dept id="787" name="景区营销阿米巴二部" hid="-1" on="0" enabled="0" />
+              <dept id="798" name="景区营销阿米巴三部" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="786" name="景区营销阿米巴一部" hid="-1" on="0" enabled="0" />
+            <dept id="852" name="景区营销质检管理部" hid="-1" on="0" enabled="0" />
+            <dept id="981" name="景区线下运营部" hid="-1" on="0" enabled="0" />
+            <dept id="1007" name="景区营销质检管理部上海特区" hid="-1" on="0" enabled="0" />
+            <dept id="1273" name="景区策划运营部" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="326" name="景区资源部" hid="0" on="0" enabled="0">
+            <dept id="57" name="景区资源一部" hid="67" on="0" enabled="0" />
+            <dept id="58" name="景区资源二部" hid="69" on="0" enabled="0" />
+            <dept id="92" name="景区资源三部" hid="70" on="0" enabled="0" />
+            <dept id="93" name="景区资源四部" hid="71" on="0" enabled="0" />
+            <dept id="94" name="资源开发部" hid="0" on="0" enabled="0">
+              <dept id="606" name="资源开发一部" hid="0" on="0" enabled="0" />
+              <dept id="607" name="资源开发二部" hid="0" on="0" enabled="0" />
+              <dept id="608" name="资源开发三部" hid="0" on="0" enabled="0" />
+            </dept>
+          </dept>
+          <dept id="674" name="景区大客户部" hid="-1" on="0" enabled="1">
+            <dept id="845" name="景区大客户一部" hid="-1" on="0" enabled="1" />
+            <dept id="846" name="景区大客户二部" hid="-1" on="0" enabled="1" />
+            <dept id="1652" name="景区大客户三部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="675" name="景区区域产品部" hid="-1" on="0" enabled="1">
+            <dept id="63" name="景区产品二部" hid="0" on="0" enabled="1">
+              <dept id="682" name="景区营销二部A区" hid="-1" on="0" enabled="0" />
+              <dept id="683" name="景区营销二部B区" hid="-1" on="0" enabled="0" />
+              <dept id="1267" name="景区产品-云南区" hid="-1" on="0" enabled="0" />
+              <dept id="1359" name="景区产品-浙江区" hid="-1" on="0" enabled="1" />
+              <dept id="1360" name="景区产品-后端组" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="64" name="景区产品三部" hid="0" on="0" enabled="1">
+              <dept id="684" name="景区营销三部A区" hid="-1" on="0" enabled="0" />
+              <dept id="685" name="景区营销三部B区" hid="-1" on="0" enabled="0" />
+              <dept id="1266" name="景区产品-东北区" hid="-1" on="0" enabled="1" />
+              <dept id="1361" name="景区产品-河北区" hid="-1" on="0" enabled="1" />
+              <dept id="1362" name="景区产品-山西内蒙区" hid="-1" on="0" enabled="1" />
+              <dept id="1363" name="景区产品-北京区" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="100" name="景区产品四部" hid="0" on="0" enabled="1">
+              <dept id="1364" name="景区产品-安徽区" hid="-1" on="0" enabled="1" />
+              <dept id="1365" name="景区产品-湖北区" hid="-1" on="0" enabled="1" />
+              <dept id="1366" name="景区产品-海南区" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="227" name="景区产品五部" hid="0" on="0" enabled="1">
+              <dept id="1367" name="景区产品-宁夏区" hid="-1" on="0" enabled="1" />
+              <dept id="1368" name="景区产品-河南区" hid="-1" on="0" enabled="1" />
+              <dept id="1369" name="景区产品-天津区" hid="-1" on="0" enabled="0" />
+              <dept id="1589" name="景区产品-陕西区" hid="-1" on="0" enabled="1" />
+              <dept id="1782" name="景区产品-集团区" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="228" name="景区产品六部" hid="0" on="0" enabled="1">
+              <dept id="1370" name="景区产品-湖南区" hid="-1" on="0" enabled="1" />
+              <dept id="1371" name="景区产品-江西区" hid="-1" on="0" enabled="1" />
+              <dept id="1372" name="景区产品-广西区" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="229" name="景区产品七部" hid="0" on="0" enabled="1">
+              <dept id="1373" name="景区产品-贵州区" hid="-1" on="0" enabled="1" />
+              <dept id="1374" name="景区产品-福建区" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="407" name="景区产品一部" hid="0" on="0" enabled="1">
+              <dept id="650" name="景区产品-上海区" hid="0" on="0" enabled="1" />
+              <dept id="680" name="景区营销一部A区" hid="-1" on="0" enabled="0" />
+              <dept id="681" name="景区营销一部B区" hid="-1" on="0" enabled="0" />
+              <dept id="986" name="景区营销一部新产品部" hid="-1" on="0" enabled="0" />
+              <dept id="1357" name="景区产品-江苏一区" hid="-1" on="0" enabled="1" />
+              <dept id="1358" name="景区产品-江苏二区" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+          <dept id="714" name="景区新产品部111" hid="-1" on="0" enabled="0">
+            <dept id="542" name="景区线下营销部" hid="0" on="0" enabled="0" />
+            <dept id="710" name="景区自助游" hid="-1" on="0" enabled="0">
+              <dept id="983" name="景区自助游一部" hid="-1" on="0" enabled="0" />
+              <dept id="984" name="景区自助游二部" hid="-1" on="0" enabled="0" />
+              <dept id="985" name="景区自助游三部" hid="-1" on="0" enabled="0" />
+              <dept id="1010" name="景区自助游维护部" hid="-1" on="0" enabled="0" />
+            </dept>
+          </dept>
+          <dept id="1268" name="景区落地产品部" hid="-1" on="0" enabled="1">
+            <dept id="1270" name="景区落地产品广东大区" hid="-1" on="0" enabled="1">
+              <dept id="1375" name="景区落地产品广东一部" hid="-1" on="0" enabled="1" />
+              <dept id="1376" name="景区落地产品广东二部" hid="-1" on="0" enabled="1" />
+              <dept id="1377" name="景区落地产品广东三部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1271" name="景区落地产品山东大区" hid="-1" on="0" enabled="1">
+              <dept id="1378" name="景区落地产品山东一部" hid="-1" on="0" enabled="1" />
+              <dept id="1379" name="景区落地产品山东二部" hid="-1" on="0" enabled="1" />
+              <dept id="1380" name="景区落地产品山东三部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1272" name="景区落地产品华西大区" hid="-1" on="0" enabled="1">
+              <dept id="1381" name="景区落地产品四川区" hid="-1" on="0" enabled="1" />
+              <dept id="1382" name="景区落地产品重庆区" hid="-1" on="0" enabled="1" />
+              <dept id="1383" name="景区落地产品云南区" hid="-1" on="0" enabled="1" />
+              <dept id="1384" name="景区落地产品华西四部" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+          <dept id="1269" name="景区管理培训部" hid="-1" on="0" enabled="1">
+            <dept id="1275" name="景区落地管理部" hid="-1" on="0" enabled="1" />
+            <dept id="1276" name="景区资源开发部" hid="-1" on="0" enabled="1">
+              <dept id="1729" name="景区资源开发一部" hid="-1" on="0" enabled="1" />
+              <dept id="1730" name="景区资源开发二部" hid="-1" on="0" enabled="1" />
+              <dept id="1731" name="景区质检培训中控部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1751" name="景区开放平台部" hid="-1" on="0" enabled="1" />
+          </dept>
+        </dept>
+        <dept id="847" name="智旅天下" hid="-1" on="0" enabled="1">
+          <dept id="278" name="智旅研发部" hid="0" on="0" enabled="1">
+            <dept id="51" name="系统项目组" hid="0" on="0" enabled="0" />
+            <dept id="479" name="策划设计组" hid="0" on="0" enabled="0" />
+            <dept id="1435" name="智旅天下-网站制作组" hid="-1" on="0" enabled="1" />
+            <dept id="1436" name="智旅天下-智慧票房售后组" hid="-1" on="0" enabled="1" />
+            <dept id="1437" name="智旅天下-智慧票房项目组" hid="-1" on="0" enabled="1">
+              <dept id="1438" name="智慧票房项目组-分销系统组" hid="-1" on="0" enabled="1" />
+              <dept id="1439" name="智慧票房项目组-客户端开发组" hid="-1" on="0" enabled="1" />
+              <dept id="1440" name="智慧票房项目组-产品组" hid="-1" on="0" enabled="1" />
+              <dept id="1441" name="智慧票房项目组-智旅平台组" hid="-1" on="0" enabled="1" />
+              <dept id="1442" name="智慧票房项目组-硬件开发组" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1445" name="智旅天下-智慧景区组" hid="-1" on="0" enabled="1" />
+            <dept id="1780" name="灵山BOSS项目组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1336" name="地面运营部" hid="-1" on="0" enabled="0" />
+          <dept id="1337" name="智旅市场开发部" hid="-1" on="0" enabled="1">
+            <dept id="1584" name="拓展一部" hid="-1" on="0" enabled="0" />
+            <dept id="1585" name="拓展二部" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1338" name="智旅运营部" hid="-1" on="0" enabled="1">
+            <dept id="1586" name="公共支撑部" hid="-1" on="0" enabled="1" />
+            <dept id="1587" name="部署运维部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1765" name="智旅大客户部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="848" name="景区渠道部" hid="-1" on="0" enabled="1">
+          <dept id="715" name="景区淘宝渠道部" hid="-1" on="0" enabled="1">
+            <dept id="938" name="景区淘宝产品部" hid="-1" on="0" enabled="1" />
+            <dept id="939" name="景区淘宝客服部" hid="-1" on="0" enabled="1">
+              <dept id="1354" name="景区淘宝客服一部" hid="-1" on="0" enabled="1" />
+              <dept id="1355" name="景区淘宝客服二部" hid="-1" on="0" enabled="1" />
+              <dept id="1356" name="景区淘宝后处理部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1670" name="景区淘宝国际门票" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="849" name="景区线下渠道部" hid="-1" on="0" enabled="1" />
+          <dept id="1274" name="景区线上渠道部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="850" name="景区活动策划部" hid="-1" on="0" enabled="1">
+          <dept id="1246" name="景区活动策划一部" hid="-1" on="0" enabled="1" />
+          <dept id="1247" name="景区活动策划二部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="883" name="景区管培生" hid="-1" on="0" enabled="1" />
+        <dept id="952" name="景区市场研发部" hid="-1" on="0" enabled="1">
+          <dept id="1668" name="景区市场部-竞价推广部" hid="-1" on="0" enabled="1" />
+          <dept id="1669" name="景区市场部-BD运营部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1350" name="景区平台运营中心" hid="-1" on="0" enabled="1">
+          <dept id="1351" name="景区平台运营-平台产品部" hid="-1" on="0" enabled="1" />
+          <dept id="1352" name="景区平台运营-活动运营部" hid="-1" on="0" enabled="1" />
+          <dept id="1353" name="景区平台运营-质检管理部" hid="-1" on="0" enabled="1" />
+          <dept id="1395" name="景区平台运营-视觉设计部" hid="-1" on="0" enabled="1" />
+          <dept id="1588" name="景区平台运营-无线运营部" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="1781" name="政府商务合作部" hid="-1" on="0" enabled="1">
+          <dept id="1798" name="政府商务合作-政府合作开发部" hid="-1" on="0" enabled="1" />
+          <dept id="1799" name="政府商务合作-政府合作运营部" hid="-1" on="0" enabled="1" />
+          <dept id="1800" name="政府商务合作-QQ旅游商务部" hid="-1" on="0" enabled="1" />
+        </dept>
+      </dept>
+      <dept id="312" name="人力资源中心" hid="0" on="0" enabled="1">
+        <dept id="11" name="行政部" hid="11" on="0" enabled="1" />
+        <dept id="53" name="招聘培训部" hid="0" on="0" enabled="0" />
+        <dept id="54" name="绩效薪酬部" hid="0" on="0" enabled="0" />
+        <dept id="55" name="公司培训部" hid="0" on="0" enabled="0" />
+        <dept id="56" name="政策事务部" hid="0" on="0" enabled="0" />
+        <dept id="806" name="人力资源部" hid="-1" on="0" enabled="1" />
+        <dept id="1122" name="校园招聘专项小组" hid="-1" on="0" enabled="0" />
+      </dept>
+      <dept id="313" name="财务中心" hid="0" on="0" enabled="1">
+        <dept id="315" name="财务一部" hid="0" on="0" enabled="0" />
+        <dept id="316" name="财务二部" hid="26" on="0" enabled="0" />
+        <dept id="317" name="财务三部" hid="0" on="0" enabled="0" />
+        <dept id="514" name="财务四部" hid="0" on="0" enabled="0" />
+        <dept id="718" name="财务管理部" hid="-1" on="0" enabled="1" />
+        <dept id="719" name="酒店财务部" hid="-1" on="0" enabled="0" />
+        <dept id="720" name="国内游财务部" hid="-1" on="0" enabled="1">
+          <dept id="1079" name="国内游财务分析组" hid="-1" on="0" enabled="1" />
+          <dept id="1080" name="国内游财务假期组" hid="-1" on="0" enabled="1" />
+          <dept id="1081" name="国内游财务核算组" hid="-1" on="0" enabled="1" />
+          <dept id="1082" name="国内游财务退款组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="721" name="国旅财务部" hid="-1" on="0" enabled="0">
+          <dept id="960" name="总账财务组" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="958" name="旅游酒店财务部" hid="-1" on="0" enabled="1" />
+        <dept id="1219" name="公共财务部" hid="-1" on="0" enabled="1" />
+      </dept>
+      <dept id="318" name="系统研发中心" hid="1" on="0" enabled="1">
+        <dept id="2" name="酒店景区研发部" hid="0" on="0" enabled="0">
+          <dept id="386" name="景区前台组" hid="0" on="0" enabled="0" />
+        </dept>
+        <dept id="5" name="B序列研发部" hid="0" on="0" enabled="0">
+          <dept id="478" name="大客户项目部" hid="0" on="0" enabled="0" />
+          <dept id="481" name="酒店直销网研发组" hid="0" on="0" enabled="0" />
+        </dept>
+        <dept id="78" name="项目研发部" hid="0" on="0" enabled="0">
+          <dept id="52" name="网站项目组" hid="0" on="0" enabled="0" />
+        </dept>
+        <dept id="79" name="产品研发部" hid="0" on="0" enabled="0">
+          <dept id="84" name="产品研发一部（酒店、景区）" hid="0" on="0" enabled="0">
+            <dept id="383" name="酒店后台组" hid="0" on="0" enabled="0" />
+            <dept id="385" name="酒店前台组" hid="0" on="0" enabled="0" />
+          </dept>
+          <dept id="85" name="产品研发二部（机票、演出）" hid="0" on="0" enabled="0">
+            <dept id="394" name="机票前台组" hid="0" on="0" enabled="0" />
+            <dept id="395" name="机票后台组" hid="0" on="0" enabled="0" />
+            <dept id="396" name="机票同行平台组" hid="0" on="0" enabled="0" />
+          </dept>
+          <dept id="86" name="产品研发三部（租车、CCRM、手机项目）" hid="0" on="0" enabled="0" />
+          <dept id="87" name="旅游度假研发部" hid="0" on="0" enabled="0">
+            <dept id="102" name="度假前台组" hid="0" on="0" enabled="0" />
+            <dept id="103" name="度假后台组" hid="0" on="0" enabled="0" />
+            <dept id="104" name="六合一维护组" hid="0" on="0" enabled="0" />
+            <dept id="331" name="旅游度假产品组" hid="0" on="0" enabled="0" />
+            <dept id="480" name="研发六合一项目组" hid="0" on="0" enabled="0" />
+          </dept>
+        </dept>
+        <dept id="82" name="系统支撑部" hid="0" on="0" enabled="1">
+          <dept id="319" name="IT部" hid="0" on="0" enabled="1" />
+          <dept id="322" name="CCT研发部" hid="133" on="0" enabled="0" />
+          <dept id="324" name="运维优化部" hid="0" on="0" enabled="1" />
+          <dept id="855" name="工程组" hid="-1" on="0" enabled="1" />
+          <dept id="856" name="桌面组" hid="-1" on="0" enabled="0" />
+          <dept id="857" name="CCT研发组" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="83" name="研发UI部" hid="0" on="0" enabled="0">
+          <dept id="452" name="网页设计部" hid="0" on="0" enabled="0" />
+          <dept id="467" name="网页构架部" hid="0" on="0" enabled="0" />
+        </dept>
+        <dept id="88" name="酒店项目研发部" hid="106" on="0" enabled="0">
+          <dept id="1026" name="酒店研发-资源研发组" hid="-1" on="0" enabled="0" />
+          <dept id="1027" name="酒店研发-客服研发组" hid="-1" on="0" enabled="0" />
+          <dept id="1028" name="酒店研发-营销研发组" hid="-1" on="0" enabled="0" />
+          <dept id="1029" name="酒店研发-品质研发组" hid="-1" on="0" enabled="0" />
+          <dept id="1344" name="港澳项目研发组" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="232" name="网站产品部" hid="0" on="0" enabled="0">
+          <dept id="233" name="网站产品一部" hid="0" on="0" enabled="0" />
+          <dept id="234" name="网站产品二部" hid="0" on="0" enabled="0" />
+          <dept id="235" name="网站产品三部" hid="0" on="0" enabled="0" />
+          <dept id="236" name="网站产品四部" hid="0" on="0" enabled="0" />
+          <dept id="238" name="网站数据部" hid="0" on="0" enabled="0" />
+          <dept id="239" name="网站运营部" hid="11" on="0" enabled="0" />
+        </dept>
+        <dept id="273" name="系统分析部" hid="0" on="0" enabled="0" />
+        <dept id="274" name="系统开发部" hid="0" on="0" enabled="0">
+          <dept id="80" name="网站平台开发部" hid="0" on="0" enabled="0" />
+          <dept id="89" name="服务架构部" hid="0" on="0" enabled="0" />
+          <dept id="277" name="内部系统开发部" hid="0" on="0" enabled="0" />
+          <dept id="285" name="产品平台开发部" hid="0" on="0" enabled="0" />
+          <dept id="328" name="租车项目开发部" hid="0" on="0" enabled="0" />
+          <dept id="338" name="演出项目开发部" hid="0" on="0" enabled="0" />
+        </dept>
+        <dept id="275" name="景区项目研发部" hid="0" on="0" enabled="1">
+          <dept id="384" name="景区B2C项目开发部" hid="0" on="0" enabled="1">
+            <dept id="1035" name="景区B2C研发-资源营销组" hid="-1" on="0" enabled="1" />
+            <dept id="1036" name="景区B2C研发-流程运维组" hid="-1" on="0" enabled="1" />
+            <dept id="1037" name="景区B2C研发-数据支持组" hid="-1" on="0" enabled="1" />
+          </dept>
+        </dept>
+        <dept id="320" name="搜索项目组" hid="0" on="0" enabled="0" />
+        <dept id="321" name="com平台研发组" hid="0" on="0" enabled="0" />
+        <dept id="352" name="机票项目研发部" hid="0" on="0" enabled="0">
+          <dept id="1111" name="机票研发-国内长线自助游部" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="453" name="net平台研发部" hid="0" on="0" enabled="0" />
+        <dept id="657" name="NET研发部" hid="0" on="0" enabled="0" />
+        <dept id="790" name="质监管理部" hid="-1" on="0" enabled="1">
+          <dept id="81" name="研发管理部" hid="0" on="0" enabled="1">
+            <dept id="1387" name="研发学院" hid="-1" on="0" enabled="1" />
+            <dept id="1388" name="行政绩效组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="323" name="QA部" hid="0" on="0" enabled="1" />
+          <dept id="843" name="OA产品组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="791" name="度假软件研发部" hid="-1" on="0" enabled="0">
+          <dept id="276" name="度假项目开发部" hid="0" on="0" enabled="0">
+            <dept id="268" name="旅行社系统研发组" hid="0" on="0" enabled="0" />
+            <dept id="269" name="度假项目研发组" hid="0" on="0" enabled="0" />
+            <dept id="1038" name="度假研发-产品营销组" hid="-1" on="0" enabled="0" />
+            <dept id="1039" name="度假研发-资源流程组" hid="-1" on="0" enabled="0" />
+            <dept id="1288" name="度假研发-出境研发组" hid="-1" on="0" enabled="0" />
+            <dept id="1289" name="度假研发-邮轮研发组" hid="-1" on="0" enabled="0" />
+            <dept id="1290" name="度假研发-签证研发组" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="792" name="软件项目开发部" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="793" name="公共项目研发部" hid="-1" on="0" enabled="1">
+          <dept id="77" name="公共基础平台研发部" hid="1234" on="0" enabled="1">
+            <dept id="105" name="数据抓取组" hid="0" on="0" enabled="0" />
+            <dept id="106" name="公共检索组" hid="0" on="0" enabled="0" />
+            <dept id="107" name="公共模块组" hid="0" on="0" enabled="0" />
+            <dept id="788" name="公共搜索组" hid="-1" on="0" enabled="0" />
+            <dept id="977" name="公共监控运维组" hid="-1" on="0" enabled="1" />
+            <dept id="1092" name="公共计算平台维护组" hid="-1" on="0" enabled="0" />
+            <dept id="1102" name="公共组件信息化组" hid="-1" on="0" enabled="1" />
+            <dept id="1103" name="公共基础研究组" hid="-1" on="0" enabled="1" />
+            <dept id="1104" name="公共技术支持组" hid="-1" on="0" enabled="1" />
+            <dept id="1110" name="公共前端支撑组" hid="-1" on="0" enabled="1" />
+            <dept id="1443" name="公共流程信息化组" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="240" name="网站设计部" hid="0" on="0" enabled="0" />
+          <dept id="241" name="公共前端开发部" hid="0" on="0" enabled="0" />
+          <dept id="293" name="公共产品分析部" hid="0" on="0" enabled="0" />
+          <dept id="325" name="公共数据中心" hid="0" on="0" enabled="1">
+            <dept id="853" name="公共数据中心-数据库组" hid="-1" on="0" enabled="1" />
+            <dept id="1093" name="公共数据中心-数据集成组" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="661" name="公共系统研发部" hid="-1" on="0" enabled="1">
+            <dept id="1098" name="公共系统研发-管理财务组" hid="-1" on="0" enabled="1" />
+            <dept id="1099" name="公共系统研发-支付平台组" hid="-1" on="0" enabled="1" />
+            <dept id="1100" name="公共系统研发-项目财务组" hid="-1" on="0" enabled="1" />
+            <dept id="1101" name="公共系统研发-公共业务服务组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="789" name="公共系统部" hid="-1" on="0" enabled="0">
+            <dept id="858" name="CN公共开发组" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="859" name="CCT系统组" hid="-1" on="0" enabled="0" />
+          <dept id="863" name="公共营销系统研发部" hid="-1" on="0" enabled="1">
+            <dept id="1094" name="公共营销研发-会员营销组" hid="-1" on="0" enabled="1">
+              <dept id="1345" name="公共营销研发-外呼系统组" hid="-1" on="0" enabled="1" />
+              <dept id="1346" name="公共营销研发-CRM系统组" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1107" name="公共营销研发-前台产品组" hid="-1" on="0" enabled="0">
+              <dept id="1243" name="公共营销研发-基础产品组" hid="-1" on="0" enabled="0" />
+              <dept id="1245" name="公共营销研发-在线客服组" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1108" name="公共营销研发-CCT项目组" hid="-1" on="0" enabled="1" />
+            <dept id="1347" name="公共营销研发-营销工具组" hid="-1" on="0" enabled="1">
+              <dept id="1095" name="公共营销研发-联盟系统组" hid="-1" on="0" enabled="1" />
+              <dept id="1096" name="公共营销研发-竞价系统组" hid="-1" on="0" enabled="0" />
+              <dept id="1097" name="公共营销研发-统计分析组" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1348" name="公共营销研发-CN平台产品组" hid="-1" on="0" enabled="1">
+              <dept id="1109" name="公共营销研发-PMS组" hid="-1" on="0" enabled="1" />
+              <dept id="1244" name="公共营销研发-会员产品组" hid="-1" on="0" enabled="1" />
+              <dept id="1349" name="公共营销研发-平台运营维护组" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1444" name="公共营销研发-点评产品组" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1105" name="公共产品研发部" hid="-1" on="0" enabled="0" />
+          <dept id="1106" name="公共视觉设计部" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="1075" name="研发培训生" hid="-1" on="0" enabled="1" />
+        <dept id="1595" name="邮轮项目研发部" hid="-1" on="0" enabled="1">
+          <dept id="1596" name="邮轮项目研发部-资源研发组" hid="-1" on="0" enabled="1" />
+          <dept id="1597" name="邮轮项目研发部-营销研发组" hid="-1" on="0" enabled="1" />
+          <dept id="1598" name="邮轮项目研发部-客服研发组" hid="-1" on="0" enabled="1" />
+          <dept id="1599" name="邮轮项目研发部-分销研发组" hid="-1" on="0" enabled="1" />
+          <dept id="1600" name="邮轮项目研发部-软件项目组" hid="-1" on="0" enabled="1" />
+        </dept>
+      </dept>
+      <dept id="709" name="无线事业部" hid="-1" on="0" enabled="1">
+        <dept id="261" name="品牌媒介中心" hid="0" on="0" enabled="1">
+          <dept id="259" name="SNS媒体组" hid="0" on="0" enabled="0" />
+          <dept id="295" name="传统媒体组" hid="0" on="0" enabled="0" />
+          <dept id="1783" name="品牌媒介中心-媒介部" hid="-1" on="0" enabled="1" />
+          <dept id="1784" name="品牌媒介中心-公关部" hid="-1" on="0" enabled="1" />
+          <dept id="1785" name="品牌媒介中心-创意策划部" hid="-1" on="0" enabled="1" />
+          <dept id="1786" name="品牌媒介中心-设计部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="794" name="无线市场部" hid="-1" on="0" enabled="1">
+          <dept id="1450" name="无线市场部-商务组" hid="-1" on="0" enabled="1" />
+          <dept id="1451" name="无线市场部-运营组" hid="-1" on="0" enabled="1" />
+          <dept id="1452" name="无线市场部-分析组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="795" name="无线产品部" hid="-1" on="0" enabled="0" />
+        <dept id="809" name="无线品质管理部" hid="-1" on="0" enabled="1" />
+        <dept id="810" name="无线设计部" hid="-1" on="0" enabled="0" />
+        <dept id="811" name="无线数据支撑部" hid="-1" on="0" enabled="0" />
+        <dept id="889" name="无线产品研发中心" hid="-1" on="0" enabled="1">
+          <dept id="807" name="无线开发Android组" hid="-1" on="0" enabled="0" />
+          <dept id="808" name="无线开发IOS组" hid="-1" on="0" enabled="0" />
+          <dept id="1191" name="无线产品研发部-酒店项目组" hid="-1" on="0" enabled="0" />
+          <dept id="1193" name="无线产品研发部-自助游项目组" hid="-1" on="0" enabled="0" />
+          <dept id="1194" name="无线产品研发部-旅游项目组" hid="-1" on="0" enabled="0" />
+          <dept id="1196" name="无线产品研发部-实习生组" hid="-1" on="0" enabled="1" />
+          <dept id="1768" name="无线内容研发部" hid="-1" on="0" enabled="1">
+            <dept id="1769" name="无线内容研发-内容技术部" hid="-1" on="0" enabled="1" />
+            <dept id="1770" name="无线内容研发-内容运营部" hid="-1" on="0" enabled="1" />
+            <dept id="1771" name="无线内容研发-PC阿米巴项目组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1772" name="无线产品研发-基础研发部" hid="-1" on="0" enabled="1">
+            <dept id="1195" name="基础研发-公共组" hid="-1" on="0" enabled="1" />
+            <dept id="1773" name="基础研发-混合开发组" hid="-1" on="0" enabled="1" />
+            <dept id="1774" name="基础研发-设计组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1775" name="无线产品研发-短线研发部" hid="-1" on="0" enabled="1">
+            <dept id="1205" name="短线研发-景区组" hid="-1" on="0" enabled="1" />
+            <dept id="1776" name="短线研发-周末游组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1777" name="无线产品研发-长线研发部" hid="-1" on="0" enabled="1">
+            <dept id="1192" name="长线研发-机票组" hid="-1" on="0" enabled="1" />
+            <dept id="1778" name="长线研发-出境邮轮组" hid="-1" on="0" enabled="1" />
+          </dept>
+        </dept>
+        <dept id="890" name="无线平台保障部" hid="-1" on="0" enabled="0">
+          <dept id="1197" name="无线平台保障-数据支撑部" hid="-1" on="0" enabled="0" />
+          <dept id="1198" name="无线平台保障-品质管理部" hid="-1" on="0" enabled="0" />
+          <dept id="1199" name="无线平台保障-产品营销组" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="891" name="无线WAP部" hid="-1" on="0" enabled="0">
+          <dept id="1200" name="无线WAP部-研发组" hid="-1" on="0" enabled="0" />
+          <dept id="1201" name="无线WAP部-产品策划组" hid="-1" on="0" enabled="0" />
+          <dept id="1202" name="无线WAP部-UI组" hid="-1" on="0" enabled="0" />
+          <dept id="1203" name="无线WAP部-SE研发组" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="910" name="画旅途" hid="-1" on="0" enabled="0" />
+        <dept id="980" name="无线研发部" hid="-1" on="0" enabled="0" />
+        <dept id="1121" name="无线管理部HR" hid="-1" on="0" enabled="1" />
+        <dept id="1204" name="无线渠道运营部" hid="-1" on="0" enabled="0" />
+        <dept id="1248" name="无线新产品部" hid="-1" on="0" enabled="1">
+          <dept id="1739" name="无线新产品部-QQ旅游" hid="-1" on="0" enabled="1">
+            <dept id="1740" name="QQ旅游-运营部" hid="-1" on="0" enabled="1" />
+            <dept id="1741" name="QQ旅游-产品部" hid="-1" on="0" enabled="1" />
+            <dept id="1742" name="QQ旅游-支撑部" hid="-1" on="0" enabled="1" />
+            <dept id="1743" name="QQ旅游-行政部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1744" name="无线新产品部-交通项目" hid="-1" on="0" enabled="1">
+            <dept id="1636" name="无线新产品部-产品策划组" hid="-1" on="0" enabled="1" />
+            <dept id="1637" name="无线新产品部-前端开发组" hid="-1" on="0" enabled="1" />
+            <dept id="1638" name="无线新产品部-后端开发组" hid="-1" on="0" enabled="1" />
+            <dept id="1639" name="无线新产品部-基础开发组" hid="-1" on="0" enabled="1" />
+          </dept>
+        </dept>
+        <dept id="1398" name="QQ旅游项目部" hid="-1" on="0" enabled="0">
+          <dept id="1399" name="QQ旅游综合管理部" hid="-1" on="0" enabled="0" />
+          <dept id="1400" name="QQ旅游阿米巴部" hid="-1" on="0" enabled="0" />
+          <dept id="1401" name="QQ旅游编辑部" hid="-1" on="0" enabled="0" />
+          <dept id="1402" name="QQ旅游度假部" hid="-1" on="0" enabled="0" />
+          <dept id="1403" name="QQ旅游无线部" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="1446" name="无线运营部" hid="-1" on="0" enabled="1">
+          <dept id="1220" name="无线运营部-活动营销部" hid="-1" on="0" enabled="0" />
+          <dept id="1447" name="无线运营部-创意策划组" hid="-1" on="0" enabled="1" />
+          <dept id="1448" name="无线运营部-开发技术组" hid="-1" on="0" enabled="1">
+            <dept id="1456" name="无线运营开发-前端组" hid="-1" on="0" enabled="0" />
+            <dept id="1457" name="无线运营开发-后端组" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1458" name="无线运营部-SEO小组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1449" name="无线用研部" hid="-1" on="0" enabled="0" />
+        <dept id="1671" name="无线数据挖掘部" hid="-1" on="0" enabled="1">
+          <dept id="402" name="无线数据挖掘-无线会员营销部" hid="0" on="0" enabled="1">
+            <dept id="613" name="数据挖掘部营销组" hid="0" on="0" enabled="0" />
+            <dept id="614" name="数据挖掘部数据组" hid="0" on="0" enabled="0" />
+            <dept id="949" name="无线会员营销部-长线会员组" hid="-1" on="0" enabled="1" />
+            <dept id="950" name="无线会员营销部-短线会员组" hid="-1" on="0" enabled="1" />
+            <dept id="951" name="无线会员营销部-公共会员组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1453" name="无线产品分析部" hid="-1" on="0" enabled="0" />
+          <dept id="1791" name="无线数据挖掘-无线数据支持部" hid="-1" on="0" enabled="1">
+            <dept id="1792" name="无线数据支持部-市场分析组" hid="-1" on="0" enabled="1" />
+            <dept id="1793" name="无线数据支持部-产品分析组" hid="-1" on="0" enabled="1" />
+            <dept id="1794" name="无线数据支持部-基础数据组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1801" name="无线数据挖掘-营销系统研发部" hid="-1" on="0" enabled="1">
+            <dept id="1803" name="营销系统研发部-会员系统组" hid="-1" on="0" enabled="1" />
+            <dept id="1804" name="营销系统研发部-统计系统组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1802" name="无线数据挖掘-基础数据研发部" hid="-1" on="0" enabled="1">
+            <dept id="1805" name="基础数据研发部-ETL组" hid="-1" on="0" enabled="1" />
+            <dept id="1806" name="基础数据研发部-应用组" hid="-1" on="0" enabled="1" />
+          </dept>
+        </dept>
+        <dept id="1672" name="商务合作部" hid="-1" on="0" enabled="1">
+          <dept id="728" name="线下商务组" hid="-1" on="0" enabled="1">
+            <dept id="258" name="线下BD部" hid="0" on="0" enabled="0" />
+          </dept>
+          <dept id="954" name="线上商务组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1779" name="无线技术支撑中心" hid="-1" on="0" enabled="1">
+          <dept id="1454" name="无线产品支撑部" hid="-1" on="0" enabled="1" />
+          <dept id="1455" name="无线后台服务部" hid="-1" on="0" enabled="1" />
+        </dept>
+      </dept>
+      <dept id="893" name="目的地事业部" hid="-1" on="0" enabled="1">
+        <dept id="656" name="来订吧" hid="0" on="0" enabled="1" />
+        <dept id="834" name="目的地-酒店市场部" hid="-1" on="0" enabled="1" />
+        <dept id="894" name="自助游产品研发中心" hid="-1" on="0" enabled="0">
+          <dept id="900" name="自助游结算部" hid="-1" on="0" enabled="0" />
+          <dept id="901" name="自助游管理部" hid="-1" on="0" enabled="0" />
+          <dept id="902" name="自助游苏沪区" hid="-1" on="0" enabled="0" />
+          <dept id="903" name="自助游浙闽区" hid="-1" on="0" enabled="0">
+            <dept id="1392" name="自助游浙南区" hid="-1" on="0" enabled="0" />
+            <dept id="1393" name="自助游浙北区" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="904" name="自助游阿米巴特区" hid="-1" on="0" enabled="0" />
+          <dept id="905" name="自助游地接区" hid="-1" on="0" enabled="0" />
+          <dept id="909" name="自助游特区三部" hid="-1" on="0" enabled="0" />
+          <dept id="929" name="自助游质检部" hid="-1" on="0" enabled="0" />
+          <dept id="972" name="自助游信息维护部" hid="-1" on="0" enabled="0" />
+          <dept id="978" name="自助游创新特区" hid="-1" on="0" enabled="0">
+            <dept id="906" name="自助游西南区" hid="-1" on="0" enabled="0" />
+            <dept id="907" name="自助游特区一部" hid="-1" on="0" enabled="0" />
+            <dept id="908" name="自助游特区二部" hid="-1" on="0" enabled="0" />
+            <dept id="1044" name="自助游北方区" hid="-1" on="0" enabled="0" />
+            <dept id="1262" name="自助游锡常区" hid="-1" on="0" enabled="0" />
+            <dept id="1263" name="自助游华中区" hid="-1" on="0" enabled="0" />
+            <dept id="1264" name="自助游川渝区" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1394" name="自助游广东区" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="897" name="目的地HR" hid="-1" on="0" enabled="1" />
+        <dept id="955" name="目的地管培生" hid="-1" on="0" enabled="1">
+          <dept id="956" name="目的地管培生一组" hid="-1" on="0" enabled="1" />
+          <dept id="957" name="目的地管培生二组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1253" name="目的地新业务部" hid="-1" on="0" enabled="1">
+          <dept id="1254" name="餐饮产品部" hid="-1" on="0" enabled="0">
+            <dept id="1256" name="目的地住宿-华东区" hid="-1" on="0" enabled="0" />
+            <dept id="1257" name="目的地住宿-东南区" hid="-1" on="0" enabled="0" />
+            <dept id="1258" name="目的地住宿-西南区" hid="-1" on="0" enabled="0" />
+            <dept id="1259" name="目的地住宿-华南区" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1255" name="餐饮运营部" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="1490" name="目的地-酒店项目部" hid="-1" on="0" enabled="1">
+          <dept id="1491" name="目的地产品运营部" hid="-1" on="0" enabled="1">
+            <dept id="1493" name="目的地运营部-酒店运营组" hid="-1" on="0" enabled="1" />
+            <dept id="1494" name="目的地运营部-团购酒店运营组" hid="-1" on="0" enabled="0" />
+            <dept id="1495" name="目的地运营部-目的地营销策划组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1492" name="目的地用户体验部" hid="-1" on="0" enabled="0">
+            <dept id="1496" name="目的地用户体验部-前端体验组" hid="-1" on="0" enabled="0" />
+            <dept id="1497" name="目的地用户体验部-后台运营组" hid="-1" on="0" enabled="0" />
+          </dept>
+        </dept>
+        <dept id="1549" name="目的地客户服务部" hid="-1" on="0" enabled="1">
+          <dept id="1550" name="目的地客服受理一组" hid="-1" on="0" enabled="1" />
+          <dept id="1551" name="目的地客服受理二组" hid="-1" on="0" enabled="1" />
+          <dept id="1552" name="目的地客诉处理组" hid="-1" on="0" enabled="1" />
+          <dept id="1553" name="目的地结算组" hid="-1" on="0" enabled="0" />
+        </dept>
+        <dept id="1590" name="攻略社区项目部" hid="-1" on="0" enabled="0">
+          <dept id="1591" name="攻略社区产品技术部" hid="-1" on="0" enabled="0">
+            <dept id="1593" name="攻略社区产品技术部-产品组" hid="-1" on="0" enabled="0" />
+            <dept id="1594" name="攻略社区产品技术部-开发组" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1592" name="攻略社区编辑运营部" hid="-1" on="0" enabled="0" />
+        </dept>
+      </dept>
+      <dept id="1136" name="邮轮事业部" hid="-1" on="0" enabled="1">
+        <dept id="75" name="旅行社项目部" hid="0" on="0" enabled="1">
+          <dept id="125" name="公共客服部" hid="0" on="0" enabled="0" />
+          <dept id="126" name="六合一客服部1111" hid="29" on="0" enabled="0" />
+          <dept id="127" name="六合一销售部" hid="0" on="0" enabled="0" />
+          <dept id="215" name="旅行社外呼中心" hid="0" on="0" enabled="0" />
+          <dept id="291" name="销售客服三部" hid="0" on="0" enabled="0" />
+          <dept id="292" name="销售客服四部" hid="0" on="0" enabled="0" />
+          <dept id="540" name="协调部" hid="0" on="0" enabled="1" />
+          <dept id="707" name="销售客服五部" hid="-1" on="0" enabled="0" />
+          <dept id="882" name="销售部" hid="-1" on="0" enabled="1">
+            <dept id="878" name="销售一组" hid="-1" on="0" enabled="1" />
+            <dept id="879" name="销售二组" hid="-1" on="0" enabled="1" />
+            <dept id="880" name="销售三组" hid="-1" on="0" enabled="1" />
+            <dept id="881" name="销售四组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1661" name="同行邮轮分销部" hid="-1" on="0" enabled="1" />
+          <dept id="1746" name="旅行社-客服部" hid="-1" on="0" enabled="1">
+            <dept id="289" name="网店客服部" hid="0" on="0" enabled="1" />
+            <dept id="290" name="六合一客服部" hid="0" on="0" enabled="1" />
+          </dept>
+        </dept>
+        <dept id="779" name="分公司" hid="-1" on="0" enabled="1">
+          <dept id="780" name="上海分公司" hid="-1" on="0" enabled="1">
+            <dept id="1762" name="上海分公司普陀区" hid="-1" on="0" enabled="1" />
+            <dept id="1763" name="上海分公司徐汇区" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="781" name="北京分公司" hid="-1" on="0" enabled="1">
+            <dept id="1409" name="北京分公司产品组" hid="-1" on="0" enabled="0" />
+            <dept id="1410" name="北京分公司运营组" hid="-1" on="0" enabled="0" />
+            <dept id="1411" name="北京分公司-接待组" hid="-1" on="0" enabled="1" />
+            <dept id="1531" name="北京分公司-产品组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1407" name="广州分公司" hid="-1" on="0" enabled="1">
+            <dept id="1745" name="广州分公司产品组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1408" name="分公司储备" hid="-1" on="0" enabled="1" />
+          <dept id="1618" name="成都分公司" hid="-1" on="0" enabled="1" />
+          <dept id="1764" name="分公司落地" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="841" name="旅游顾问项目部" hid="-1" on="0" enabled="1">
+          <dept id="1005" name="团队部" hid="-1" on="0" enabled="0" />
+          <dept id="1252" name="外呼培训质检部" hid="-1" on="0" enabled="1" />
+          <dept id="1277" name="外呼旅游顾问部" hid="-1" on="0" enabled="1">
+            <dept id="1417" name="度假外呼质检部" hid="-1" on="0" enabled="0" />
+            <dept id="1542" name="外呼旅游顾问第一军团" hid="-1" on="0" enabled="1">
+              <dept id="842" name="外呼上海二区" hid="-1" on="0" enabled="1" />
+              <dept id="945" name="外呼旅游顾问一部" hid="-1" on="0" enabled="0" />
+              <dept id="1138" name="外呼旅游顾问三部" hid="-1" on="0" enabled="0" />
+              <dept id="1206" name="外呼旅游顾问四部" hid="-1" on="0" enabled="0" />
+              <dept id="1418" name="外呼苏州区" hid="-1" on="0" enabled="1" />
+              <dept id="1545" name="外呼上海一区" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1543" name="外呼旅游顾问第二军团" hid="-1" on="0" enabled="1">
+              <dept id="1544" name="外呼上海三区" hid="-1" on="0" enabled="1" />
+              <dept id="1546" name="外呼浙江区" hid="-1" on="0" enabled="1" />
+              <dept id="1548" name="外呼旅游顾问十部" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1787" name="外呼旅游顾问第三军团" hid="-1" on="0" enabled="1">
+              <dept id="1419" name="外呼上海四区" hid="-1" on="0" enabled="1" />
+              <dept id="1547" name="外呼江苏其他地区" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+          <dept id="1278" name="外呼HR部" hid="-1" on="0" enabled="1" />
+          <dept id="1420" name="外呼新人部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1137" name="邮轮HR部" hid="-1" on="0" enabled="1">
+          <dept id="1413" name="邮轮HR招聘培训部" hid="-1" on="0" enabled="1">
+            <dept id="1414" name="度假HR招聘组" hid="-1" on="0" enabled="0" />
+            <dept id="1415" name="度假HR培训组" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1416" name="邮轮HR人事行政组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1144" name="邮轮产品中心" hid="-1" on="0" enabled="1">
+          <dept id="1147" name="邮轮产品包船部" hid="-1" on="0" enabled="1">
+            <dept id="1514" name="度假邮轮产品包船一组" hid="-1" on="0" enabled="1" />
+            <dept id="1515" name="度假邮轮产品包船二组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1422" name="邮轮产品分销部" hid="-1" on="0" enabled="1" />
+          <dept id="1601" name="邮轮产品策划部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1146" name="度假邮轮线下营销部" hid="-1" on="0" enabled="0" />
+        <dept id="1148" name="邮轮采购操作中心" hid="-1" on="0" enabled="1">
+          <dept id="1609" name="邮轮包船分析部" hid="-1" on="0" enabled="1" />
+          <dept id="1610" name="邮轮操作部" hid="-1" on="0" enabled="1">
+            <dept id="1611" name="邮轮操作一部" hid="-1" on="0" enabled="1" />
+            <dept id="1612" name="邮轮操作二部" hid="-1" on="0" enabled="1" />
+          </dept>
+        </dept>
+        <dept id="1426" name="邮轮城市运营中心" hid="-1" on="0" enabled="1">
+          <dept id="1613" name="邮轮城市运营部" hid="-1" on="0" enabled="1">
+            <dept id="1614" name="邮轮苏州城市运营部" hid="-1" on="0" enabled="1" />
+            <dept id="1615" name="邮轮上海城市运营部" hid="-1" on="0" enabled="1" />
+            <dept id="1616" name="邮轮无锡城市运营部" hid="-1" on="0" enabled="1" />
+            <dept id="1760" name="邮轮南京城市运营部" hid="-1" on="0" enabled="1" />
+            <dept id="1761" name="邮轮常州城市运营部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1797" name="邮轮城市商务合作部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1602" name="邮轮预订中心" hid="-1" on="0" enabled="1">
+          <dept id="1145" name="邮轮订单部" hid="-1" on="0" enabled="1">
+            <dept id="1423" name="邮轮订单包船OS" hid="-1" on="0" enabled="1" />
+            <dept id="1424" name="邮轮订单分销OS" hid="-1" on="0" enabled="1" />
+            <dept id="1425" name="邮轮订单OP" hid="-1" on="0" enabled="1">
+              <dept id="1516" name="邮轮质检组" hid="-1" on="0" enabled="0" />
+              <dept id="1517" name="邮轮培训组" hid="-1" on="0" enabled="0" />
+              <dept id="1518" name="邮轮材料组" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1766" name="邮轮订单OC" hid="-1" on="0" enabled="1" />
+            <dept id="1767" name="邮轮订单QA" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1603" name="邮轮CCT部" hid="-1" on="0" enabled="1">
+            <dept id="1604" name="邮轮CCT组" hid="-1" on="0" enabled="1" />
+            <dept id="1605" name="邮轮CCT处理组" hid="-1" on="0" enabled="1" />
+            <dept id="1606" name="邮轮CCT质培组" hid="-1" on="0" enabled="1" />
+            <dept id="1607" name="邮轮CCT在线组" hid="-1" on="0" enabled="1" />
+            <dept id="1642" name="邮轮CCT新人组" hid="-1" on="0" enabled="0" />
+          </dept>
+        </dept>
+        <dept id="1608" name="邮轮新人部" hid="-1" on="0" enabled="1" />
+        <dept id="1641" name="邮轮市场中心" hid="-1" on="0" enabled="1">
+          <dept id="1732" name="邮轮市场渠道营销部" hid="-1" on="0" enabled="1" />
+          <dept id="1733" name="邮轮市场平台运营部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1710" name="邮轮策划运营中心" hid="-1" on="0" enabled="1">
+          <dept id="1617" name="邮轮策划运营-活动部" hid="-1" on="0" enabled="1" />
+          <dept id="1619" name="邮轮策划运营-流程部" hid="-1" on="0" enabled="1" />
+          <dept id="1711" name="邮轮平台产品运营部" hid="-1" on="0" enabled="1" />
+          <dept id="1712" name="邮轮策划运营-设计部" hid="-1" on="0" enabled="1" />
+          <dept id="1795" name="邮轮策划运营-无线平台部" hid="-1" on="0" enabled="1" />
+          <dept id="1796" name="邮轮策划运营-PC平台部" hid="-1" on="0" enabled="1" />
+        </dept>
+      </dept>
+      <dept id="1620" name="出境游事业部" hid="-1" on="0" enabled="1">
+        <dept id="1621" name="国际机票" hid="-1" on="0" enabled="0">
+          <dept id="1168" name="国际机票会员营销部" hid="-1" on="0" enabled="0">
+            <dept id="1170" name="国际机票线下会员部" hid="-1" on="0" enabled="0" />
+          </dept>
+        </dept>
+        <dept id="1622" name="出境跟团游项目部" hid="-1" on="0" enabled="1">
+          <dept id="805" name="出境淘宝部" hid="-1" on="0" enabled="1">
+            <dept id="1432" name="度假淘宝客服中心" hid="-1" on="0" enabled="1" />
+            <dept id="1433" name="度假淘宝运营中心" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1427" name="出境产品中心" hid="-1" on="0" enabled="1">
+            <dept id="1139" name="度假东南亚产品部" hid="-1" on="0" enabled="0" />
+            <dept id="1140" name="度假海岛产品部" hid="-1" on="0" enabled="0" />
+            <dept id="1141" name="度假日韩产品部" hid="-1" on="0" enabled="0">
+              <dept id="1428" name="度假日韩产品跟团组" hid="-1" on="0" enabled="0" />
+              <dept id="1429" name="度假日韩产品自由行组" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1142" name="度假长线产品部" hid="-1" on="0" enabled="0" />
+            <dept id="1522" name="度假出境跟团游" hid="-1" on="0" enabled="0" />
+            <dept id="1523" name="度假出境签证自由行" hid="-1" on="0" enabled="1">
+              <dept id="1538" name="度假签证产品部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1524" name="出境华东跟团" hid="-1" on="0" enabled="1">
+              <dept id="1527" name="华东-日韩部" hid="-1" on="0" enabled="1" />
+              <dept id="1528" name="华东-东南亚部" hid="-1" on="0" enabled="1" />
+              <dept id="1529" name="华东-长线部" hid="-1" on="0" enabled="1" />
+              <dept id="1530" name="华东-海岛部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1525" name="出境华北跟团" hid="-1" on="0" enabled="1">
+              <dept id="1532" name="华北-运营组" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1526" name="出境华南跟团" hid="-1" on="0" enabled="1">
+              <dept id="1533" name="华南-日韩部" hid="-1" on="0" enabled="1" />
+              <dept id="1534" name="华南-东南亚部" hid="-1" on="0" enabled="1" />
+              <dept id="1535" name="华南-长线部" hid="-1" on="0" enabled="1" />
+              <dept id="1536" name="华南-海岛部" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+          <dept id="1629" name="出境预订中心" hid="-1" on="0" enabled="1">
+            <dept id="128" name="出境客户服务部" hid="0" on="0" enabled="1">
+              <dept id="1132" name="出境质培组" hid="-1" on="0" enabled="1" />
+              <dept id="1133" name="出境回访组" hid="-1" on="0" enabled="1" />
+              <dept id="1134" name="出境结算组" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1124" name="出境游订单中心" hid="-1" on="0" enabled="1">
+              <dept id="1131" name="出境订单质培组" hid="-1" on="0" enabled="1" />
+              <dept id="1647" name="出境OP新人组" hid="-1" on="0" enabled="1" />
+              <dept id="1717" name="出境跟团游OP部" hid="-1" on="0" enabled="1">
+                <dept id="1128" name="东南亚跟团OP" hid="-1" on="0" enabled="1" />
+                <dept id="1129" name="日韩跟团OP" hid="-1" on="0" enabled="1" />
+                <dept id="1130" name="海岛跟团OP" hid="-1" on="0" enabled="1" />
+                <dept id="1430" name="长线跟团OP" hid="-1" on="0" enabled="1" />
+                <dept id="1718" name="港澳台跟团OP" hid="-1" on="0" enabled="1" />
+              </dept>
+              <dept id="1723" name="出境游OP后处理" hid="-1" on="0" enabled="1">
+                <dept id="1724" name="OP后处理一组" hid="-1" on="0" enabled="1" />
+                <dept id="1725" name="OP后处理二组" hid="-1" on="0" enabled="1" />
+                <dept id="1726" name="OP后处理三组" hid="-1" on="0" enabled="1" />
+              </dept>
+              <dept id="1727" name="出境游OP新兵连" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1209" name="出境游港澳台预订" hid="-1" on="0" enabled="1">
+              <dept id="1210" name="港澳台预订一部" hid="-1" on="0" enabled="1" />
+              <dept id="1211" name="港澳台预订二部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1714" name="出境游呼叫中心" hid="-1" on="0" enabled="1">
+              <dept id="1655" name="出境游CCT" hid="-1" on="0" enabled="1">
+                <dept id="1656" name="出境游CCT预订组" hid="-1" on="0" enabled="1" />
+                <dept id="1657" name="出境游CCT质培组" hid="-1" on="0" enabled="1" />
+                <dept id="1658" name="出境游CCT在线组" hid="-1" on="0" enabled="1" />
+                <dept id="1659" name="出境游CCT新人组" hid="-1" on="0" enabled="1" />
+              </dept>
+              <dept id="1715" name="签证CCT" hid="-1" on="0" enabled="0" />
+              <dept id="1716" name="出境游CCT新兵连" hid="-1" on="0" enabled="0" />
+            </dept>
+          </dept>
+          <dept id="1673" name="跟团供管部" hid="-1" on="0" enabled="1">
+            <dept id="1674" name="华东供管部" hid="-1" on="0" enabled="1">
+              <dept id="1682" name="华东-日韩供管部" hid="-1" on="0" enabled="1" />
+              <dept id="1683" name="华东-东南亚供管部" hid="-1" on="0" enabled="1" />
+              <dept id="1684" name="华东-海岛供管部" hid="-1" on="0" enabled="1" />
+              <dept id="1685" name="华东-长线供管部" hid="-1" on="0" enabled="1" />
+              <dept id="1686" name="华东-港澳台供管部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1675" name="华南供管部" hid="-1" on="0" enabled="1">
+              <dept id="1687" name="华南-日韩供管部" hid="-1" on="0" enabled="1" />
+              <dept id="1688" name="华南-东南亚供管部" hid="-1" on="0" enabled="1" />
+              <dept id="1689" name="华南-海岛供管部" hid="-1" on="0" enabled="1" />
+              <dept id="1690" name="华南-长线供管部" hid="-1" on="0" enabled="1" />
+              <dept id="1691" name="华南-港澳台供管部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1728" name="华北供管部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1676" name="跟团产品部" hid="-1" on="0" enabled="1">
+            <dept id="1677" name="跟团产品-日韩部" hid="-1" on="0" enabled="1">
+              <dept id="1692" name="日韩营销部" hid="-1" on="0" enabled="1" />
+              <dept id="1693" name="日韩运营部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1678" name="跟团产品-东南亚部" hid="-1" on="0" enabled="1">
+              <dept id="1694" name="东南亚营销部" hid="-1" on="0" enabled="1" />
+              <dept id="1695" name="东南亚运营部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1679" name="跟团产品-长线部" hid="-1" on="0" enabled="1">
+              <dept id="1696" name="长线营销部" hid="-1" on="0" enabled="1" />
+              <dept id="1697" name="长线运营部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1680" name="跟团产品-海岛部" hid="-1" on="0" enabled="1">
+              <dept id="1698" name="海岛营销部" hid="-1" on="0" enabled="1" />
+              <dept id="1699" name="海岛运营部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1681" name="跟团产品-港澳台部" hid="-1" on="0" enabled="1">
+              <dept id="1700" name="港澳台营销部" hid="-1" on="0" enabled="1" />
+              <dept id="1701" name="港澳台运营部" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+        </dept>
+        <dept id="1623" name="出境自由行项目部" hid="-1" on="0" enabled="1">
+          <dept id="1113" name="自由行预订中心" hid="-1" on="0" enabled="1">
+            <dept id="868" name="国际机票呼叫中心" hid="-1" on="0" enabled="1">
+              <dept id="1579" name="国际机票CCS-新人组" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="869" name="国际订单前处理" hid="-1" on="0" enabled="0">
+              <dept id="1115" name="国际机票OR" hid="-1" on="0" enabled="0" />
+              <dept id="1116" name="国际机票OR-CF" hid="-1" on="0" enabled="0" />
+              <dept id="1117" name="国际机票OR-会员组" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="870" name="国际机票专家组" hid="-1" on="0" enabled="0" />
+            <dept id="871" name="国际订单后处理" hid="-1" on="0" enabled="0">
+              <dept id="1084" name="国际机票出票组" hid="-1" on="0" enabled="0" />
+              <dept id="1085" name="国际机票订单处理组" hid="-1" on="0" enabled="0" />
+              <dept id="1086" name="国际机票审核组" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1083" name="国际机票投诉质检组" hid="-1" on="0" enabled="0" />
+            <dept id="1162" name="自由行预订部" hid="-1" on="0" enabled="1">
+              <dept id="1070" name="自由行预订一部" hid="-1" on="0" enabled="1" />
+              <dept id="1071" name="自由行预订二部" hid="-1" on="0" enabled="1" />
+              <dept id="1114" name="自由行预订资深部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1163" name="自由行服务部" hid="-1" on="0" enabled="1">
+              <dept id="1072" name="自由行服务一部" hid="-1" on="0" enabled="1" />
+              <dept id="1073" name="自由行服务二部" hid="-1" on="0" enabled="1" />
+              <dept id="1750" name="自由行商务通" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1164" name="自由行OR部" hid="-1" on="0" enabled="1">
+              <dept id="1169" name="自由行OR会员部" hid="-1" on="0" enabled="1" />
+              <dept id="1178" name="国际机票OR审核部" hid="-1" on="0" enabled="0" />
+              <dept id="1179" name="自由行OR捞单部" hid="-1" on="0" enabled="1" />
+              <dept id="1180" name="国际OR扣款组" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1165" name="国际机票订单中心" hid="-1" on="0" enabled="1">
+              <dept id="1166" name="国际机票资深部" hid="-1" on="0" enabled="1">
+                <dept id="1173" name="国际机票资深一部" hid="-1" on="0" enabled="0" />
+                <dept id="1174" name="国际机票资深二部" hid="-1" on="0" enabled="0" />
+              </dept>
+            </dept>
+            <dept id="1167" name="国际机票客户服务部" hid="-1" on="0" enabled="0">
+              <dept id="1171" name="国际机票CS部" hid="-1" on="0" enabled="0">
+                <dept id="1405" name="国际机票客诉部" hid="-1" on="0" enabled="0" />
+              </dept>
+            </dept>
+            <dept id="1172" name="国际机票培训质检部" hid="-1" on="0" enabled="0" />
+            <dept id="1279" name="国际机票OP部" hid="-1" on="0" enabled="1">
+              <dept id="1175" name="国际机票出票部" hid="-1" on="0" enabled="1" />
+              <dept id="1176" name="国际机票OC部" hid="-1" on="0" enabled="1" />
+              <dept id="1177" name="国际订单邮寄组" hid="-1" on="0" enabled="0" />
+              <dept id="1406" name="国际机票OA部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1643" name="签证OP部" hid="-1" on="0" enabled="1">
+              <dept id="1510" name="签证短线OP组" hid="-1" on="0" enabled="1" />
+              <dept id="1511" name="签证长线OP组" hid="-1" on="0" enabled="1" />
+              <dept id="1512" name="签证渠道OP组" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1713" name="自由行流程体验部" hid="-1" on="0" enabled="1" />
+            <dept id="1719" name="自由行OP部" hid="-1" on="0" enabled="1">
+              <dept id="1720" name="东南亚海岛自由行OP" hid="-1" on="0" enabled="1" />
+              <dept id="1721" name="港澳台自由行OP" hid="-1" on="0" enabled="1" />
+              <dept id="1722" name="日韩自由行OP" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1790" name="自由行新兵连" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1207" name="港澳项目部" hid="-1" on="0" enabled="0">
+            <dept id="1208" name="港澳产品部" hid="-1" on="0" enabled="0">
+              <dept id="1212" name="港澳产品一部" hid="-1" on="0" enabled="0" />
+              <dept id="1213" name="港澳产品二部" hid="-1" on="0" enabled="0" />
+              <dept id="1214" name="港澳旅行社产品部" hid="-1" on="0" enabled="0" />
+              <dept id="1261" name="港澳产品三部" hid="-1" on="0" enabled="0" />
+            </dept>
+          </dept>
+          <dept id="1215" name="出境签证中心" hid="-1" on="0" enabled="0">
+            <dept id="1513" name="度假签证质培组" hid="-1" on="0" enabled="0" />
+            <dept id="1633" name="出境签证预订部" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="1537" name="自由行产品部" hid="-1" on="0" enabled="1">
+            <dept id="1702" name="自由行产品-海岛部" hid="-1" on="0" enabled="1" />
+            <dept id="1703" name="自由行产品-港澳台部" hid="-1" on="0" enabled="1" />
+            <dept id="1704" name="自由行产品-东南亚日韩部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1628" name="国际机票产品部" hid="-1" on="0" enabled="1">
+            <dept id="973" name="国际机票外采部" hid="-1" on="0" enabled="1">
+              <dept id="1118" name="国际机票转单服务组" hid="-1" on="0" enabled="0" />
+              <dept id="1119" name="国际机票运价组" hid="-1" on="0" enabled="0" />
+              <dept id="1160" name="国际新渠道政策运营组" hid="-1" on="0" enabled="0" />
+              <dept id="1161" name="国际新渠道订单服务组" hid="-1" on="0" enabled="0" />
+              <dept id="1459" name="国际新渠道外部代采购组" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="1625" name="国际机票商务部" hid="-1" on="0" enabled="1">
+              <dept id="1627" name="国际机票外航商务部" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1709" name="国际机票供管部" hid="-1" on="0" enabled="1" />
+            <dept id="1749" name="国际机票运营部" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1644" name="签证产品部" hid="-1" on="0" enabled="1">
+            <dept id="1630" name="签证产品营销" hid="-1" on="0" enabled="1" />
+            <dept id="1748" name="签证产品运营" hid="-1" on="0" enabled="1">
+              <dept id="1539" name="签证上海领区组" hid="-1" on="0" enabled="1" />
+              <dept id="1540" name="签证北京领区组" hid="-1" on="0" enabled="1" />
+              <dept id="1541" name="签证广州领区组" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+          <dept id="1747" name="自由行商务部" hid="-1" on="0" enabled="1">
+            <dept id="1624" name="自由行供管商务部" hid="-1" on="0" enabled="1" />
+            <dept id="1626" name="自由行航司商务部" hid="-1" on="0" enabled="1" />
+          </dept>
+        </dept>
+        <dept id="1645" name="出境游HR" hid="-1" on="0" enabled="1" />
+        <dept id="1646" name="出境市场营销部" hid="-1" on="0" enabled="1">
+          <dept id="1705" name="出境市场营销部-无线平台营销部" hid="-1" on="0" enabled="1" />
+          <dept id="1706" name="出境市场营销部-PC平台营销部" hid="-1" on="0" enabled="1" />
+          <dept id="1707" name="出境市场营销部-渠道运营部" hid="-1" on="0" enabled="1" />
+          <dept id="1708" name="出境市场营销部-线下营销部" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1660" name="出境游系统研发部" hid="-1" on="0" enabled="1">
+          <dept id="1032" name="出境研发-技术服务部" hid="-1" on="0" enabled="1" />
+          <dept id="1034" name="出境研发-国际机票研发部" hid="-1" on="0" enabled="1" />
+          <dept id="1640" name="出境研发-出境游研发组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1789" name="出境管培生" hid="-1" on="0" enabled="1" />
+      </dept>
+      <dept id="1632" name="国内游事业部" hid="-1" on="0" enabled="1">
+        <dept id="349" name="国内游CRMC" hid="0" on="0" enabled="1">
+          <dept id="137" name="国内游SC" hid="0" on="0" enabled="1">
+            <dept id="211" name="国内游SC-A1" hid="0" on="0" enabled="1" />
+            <dept id="212" name="国内游SC-A2" hid="0" on="0" enabled="1" />
+            <dept id="213" name="国内游SC-A3" hid="0" on="0" enabled="1" />
+            <dept id="271" name="国内游SC-A4" hid="0" on="0" enabled="1" />
+            <dept id="272" name="机票CCS-B1组" hid="0" on="0" enabled="0" />
+            <dept id="355" name="国内游SC-ET" hid="0" on="0" enabled="1">
+              <dept id="202" name="机票订单ET行程单打印" hid="0" on="0" enabled="0" />
+              <dept id="203" name="机票订单OD出票" hid="0" on="0" enabled="0" />
+              <dept id="204" name="机票OP催单处理部" hid="0" on="0" enabled="0" />
+            </dept>
+            <dept id="387" name="国内游SC-KO" hid="0" on="0" enabled="1" />
+            <dept id="456" name="国内游SC-OC" hid="0" on="0" enabled="1">
+              <dept id="138" name="机票OC前处理部" hid="0" on="0" enabled="0">
+                <dept id="225" name="机票OC前处理一部" hid="0" on="0" enabled="0" />
+                <dept id="226" name="机票OC前处理二部" hid="0" on="0" enabled="0" />
+              </dept>
+              <dept id="139" name="机票OC" hid="0" on="0" enabled="0" />
+              <dept id="283" name="机票订单OC变更" hid="0" on="0" enabled="0" />
+              <dept id="284" name="机票订单FC航变" hid="0" on="0" enabled="0" />
+            </dept>
+            <dept id="519" name="机票QQ旅游" hid="0" on="0" enabled="0" />
+            <dept id="530" name="国内游SC-新兵连" hid="0" on="0" enabled="1" />
+            <dept id="605" name="国内游SC-夜班组" hid="0" on="0" enabled="1" />
+            <dept id="722" name="国内游SC-晚班组" hid="-1" on="0" enabled="1" />
+            <dept id="723" name="机票CCS-B2组" hid="-1" on="0" enabled="0" />
+            <dept id="797" name="国内游SC-质检" hid="-1" on="0" enabled="1" />
+            <dept id="866" name="机票CCS-B3组" hid="-1" on="0" enabled="0" />
+            <dept id="884" name="机票CCS-A4" hid="-1" on="0" enabled="0" />
+            <dept id="1040" name="国内游SC-A5" hid="-1" on="0" enabled="1" />
+            <dept id="1041" name="国内游SC-A6" hid="-1" on="0" enabled="1" />
+            <dept id="1042" name="机票CCS-A7组" hid="-1" on="0" enabled="0" />
+            <dept id="1043" name="机票CCS-A8组" hid="-1" on="0" enabled="0" />
+            <dept id="1068" name="机票CCS-A9组" hid="-1" on="0" enabled="0" />
+            <dept id="1159" name="国内游SC-外采组" hid="-1" on="0" enabled="1" />
+            <dept id="1265" name="国内游SC-标兵团" hid="-1" on="0" enabled="1">
+              <dept id="1385" name="国内游SC-订单处理标兵" hid="-1" on="0" enabled="1" />
+              <dept id="1386" name="国内游SC-退改签标兵" hid="-1" on="0" enabled="1" />
+            </dept>
+            <dept id="1666" name="国内游会员外呼组" hid="-1" on="0" enabled="1" />
+            <dept id="1738" name="国内游SC-OP" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="201" name="机票订单处理板块" hid="0" on="0" enabled="0">
+            <dept id="297" name="机票订单OA" hid="0" on="0" enabled="0">
+              <dept id="783" name="机票订单特殊政策处理" hid="-1" on="0" enabled="0" />
+              <dept id="873" name="订单OA" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="534" name="机票KCA订单咨询及后期处理" hid="0" on="0" enabled="0" />
+            <dept id="712" name="机票CF部" hid="-1" on="0" enabled="0">
+              <dept id="702" name="机票TTS" hid="-1" on="0" enabled="0" />
+            </dept>
+            <dept id="782" name="机票订单质检部" hid="-1" on="0" enabled="0" />
+            <dept id="979" name="机票订单CS部" hid="-1" on="0" enabled="0" />
+          </dept>
+          <dept id="270" name="国内游新人部" hid="0" on="0" enabled="1" />
+          <dept id="281" name="国内游CCT" hid="0" on="0" enabled="1">
+            <dept id="16" name="机票CCT四部" hid="0" on="0" enabled="0" />
+            <dept id="205" name="国内游CCT-A1" hid="0" on="0" enabled="1" />
+            <dept id="206" name="国内游CCT-A2" hid="0" on="0" enabled="1" />
+            <dept id="207" name="国内游CCT标兵团" hid="0" on="0" enabled="1" />
+            <dept id="208" name="国内游CCT-B3" hid="0" on="0" enabled="1" />
+            <dept id="209" name="国内游CCT-B4" hid="0" on="0" enabled="1" />
+            <dept id="210" name="机票CCT-A8组" hid="0" on="0" enabled="0" />
+            <dept id="298" name="国内游CCT-B2" hid="0" on="0" enabled="1" />
+            <dept id="300" name="国内游CCT-B1" hid="0" on="0" enabled="1" />
+            <dept id="301" name="国内游CCT-B5" hid="0" on="0" enabled="1" />
+            <dept id="389" name="机票CCT一部" hid="0" on="0" enabled="0">
+              <dept id="299" name="CCT-A5组" hid="0" on="0" enabled="0" />
+            </dept>
+            <dept id="390" name="机票CCT二部" hid="0" on="0" enabled="0" />
+            <dept id="391" name="机票CCT三部" hid="0" on="0" enabled="0" />
+            <dept id="518" name="国内游CCT新兵连" hid="0" on="0" enabled="1" />
+            <dept id="713" name="国内游CCT质检" hid="-1" on="0" enabled="1" />
+            <dept id="974" name="国内游CCT-B6" hid="-1" on="0" enabled="1" />
+            <dept id="975" name="国内游CCT-B7" hid="-1" on="0" enabled="1" />
+            <dept id="976" name="国内游CCT-B8" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="356" name="呼叫中心板块" hid="0" on="0" enabled="0" />
+          <dept id="388" name="国内游OR" hid="0" on="0" enabled="1">
+            <dept id="108" name="机票OR三部" hid="0" on="0" enabled="0" />
+            <dept id="109" name="机票OR四部" hid="0" on="0" enabled="0" />
+            <dept id="157" name="国内游OR-CF" hid="0" on="0" enabled="1" />
+            <dept id="243" name="国内游OR-A1" hid="0" on="0" enabled="0" />
+            <dept id="244" name="国内游OR-PC" hid="0" on="0" enabled="1" />
+            <dept id="245" name="国内游OR无线二组" hid="0" on="0" enabled="1" />
+            <dept id="392" name="机票OR一部" hid="0" on="0" enabled="0" />
+            <dept id="393" name="机票OR二部" hid="0" on="0" enabled="0">
+              <dept id="246" name="机票OR--B1" hid="0" on="0" enabled="0" />
+              <dept id="247" name="机票OR--B2" hid="0" on="0" enabled="0" />
+              <dept id="248" name="机票OR--B3" hid="0" on="0" enabled="0" />
+            </dept>
+            <dept id="511" name="国内游OR-A4" hid="0" on="0" enabled="0" />
+            <dept id="512" name="机票OR-A5组" hid="0" on="0" enabled="0" />
+            <dept id="520" name="国内游OR新兵连" hid="0" on="0" enabled="1" />
+            <dept id="930" name="国内游OR质检部" hid="-1" on="0" enabled="1" />
+            <dept id="931" name="国内游OR支付推荐组" hid="-1" on="0" enabled="1" />
+            <dept id="932" name="国内游OR支付助手组" hid="-1" on="0" enabled="1" />
+            <dept id="933" name="国内游OR无线一组" hid="-1" on="0" enabled="1" />
+            <dept id="934" name="国内游OR支付保障组" hid="-1" on="0" enabled="1">
+              <dept id="935" name="国内游OR信用卡组" hid="-1" on="0" enabled="1" />
+              <dept id="936" name="国内游OR储蓄卡组" hid="-1" on="0" enabled="1" />
+            </dept>
+          </dept>
+          <dept id="1218" name="国内游PD" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1295" name="国内游系统研发部" hid="-1" on="0" enabled="1">
+          <dept id="1030" name="国内游研发-资源产品组" hid="-1" on="0" enabled="1" />
+          <dept id="1031" name="国内游研发-流程运维组" hid="-1" on="0" enabled="1" />
+          <dept id="1033" name="国内游研发-产品营销组" hid="-1" on="0" enabled="1" />
+          <dept id="1217" name="国内游研发-火车票研发组" hid="-1" on="0" enabled="1" />
+          <dept id="1508" name="国内游研发-基础架构组" hid="-1" on="0" enabled="1" />
+        </dept>
+        <dept id="1340" name="国内游市场研发部" hid="-1" on="0" enabled="1" />
+        <dept id="1634" name="国内游产品" hid="-1" on="0" enabled="1">
+          <dept id="872" name="产品雏鹰管培组" hid="-1" on="0" enabled="1" />
+          <dept id="913" name="新业务部" hid="-1" on="0" enabled="1">
+            <dept id="1076" name="TTS调控组" hid="-1" on="0" enabled="0" />
+            <dept id="1077" name="外采组" hid="-1" on="0" enabled="1" />
+            <dept id="1078" name="预订组" hid="-1" on="0" enabled="1" />
+          </dept>
+          <dept id="1015" name="航司运营部" hid="-1" on="0" enabled="1" />
+          <dept id="1021" name="供管商务部" hid="-1" on="0" enabled="1" />
+          <dept id="1112" name="航司商务部" hid="-1" on="0" enabled="1">
+            <dept id="1284" name="机票内航商务一部" hid="-1" on="0" enabled="0" />
+            <dept id="1285" name="机票内航商务二部" hid="-1" on="0" enabled="0" />
+            <dept id="1286" name="机票外航商务部" hid="-1" on="0" enabled="0" />
+            <dept id="1287" name="国内自助游商务部" hid="-1" on="0" enabled="0" />
+          </dept>
+        </dept>
+        <dept id="1635" name="机+酒/火车票" hid="-1" on="0" enabled="1" />
+        <dept id="1648" name="国内游HR" hid="-1" on="0" enabled="1" />
+      </dept>
+    </dept>
+  </deptList>
+  <errInfo />
+</rlt>

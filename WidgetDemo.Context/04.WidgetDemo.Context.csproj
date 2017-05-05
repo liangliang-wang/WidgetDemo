@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F6E32F5-D8EB-41CE-8E94-2C699B48368A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WidgetDemo.Context</RootNamespace>
+    <AssemblyName>WidgetDemo.Context</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\SolutionItems\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.4.5.8\lib\net45\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Client, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Client.4.5.8\lib\net45\ServiceStack.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.4.5.8\lib\net45\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.4.5.8\lib\portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Redis.4.5.8\lib\net45\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.4.5.8\lib\net45\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver">
+      <HintPath>..\SolutionItems\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\SolutionItems\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Crawler\ICrawler.cs" />
+    <Compile Include="Crawler\OnCompletedEventArgs.cs" />
+    <Compile Include="Crawler\OnErrorEventArgs.cs" />
+    <Compile Include="Crawler\OnStartEventArgs.cs" />
+    <Compile Include="Crawler\StrongCrawler.cs" />
+    <Compile Include="DepartmentContext.cs" />
+    <Compile Include="FlightAlarmAddresseeContext.cs" />
+    <Compile Include="HelperContext.cs" />
+    <Compile Include="HttpHelperContext.cs" />
+    <Compile Include="MenuServices\MenuModel.cs" />
+    <Compile Include="MenuServices\MenuRequest.cs" />
+    <Compile Include="MenuServices\MenuRequestBase.cs" />
+    <Compile Include="MenuServices\MenuResponseModel.cs" />
+    <Compile Include="MenuServices\MenuService.cs" />
+    <Compile Include="MenuServices\MenuUserModel.cs" />
+    <Compile Include="model\AddBookingRequest.cs" />
+    <Compile Include="model\AddBookingRequestDetail.cs" />
+    <Compile Include="model\Address.cs" />
+    <Compile Include="model\ArrivingFrom.cs" />
+    <Compile Include="model\BookingItemRequest.cs" />
+    <Compile Include="model\Cancel\CancelBookingRequest.cs" />
+    <Compile Include="model\CodeName.cs" />
+    <Compile Include="model\DateRange.cs" />
+    <Compile Include="model\DepartureTime.cs" />
+    <Compile Include="model\Transfer\DropOffAccommodation.cs" />
+    <Compile Include="model\Transfer\DropOffAirport.cs" />
+    <Compile Include="model\Transfer\DropOffDetails.cs" />
+    <Compile Include="model\edit\BookingReference.cs" />
+    <Compile Include="model\edit\ModifyBookingItemRequest.cs" />
+    <Compile Include="model\entity.cs" />
+    <Compile Include="model\HotelItem.cs" />
+    <Compile Include="model\HotelPaxRoom.cs" />
+    <Compile Include="model\HotelRoom.cs" />
+    <Compile Include="model\edit\ModifyBookingRequest.cs" />
+    <Compile Include="model\PaxName.cs" />
+    <Compile Include="model\PeriodOfStay.cs" />
+    <Compile Include="model\Transfer\DropOffPort.cs" />
+    <Compile Include="model\Transfer\DropOffStation.cs" />
+    <Compile Include="model\Transfer\PickUpAccommodation.cs" />
+    <Compile Include="model\Transfer\PickUpAirport.cs" />
+    <Compile Include="model\Transfer\PickUpDetails.cs" />
+    <Compile Include="model\Transfer\PickUpPort.cs" />
+    <Compile Include="model\Transfer\PickUpStation.cs" />
+    <Compile Include="model\Place.cs" />
+    <Compile Include="model\RequestRequestDetails.cs" />
+    <Compile Include="model\response\BookingItemResponse.cs" />
+    <Compile Include="model\response\BookingPrice.cs" />
+    <Compile Include="model\response\BookingResponse.cs" />
+    <Compile Include="model\response\EssentialInformation.cs" />
+    <Compile Include="model\response\ItemItemPrice.cs" />
+    <Compile Include="model\response\Response.cs" />
+    <Compile Include="model\Search\SearchBookingItemRequest.cs" />
+    <Compile Include="model\Search\SearchBookingItemResponse.cs" />
+    <Compile Include="model\Sightseeing\ResponseSightseeingItem.cs" />
+    <Compile Include="model\Sightseeing\TourDeparture.cs" />
+    <Compile Include="model\Sightseeing\SightseeingItem.cs" />
+    <Compile Include="model\Sightseeing\TourLanguage.cs" />
+    <Compile Include="model\Transfer\TransferItem.cs" />
+    <Compile Include="model\Transfer\TransferPlace.cs" />
+    <Compile Include="model\Transfer\TransferVehicle.cs" />
+    <Compile Include="model\Transfer\Vehicle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedisContext.cs" />
+    <Compile Include="SpiderApi\SpiderApiContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\00.WidgetDemo.Common\01.WidgetDemo.Common.csproj">
+      <Project>{00bfcbf5-e4f6-45cc-9519-220f9fcef849}</Project>
+      <Name>01.WidgetDemo.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WidgetDemo.DAL\03.WidgetDemo.DAL.csproj">
+      <Project>{764b8b0a-924e-406c-b6c7-0bb48622006b}</Project>
+      <Name>03.WidgetDemo.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WidgetDemo.Model\02.WidgetDemo.Model.csproj">
+      <Project>{ae81332f-8d18-4fb6-96f4-4dcff2df861d}</Project>
+      <Name>02.WidgetDemo.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XML\AddbookingItemRequest.xml" />
+    <Content Include="XML\AddBookingRequest_Hotel_ParticipationLevel1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\ResponseSightseeingItem.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
