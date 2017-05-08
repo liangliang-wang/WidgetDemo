@@ -1,16 +1,18 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using TC.Flight.CommonToolsLibrary.Tools;
-using WidgetDemo.Common.Enum;
 
 namespace WidgetDemo.Common
 {
     /// <summary>枚举帮助类</summary>
     public static class EnumHelper
     {
+        private static readonly ConcurrentDictionary<Type, Dictionary<string, EnumItem>> EnumAbout
+         = new ConcurrentDictionary<Type, Dictionary<string, EnumItem>>();
         private static string GetName(Type t, object v)
         {
             try
@@ -118,6 +120,45 @@ namespace WidgetDemo.Common
                 result.Add(array.GetValue(i).ToString());
             }
             return result;
+        }
+
+
+
+
+        public static string GetDes(this Enum value)
+        {
+            FieldInfo field = value.GetType().GetField(value.ToString());
+            return ((DescriptionAttribute)Attribute.GetCustomAttribute(field, typeof(DescriptionAttribute))).Description;
+        }
+
+        public static Dictionary<string, EnumItem> GetItemList(this Enum value)
+        {
+            Type eType = value.GetType();
+            if (!EnumAbout.ContainsKey(eType))
+            {
+                Type valueType = Enum.GetUnderlyingType(eType);
+                var enums = Enum.GetValues(eType);
+                Dictionary<string, EnumItem> tmpList = new Dictionary<string, EnumItem>();
+                foreach (Enum e in enums)
+                    tmpList.Add(Convert.ChangeType(e, valueType).ToString(), new EnumItem
+                    {
+                        ItemText = e.ToString(),
+                        ItemValue = Convert.ChangeType(e, valueType).ToString(),
+                        ItemDes = e.GetDes()
+                    });
+                EnumAbout.TryAdd(eType, tmpList);
+            }
+            return EnumAbout[eType];
+        }
+
+        public class EnumItem
+        {
+            public string ItemText { get; set; }
+            public string ItemValue { get; set; }
+            public string ItemDes { get; set; }
+            public const string ItemValueField = "ItemValue";
+            public const string ItemTextField = "ItemText";
+            public const string ItemDesField = "ItemDes";
         }
     }
 }

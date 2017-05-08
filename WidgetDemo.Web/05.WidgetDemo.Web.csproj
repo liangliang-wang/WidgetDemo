@@ -149,33 +149,6 @@
       <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="TC.Flight.CommonEnumLibrary">
-      <HintPath>..\SolutionItems\TC.Flight.CommonEnumLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="TC.Flight.CommonToolsLibrary">
-      <HintPath>..\SolutionItems\TC.Flight.CommonToolsLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="TC.Flight.T4Library">
-      <HintPath>..\SolutionItems\TC.Flight.T4Library.dll</HintPath>
-    </Reference>
-    <Reference Include="TC.SystemOperateLog">
-      <HintPath>..\SolutionItems\TC.SystemOperateLog.dll</HintPath>
-    </Reference>
-    <Reference Include="TCBase.Authority.Sdk">
-      <HintPath>..\SolutionItems\TCBase.Authority.Sdk.dll</HintPath>
-    </Reference>
-    <Reference Include="TCBase.CapacityPlanning.RequestTrack">
-      <HintPath>..\SolutionItems\TCBase.CapacityPlanning.RequestTrack.dll</HintPath>
-    </Reference>
-    <Reference Include="TCSmartFramework.CommonInterface">
-      <HintPath>..\SolutionItems\TCSmartFramework.CommonInterface.dll</HintPath>
-    </Reference>
-    <Reference Include="TCSmartFramework.DataAccess">
-      <HintPath>..\SolutionItems\TCSmartFramework.DataAccess.dll</HintPath>
-    </Reference>
-    <Reference Include="TCSmartFramework.Utility">
-      <HintPath>..\SolutionItems\TCSmartFramework.Utility.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AdminControllerBase.cs" />

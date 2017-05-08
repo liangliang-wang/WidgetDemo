@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using TC.Flight.CommonToolsLibrary.Tools;
+using WidgetDemo.Common;
 using WidgetDemo.Context;
 
 namespace WidgetDemo.Web.Controllers
@@ -32,14 +32,14 @@ namespace WidgetDemo.Web.Controllers
         /// <returns>结果</returns>
         public ContentResult GetTimeByJava(string milliseconds)
         {
-            var ss = StringPlus.StrToInt64(milliseconds, 0);
+            var ss = TypeParse.ToLong(milliseconds, 0);
             DateTime time = HelperContext.GetTimeByJavaMilliseconds(ss);
             return Content(time.ToString());
         }
 
         public ContentResult GetTimeByStamp(string milliseconds)
         {
-            var ss = StringPlus.StrToInt64(milliseconds, 0);
+            var ss = TypeParse.ToLong(milliseconds, 0);
             DateTime time = HelperContext.ConvertTimestamp(ss);
             return Content(time.ToString());
         }

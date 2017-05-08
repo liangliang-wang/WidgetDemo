@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace WidgetDemo.Common.Enum
+namespace WidgetDemo.Common
 {
     /// <summary>http请求类型 </summary>
     public enum HttpRequestType

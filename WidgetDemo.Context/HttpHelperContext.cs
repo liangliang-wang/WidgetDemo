@@ -1,7 +1,5 @@
-﻿
-using System;
+﻿using System;
 using WidgetDemo.Common;
-using WidgetDemo.Common.Enum;
 
 namespace WidgetDemo.Context
 {
