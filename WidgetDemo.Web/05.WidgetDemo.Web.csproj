@@ -52,9 +52,6 @@
     <Reference Include="Aspose.Cells">
       <HintPath>..\SolutionItems\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="Flight.CommonParamAndEnum">
-      <HintPath>..\SolutionItems\Flight.CommonParamAndEnum.dll</HintPath>
-    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\SolutionItems\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
