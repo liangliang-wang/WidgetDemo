@@ -13,7 +13,7 @@ namespace ConsoleApplication1
             //IOTest t = new IOTest();
             //t.Get(@"F:\保存文件\王亮-Utf8.txt");
 
-           // WindowsServiceMonitor monitor = new WindowsServiceMonitor("10.1.56.85", "lj5351", "2015@ly.com");
+            // WindowsServiceMonitor monitor = new WindowsServiceMonitor("10.1.56.85", "lj5351", "2015@ly.com");
 
             //var obj = monitor.GetServiceList("TickService");
             //var obj01 = monitor.GetServiceValue("TickService", "TcVacationTick");
@@ -33,9 +33,11 @@ namespace ConsoleApplication1
 
             //Console.WriteLine(op.Foot(p));
 
-            Test t = new Test();
-            t.s();
-
+            //Test t = new Test();
+            //t.s();
+            ContentFind s = new ContentFind();
+            var filesNmae = s.FindContent(@"C:\Users\Administrator\Documents\WeChat Files\wl6491\Files\brokers\brokers", "金石");
+            Console.WriteLine(filesNmae);
             Console.ReadLine();
         }
 
