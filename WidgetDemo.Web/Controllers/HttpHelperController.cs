@@ -11,6 +11,7 @@ using System.Web.Security;
 using Newtonsoft.Json;
 using WidgetDemo.Context.MenuServices;
 using WidgetDemo.Model.HttpHelper;
+using WidgetDemo.Common;
 
 namespace WidgetDemo.Web.Controllers
 {
@@ -423,7 +424,7 @@ namespace WidgetDemo.Web.Controllers
             mRequest.Referer = "http://www.lvyouquan.cn/Index.aspx";
             mRequest.CookieContainer = new CookieContainer();
             mRequest.CookieContainer.SetCookies(new Uri("http://www.lvyouquan.cn"), "SERVERID=web35; path=/");
-            
+
             using (Stream myRequestStream = mRequest.GetRequestStream())
             {
                 myRequestStream.Write(data, 0, data.Length);
@@ -464,7 +465,7 @@ namespace WidgetDemo.Web.Controllers
                 , false, userData);
             string hashTicket = FormsAuthentication.Encrypt(ticket);
 
-            HttpCookie cookie = new HttpCookie(FormsAuthentication.FormsCookieName, hashTicket) {HttpOnly = true};
+            HttpCookie cookie = new HttpCookie(FormsAuthentication.FormsCookieName, hashTicket) { HttpOnly = true };
             //cookie.Domain = "";
             //Response.AddHeader("P3P", "CP=CAO PSA OUR");
             Response.Cookies.Add(cookie);
@@ -478,6 +479,14 @@ namespace WidgetDemo.Web.Controllers
         public void SendSMS()
         {
 
+        }
+
+        public void ImageToBase64()
+        {
+            var file = @"E:\微信图片.png";
+            var base64 = ImageHelper.ImgToBase64String(file);
+            var savePath =@"E:\";
+            ImageHelper.Base64ToImg(base64, savePath, "123");
         }
     }
 }

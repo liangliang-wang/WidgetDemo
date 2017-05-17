@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
-using TC.Flight.CommonToolsLibrary.Tools;
 
 namespace WidgetDemo.Common
 {
@@ -81,28 +80,28 @@ namespace WidgetDemo.Common
             return null;
         }
 
-        /// <summary>
-        /// 根据枚举字段获取枚举值
-        /// </summary>
-        /// <typeparam name="T">枚举类型</typeparam>
-        /// <param name="field">枚举字段</param>
-        /// <returns>枚举值</returns>
-        public static int GetEnumByFieldName<T>(this string field)
-        {
-            try
-            {
-                Type type = typeof(T);
-                var allKey = EnumPlus.GetEnumKey(type);
-                var description = allKey.FirstOrDefault(q => q.Value.ToLower() == field).Key;
-                var key = description.GetEnumName<HttpRequestType>();
-                return key;
-            }
-            catch
-            {
-                return 0;
-            }
+        ///// <summary>
+        ///// 根据枚举字段获取枚举值
+        ///// </summary>
+        ///// <typeparam name="T">枚举类型</typeparam>
+        ///// <param name="field">枚举字段</param>
+        ///// <returns>枚举值</returns>
+        //public static int GetEnumByFieldName<T>(this string field)
+        //{
+        //    try
+        //    {
+        //        Type type = typeof(T);
+        //        var allKey = EnumPlus.GetEnumKey(type);
+        //        var description = allKey.FirstOrDefault(q => q.Value.ToLower() == field).Key;
+        //        var key = description.GetEnumName<HttpRequestType>();
+        //        return key;
+        //    }
+        //    catch
+        //    {
+        //        return 0;
+        //    }
 
-        }
+        //}
 
         /// <summary>
         /// 枚举转换成数组

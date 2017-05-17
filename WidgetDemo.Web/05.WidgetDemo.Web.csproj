@@ -151,6 +151,7 @@
     <Compile Include="Controllers\AdminControllerBase.cs" />
     <Compile Include="Controllers\AdminWebViewPageBase.cs" />
     <Compile Include="Controllers\AmazeController.cs" />
+    <Compile Include="Controllers\App\AppIndexController.cs" />
     <Compile Include="Controllers\CrawlerController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\EasyUiController.cs" />
@@ -1162,6 +1163,7 @@
     <Content Include="Content\Templete\Example.xlsx" />
     <Content Include="Content\Templete\综合查询报表.xls" />
     <Content Include="Scripts\JsonFormat.js" />
+    <Content Include="Views\App\AppIndex\Index.html" />
     <Content Include="XML\User.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -1237,6 +1239,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\App\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
