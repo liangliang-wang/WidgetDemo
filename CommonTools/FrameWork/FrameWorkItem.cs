@@ -18,5 +18,10 @@ namespace CommonTools.FrameWork
         /// SQL参数
         /// </summary>
         public Dictionary<string,object> SqlParam { set; get; }
+
+        /// <summary>
+        /// 数据库连接字符串
+        /// </summary>
+        public string ConnectionString { set; get; }
     }
 }

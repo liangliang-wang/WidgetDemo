@@ -107,5 +107,25 @@ namespace WidgetDemo.Common
             }
             return result;
         }
+
+        /// <summary>
+        /// 转化为Double 
+        /// </summary>
+        /// <param name="value">原值</param>
+        /// <param name="defaultValue">失败后的默认值</param>
+        /// <returns>结果</returns>
+        public static double ToDouble(this object value, double defaultValue)
+        {
+            double result = 0;
+            try
+            {
+                result = Convert.ToDouble(value);
+            }
+            catch (Exception ex)
+            {
+                result = defaultValue;
+            }
+            return result;
+        }
     }
 }

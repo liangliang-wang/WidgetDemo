@@ -33,14 +33,13 @@ namespace CommonTools.FrameWork
         /// 查询单个实体
         /// </summary>
         /// <param name="item">框架实体</param>
-        /// <param name="dbConnectionString">数据库链接字符串</param>
         /// <returns>单个对象</returns>
-        public T SelectModel(FrameWorkItem item, string dbConnectionString)
+        public T SelectModel(FrameWorkItem item)
         {
             IDataReader dr = null;
             try
             {
-                dr = BuildDataReader(item, dbConnectionString);
+                dr = BuildDataReader(item);
                 if (dr != null && dr.Read())
                 {
                     return DynamicBuilderEntity<T>.CreateBuilder(dr).Build(dr);
@@ -62,20 +61,19 @@ namespace CommonTools.FrameWork
         /// 查询集合，带分页
         /// </summary>
         /// <param name="item">框架实体</param>
-        /// <param name="dbConnectionString">数据库连接实体</param>
         /// <param name="dp">分页对象</param>
         /// <returns>对象集合</returns>
-        public List<T> SelectList(FrameWorkItem item, string dbConnectionString, DataPage dp = null)
+        public List<T> SelectList(FrameWorkItem item, DataPage dp = null)
         {
             IDataReader dr = null;
             try
             {
-                dr = BuildDataReader(item, dbConnectionString, dp);
+                dr = BuildDataReader(item, dp);
 
                 List<T> list = new List<T>();
                 if (dp != null && dp.PageSize > 0)
                 {
-                    int result = GetResult<int>(string.Format("SELECT COUNT(1) FROM ({0}) a", item.Sql), dbConnectionString, item.SqlParam);
+                    int result = GetResult<int>(string.Format("SELECT COUNT(1) FROM ({0}) a", item.Sql), item.ConnectionString, item.SqlParam);
                     dp.RowCount = result;
                 }
                 while (dr != null && dr.Read())
@@ -101,16 +99,15 @@ namespace CommonTools.FrameWork
         /// 查询表格数据
         /// </summary>
         /// <param name="item">框架实体</param>
-        /// <param name="dbConnectionString">数据库连接实体</param>
         /// <param name="dp">分页对象</param>
         /// <returns></returns>
-        public DataTable SelectDataTable(FrameWorkItem item, string dbConnectionString, DataPage dp = null)
+        public DataTable SelectDataTable(FrameWorkItem item, DataPage dp = null)
         {
             IDataReader dr = null;
             DataTable result = new DataTable();
             try
             {
-                dr = BuildDataReader(item, dbConnectionString, dp);
+                dr = BuildDataReader(item, dp);
                 var datasSet = dr.ToDataSet();
                 if (datasSet.Tables.Count > 0)
                 {
@@ -129,18 +126,16 @@ namespace CommonTools.FrameWork
             }
         }
 
-
         /// <summary>
         /// 根据框架实体，条件式的选用sqlhelper
         /// </summary>
         /// <param name="item">框架实体</param>
-        /// <param name="dbConnectionString">链接字符串</param>
         /// <param name="dp">分页</param>
         /// <returns>IDataReader</returns>
-        private IDataReader BuildDataReader(FrameWorkItem item, string dbConnectionString, DataPage dp = null)
+        private IDataReader BuildDataReader(FrameWorkItem item,DataPage dp = null)
         {
             var sql = DalAid.CreatePageQuerySqlByMySql(item.Sql, dp);
-            var connection = new MySqlConnection(dbConnectionString);
+            var connection = new MySqlConnection(item.ConnectionString);
             var cmd = new MySqlCommand(sql, connection);
             foreach (var par in item.SqlParam)
                 cmd.Parameters.AddWithValue(par.Key, par.Value);
