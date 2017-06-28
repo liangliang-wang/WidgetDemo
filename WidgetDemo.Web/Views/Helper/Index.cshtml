@@ -39,7 +39,7 @@
             }
             $("#out").val(jsonOut);
         }
-        
+
         ///时间转化
         function Change() {
             var ss = $('#timeStamp').val();
@@ -50,10 +50,10 @@
             $.ajax({
                 type: "Get",
                 url: '@Url.Content("~/Helper/GetTimeByJava?milliseconds=")' + ss,
-                success: function(data) {
+                success: function (data) {
                     $('#time').val(data);
                 },
-                error: function() {
+                error: function () {
                     $.messager.alert("错 误", "转换失败", "error");
                 }
 
@@ -123,7 +123,8 @@
 <br />
 @*时间转化*@
 <div>
-    <span>Java时间戳<input type="text" id="timeStamp" style="width: 150px;" />
+    <span>
+        Java时间戳<input type="text" id="timeStamp" style="width: 150px;" />
         <input type="button" id="updateSubmit" value="转换" style="width: 50px" onclick="Change()" />
         时间<input type="text" id="time" style="width: 150px;" />
     </span>
@@ -152,6 +153,31 @@
 
 @*图片转Base64*@
 <div>
-   
+
 </div>
 <iframe src="" width=0 height=0 frameborder=0></iframe>
+<script>
+    var address = "http://192.168.3.25:8002/Meet/User/AddUser";
+    var postData = {
+        "Name": "王亮01",
+        "Mobile": "18914089468",
+        "Email": "123"
+    };
+    $.ajax({
+        type: "Post",
+        url: address,
+        data: postData,
+        success: function (res) {
+            debugger;
+            //$('#LogType').val(data);
+        },
+        error: function () {
+            $.messager.alert("错 误", "转换失败", "error");
+        }
+
+    });
+    function s(data) {
+        debugger;
+        var asa = "";
+    }
+</script>

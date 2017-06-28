@@ -1,4 +1,4 @@
-﻿using CommonTools.Enum;
+﻿using CommonTools.Enums;
 using CommonTools.Model;
 using MySql.Data.MySqlClient;
 using System;
@@ -132,15 +132,11 @@ namespace CommonTools.FrameWork
         /// <param name="item">框架实体</param>
         /// <param name="dp">分页</param>
         /// <returns>IDataReader</returns>
-        private IDataReader BuildDataReader(FrameWorkItem item,DataPage dp = null)
+        private IDataReader BuildDataReader(FrameWorkItem item, DataPage dp = null)
         {
-            var sql = DalAid.CreatePageQuerySqlByMySql(item.Sql, dp);
+            var sql = DalAid.CreatePageQuerySql(item.Sql, dp, dbType);
             var connection = new MySqlConnection(item.ConnectionString);
-            var cmd = new MySqlCommand(sql, connection);
-            foreach (var par in item.SqlParam)
-                cmd.Parameters.AddWithValue(par.Key, par.Value);
-            if (connection.State != ConnectionState.Open)
-                connection.Open();
+            var cmd = GetCommand(sql, item.ConnectionString, item.SqlParam);
             var cnt = cmd.ExecuteReader();
             return cnt;
         }
@@ -253,6 +249,8 @@ namespace CommonTools.FrameWork
                     cmd.Parameters.AddWithValue(item.Key, item.Value);
                 }
             }
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
             return cmd;
         }
 
@@ -275,6 +273,56 @@ namespace CommonTools.FrameWork
                 }
             }
             return cmd;
+        }
+
+        /// <summary>
+        /// 执行sql 返回响应行数
+        /// </summary>
+        /// <param name="item">参数</param>
+        /// <returns>结果</returns>
+        public int ExecuteNonQuery(FrameWorkItem item)
+        {
+            int result = 0;
+            try
+            {
+                using (var cmd = GetCommand(item.Sql, item.ConnectionString, item.SqlParam))
+                {
+                    if (cmd != null)
+                    {
+                        result = cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message + "\r\n" + item.Sql);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 执行查询，并返回查询所返回的结果集中第一行的第一列。 忽略额外的列或行。
+        /// </summary>
+        /// <param name="item">参数</param>
+        /// <returns>结果</returns>
+        public object ExecuteScalar(FrameWorkItem item)
+        {
+            object result = null; ;
+            try
+            {
+                using (var cmd = GetCommand(item.Sql, item.ConnectionString, item.SqlParam))
+                {
+                    if (cmd != null)
+                    {
+                        result = cmd.ExecuteScalar();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message + "\r\n" + item.Sql);
+            }
+            return result;
         }
     }
 }

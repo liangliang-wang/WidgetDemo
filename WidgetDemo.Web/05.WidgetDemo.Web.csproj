@@ -35,7 +35,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>bin\Debuger\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -1189,6 +1189,7 @@
     <Content Include="Cake\assets\fonts\fontawesome-webfont.woff" />
     <Content Include="Cake\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="Cake\assets\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\liangliang.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\comm.js" />
     <Content Include="Scripts\date.js" />

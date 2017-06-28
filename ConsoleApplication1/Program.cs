@@ -36,8 +36,11 @@ namespace ConsoleApplication1
             //Test t = new Test();
             //t.s();
             ContentFind s = new ContentFind();
-            var filesNmae = s.FindContent(@"C:\Users\Administrator\Documents\WeChat Files\wl6491\Files\brokers\brokers", "金石");
+            var filesNmae = s.FindContent(@"C:\Users\Administrator\Documents\WeChat Files\wl6491\Files\brokers\brokers", "1036");
             Console.WriteLine(filesNmae);
+            Console.WriteLine("---结束--");
+
+            //new MyWebSocketClient().start();
             Console.ReadLine();
         }
 

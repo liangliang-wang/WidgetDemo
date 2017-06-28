@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CommonTools</RootNamespace>
     <AssemblyName>CommonTools</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -46,13 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enum\DBType.cs" />
+    <Compile Include="Enums\DBType.cs" />
     <Compile Include="FrameWork\DalAid.cs" />
     <Compile Include="FrameWork\DynamicBuilderEntity.cs" />
     <Compile Include="FrameWork\EntityFrameWork.cs" />
     <Compile Include="FrameWork\FrameWorkItem.cs" />
     <Compile Include="Model\DataPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Toos\DateTimeEx.cs" />
+    <Compile Include="Toos\EnumHelper.cs" />
+    <Compile Include="Toos\EnumPlus.cs" />
+    <Compile Include="Toos\HttpHelper.cs" />
+    <Compile Include="Toos\TypeParse.cs" />
+    <Compile Include="Toos\XmlHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

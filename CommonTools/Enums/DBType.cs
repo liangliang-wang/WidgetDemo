@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonTools.Enum
+namespace CommonTools.Enums
 {
     public enum DBType
     {

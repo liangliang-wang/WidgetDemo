@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HPSocketCS">
+      <HintPath>..\ref\HPSocketCS.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -48,6 +51,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.cs" />
+    <Compile Include="WebSocketClient.cs" />
     <Compile Include="WindowsServiceMonitor.cs" />
     <Compile Include="XmlCreateAndReadForLinq.cs" />
   </ItemGroup>

@@ -1,4 +1,4 @@
-﻿using CommonTools.Enum;
+﻿using CommonTools.Enums;
 using CommonTools.Model;
 using System;
 using System.Collections.Generic;
@@ -132,6 +132,9 @@ namespace CommonTools.FrameWork
         /// <returns>结果</returns>
         public static string CreatePageQuerySql(string sql, DataPage dp, DBType DBType)
         {
+            if (dp == null)
+                return sql;
+
             int num = (dp.PageIndex - 1) * dp.PageSize;
             bool flag = DBType == DBType.SQLSERVER;
             if (flag)
