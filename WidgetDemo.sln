@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.WidgetDemo.Context", "WidgetDemo.Context\04.WidgetDemo.Context.csproj", "{7F6E32F5-D8EB-41CE-8E94-2C699B48368A}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.WidgetDemo.Web", "WidgetDemo.Web\05.WidgetDemo.Web.csproj", "{6B6AACCC-E031-41BC-B475-952311BAFFB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTools", "CommonTools\CommonTools.csproj", "{49ADF9A7-E64E-4868-A623-E19838246EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.WidgetDemo.Test", "WidgetDemo.Test\06.WidgetDemo.Test.csproj", "{DD5FE7B1-AC18-4AFA-AF2E-E2C367B2F4BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{49ADF9A7-E64E-4868-A623-E19838246EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49ADF9A7-E64E-4868-A623-E19838246EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49ADF9A7-E64E-4868-A623-E19838246EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5FE7B1-AC18-4AFA-AF2E-E2C367B2F4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5FE7B1-AC18-4AFA-AF2E-E2C367B2F4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5FE7B1-AC18-4AFA-AF2E-E2C367B2F4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5FE7B1-AC18-4AFA-AF2E-E2C367B2F4BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

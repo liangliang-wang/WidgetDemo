@@ -42,9 +42,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WidgetDemo.Model">
-      <HintPath>..\WidgetDemo.Model\bin\Debug\WidgetDemo.Model.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\ChildrenDep.cs" />
@@ -52,10 +49,15 @@
     <Compile Include="Model\FlightAlarmAddressee.cs" />
     <Compile Include="Model\RootDep.cs" />
     <Compile Include="Persistence\DepartmentPersistence.cs" />
+    <Compile Include="Persistence\EntityFrameWorkTest.cs" />
     <Compile Include="Persistence\UserPersistence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonTools\CommonTools.csproj">
+      <Project>{49adf9a7-e64e-4868-a623-e19838246ee9}</Project>
+      <Name>CommonTools</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WidgetDemo.Model\02.WidgetDemo.Model.csproj">
       <Project>{ae81332f-8d18-4fb6-96f4-4dcff2df861d}</Project>
       <Name>02.WidgetDemo.Model</Name>

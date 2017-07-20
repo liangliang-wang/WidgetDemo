@@ -49,6 +49,7 @@
     <Compile Include="DsfInterface\ParameterViewModel.cs" />
     <Compile Include="DsfInterface\PropertyViewModel.cs" />
     <Compile Include="DsfInterface\TypeViewModel.cs" />
+    <Compile Include="EntityFrameWorkModel\TestEntity.cs" />
     <Compile Include="HttpHelper\HttpHelperModel.cs" />
     <Compile Include="HttpHelper\HttpRequestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,6 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HttpHelp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonTools\CommonTools.csproj">
+      <Project>{49adf9a7-e64e-4868-a623-e19838246ee9}</Project>
+      <Name>CommonTools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

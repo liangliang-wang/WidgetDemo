@@ -324,5 +324,19 @@ namespace CommonTools.FrameWork
             }
             return result;
         }
+
+        /// <summary>
+        /// 添加
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="entity"></param>
+        /// <param name="dbConnectionString"></param>
+        /// <returns></returns>
+        public int Add<T>(T entity, string dbConnectionString) where T : BaseEntity
+        {
+            var sql = entity.GetInsertSql();
+
+            return ExecuteNonQuery(new FrameWorkItem { Sql=sql.Item1,ConnectionString = dbConnectionString,SqlParam = sql.Item2});
+        }
     }
 }
